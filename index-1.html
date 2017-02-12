@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+</head>
+<body>
+	<p class="testatr">1</p>
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', onDomReady);
+		function onDomReady() {
+		    var amount = document.getElementsByClassName('testatr')[0];
+		    (function iterate(i) {
+		        amount.innerHTML = i;
+		        if (i < 400) {
+		            setTimeout(function() { iterate(i + 1); }, 1000);
+		        }
+		    })(0);
+		}
+	</script>
+</body>
+</html>

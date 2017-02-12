@@ -1,0 +1,28 @@
+@import url(variables.css);
+@import "http://webfonts.ru/import/arvo.css";
+body {
+  font-family: 'Arvo'; }
+
+.navbar {
+  height: 120px; }
+  .navbar li a {
+    padding: 50px; }
+  .navbar .navbar-left {
+    margin-left: 100px; }
+  .navbar .navbar-right {
+    margin-right: 150px; }
+
+.navbar-brand {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  padding: 2px;
+  text-align: center; }
+  .navbar-brand p {
+    padding-top: 10px; }
+  .navbar-brand img {
+    height: 100%;
+    margin: auto;
+    margin-top: 20px; }
+
+/*# sourceMappingURL=app.css.map */

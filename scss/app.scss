@@ -1,0 +1,44 @@
+@import "variables.css";
+@import "http://webfonts.ru/import/arvo.css";
+
+body {
+	font-family: 'Arvo'; 
+
+}
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.main {
+	background-image: url('https://www.placecage.com/1600/1200');
+}
+
+.nav{
+    border:1px solid #ccc;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    
+
+ li{
+    display:inline;
+	 a{
+    display:inline-block;
+    padding:10px;
+    text-align: center;
+        text-align: -webkit-center;
+
+}
+}
+
+}
