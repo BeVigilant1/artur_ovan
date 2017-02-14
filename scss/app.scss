@@ -3,7 +3,11 @@
 
 body {
 	font-family: 'Arvo'; 
-
+	
+}
+/* container-fluid fix*/
+.container-fluid {
+	padding: 0;
 }
 /* centered columns styles */
 .row-centered {
@@ -19,21 +23,27 @@ body {
 }
 
 .main {
-	background-image: url('https://www.placecage.com/1600/1200');
+	z-index: 2;
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
 }
 
 .nav{
-    border:1px solid #ccc;
-    border-width:1px 0;
+    
+   
     list-style:none;
     margin:0;
     padding:0;
-    
+   
 
  li{
     display:inline;
 	 a{
+	color: #fff;
     display:inline-block;
+    text-transform: uppercase;
     padding:10px;
     text-align: center;
         text-align: -webkit-center;
@@ -41,4 +51,38 @@ body {
 }
 }
 
+}
+.menu-button  {
+	font-size: 25px;
+	font-weight: 0;
+	padding: 30px 0 0 30px;
+}
+.menu-logo {
+	
+	max-width: 400px;
+	margin:30px auto;
+}
+.menu-contacts {
+	text-align: right;
+	color: #fff;
+	margin-top: 30px;
+	padding-right: 30px;
+	a {
+		padding: 10px 10px;
+		font-size: 20px;
+	}
+	
+}
+.hero {
+position: relative;
+	height: 100vh;
+	z-index: -1;
+	background-image: url('../img/bg_main.png');
+	background-size: 100% auto;
+	width:100%;
+}
+
+.numbers {
+	width: 300px;
+	height: 300px;
 }
