@@ -1,8 +1,26 @@
 @import "variables.css";
+@import "fonts.css";
+
 @import "http://webfonts.ru/import/arvo.css";
 
+
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-user-select: none;                /* disable text select */
+  -webkit-touch-callout: none;              /* disable callout, image save panel (popup) */
+  -webkit-tap-highlight-color: transparent; /* "turn off" link highlight */
+
+}
+h1,h2,h3,p,a {
+	text-rendering: optimizeLegibility;
+}
+
+a:focus {
+  outline:0; // Firefox (remove border on link click)
+}
+
 body {
-	font-family: 'Arvo'; 
+	font-family: 'Effra'; 
 	
 }
 /* container-fluid fix*/
@@ -31,24 +49,24 @@ body {
 }
 
 .nav{
-    
-   
-    list-style:none;
-    margin:0;
-    padding:0;
-   
-
- li{
-    display:inline;
 	 a{
+	 	line-height: 50px;
+	 	 display:inline;
 	color: #fff;
     display:inline-block;
     text-transform: uppercase;
     padding:10px;
     text-align: center;
         text-align: -webkit-center;
+        font-weight: 100;
+	font-style: normal;
+	font-size: 21px;
+	&:hover {
+		opacity:0.7;
+		text-decoration: none;
+		cursor: pointer;
+	}
 
-}
 }
 
 }
@@ -56,6 +74,12 @@ body {
 	font-size: 25px;
 	font-weight: 0;
 	padding: 30px 0 0 30px;
+	a{
+		color:wheat;
+		&:hover{
+			color:#a88643;
+		}
+	}
 }
 .menu-logo {
 	
@@ -66,10 +90,21 @@ body {
 	text-align: right;
 	color: #fff;
 	margin-top: 30px;
-	padding-right: 30px;
+	padding-right: 50px;
+	.tel {
+		font-size: 21px;
+		margin-top: 15px;
+		font-weight: 100;
+	font-style: normal;
+	}
 	a {
 		padding: 10px 10px;
-		font-size: 20px;
+		font-size: 35px;
+		color:wheat;
+		&:hover{
+			color:#a88643;
+		}
+
 	}
 	
 }
@@ -79,14 +114,17 @@ position: relative;
 	z-index: -1;
 	background-image: url('../img/bg_main.png');
 	background-size: 100% auto;
+	background-attachment: fixed;
 	width:100%;
 }
 
 .company-stats {
 	margin-bottom: 100px;
+	float:left;
 	p {
-			margin-top: 20px;
+			margin-top: 45px;
 			text-align: center;
+			font-size: 18px;
 		}
 }
 
@@ -108,44 +146,53 @@ position: relative;
 			border-radius: 50%;
 			position: relative;
 			color: #fff;
-		
-		
+			margin-bottom: 80px;
+
+			
 		
 		.num {
 			  position: absolute;
-			  top:4%;
+			  top:10%;
 			 left:11%;
-			  font-size: 70px;
+			  font-size: 90px;
+			  font-family: 'ArnoPro';
+	font-weight: 100;
+	font-style: normal;
+				    line-height: 1.2;
+
 			
+		}
+		.num1 {
+			left:8%;
 		}
 .num1::after{
 				content:'лет';
 				display: block;
-				font-size: 17px;
+				font-size: 21px;
 				font-weight: normal;
 				    position: absolute;
-    top: 85%;
+    top: 74%;
     left: 48%;
 			}
 .num2::after{
 
 				content:'тысяч\00a0рублей';
 				display: block;
-				font-size: 17px;
+				font-size: 21px;
 				font-weight: normal;
 				    position: absolute;
-    top: 85%;
-    left: 5%;
+    top: 74%;
+    left: 8%;
 			}
 .num3::after{
 
 
 				content:'миллионов рублей';
 				display: block;
-				font-size: 17px;
+				font-size: 21px;
 				font-weight: normal;
 				    position: absolute;
-    top: 85%;
+    top: 74%;
     left: 5%;
 			}
 .num4::after{
@@ -153,10 +200,10 @@ position: relative;
 
 				content:'человек';
 				display: block;
-				font-size: 17px;
+				font-size: 21px;
 				font-weight: normal;
 				    position: absolute;
-    top: 85%;
+    top: 74%;
     left: 28%;
 			}
 }
@@ -164,6 +211,28 @@ position: relative;
 
 }
 
+.test {
+	a {
+	color:inherit;
+	&:hover {
+		
+		cursor: pointer;
+		.half--colored,.half__border:before,.half__border:after,.half__border--left:before,.half__border--left, .half__border--right:before,.half__border--right  {
+	background-color: silver;
+
+	cursor: pointer;
+
+}
+h2{
+	color:white;
+	
+}
+p{
+	color:white;
+	}
+}
+}
+}
 
 
 
@@ -173,6 +242,21 @@ position: relative;
 	width: calc(50% + 20px);
 	float: left;
 	background-size: cover;
+
+	h2 {
+		font-size: 70px;
+		color:#a88643;
+		text-transform: uppercase;
+		font-family: 'ArnoPro';
+		font-weight: 100;
+	
+
+	}
+	p {
+		font-size: 32px;
+		font-family: 'ArnoPro';
+		
+	}
 	&.baloons{
 		background-image: url('../img/baloons.jpg');
 	} 
@@ -196,6 +280,7 @@ position: relative;
 	width: calc(50% - 20px);
 	text-align: center;
 	padding-top: 100px;
+
 }
 
 .half__border {
@@ -253,4 +338,64 @@ position: relative;
 .half__border--right.half__border--bottom:before {
 	top: -8px;
 	transform: rotate(-30deg);
+}
+
+.footer {
+	padding: 20px 20px;
+	margin-top: 60px;
+	height: 60px;
+	background-color: silver;
+color:#3c3d3b ;
+
+	ul {
+		list-style: none;
+
+		li {
+			display: inline;
+			margin-left: 10%;
+			padding-left: 10px;
+			text-transform: uppercase;
+		}
+		a {
+			color:#3c3d3b ;
+			&:hover{
+		color: white;
+				text-decoration: none;
+			}
+		}
+	}
+	
+}
+
+.social {
+	color:#3c3d3b ;
+	position:relative;
+	display: inline;
+	i {
+		font-size: 21px;
+		margin-left: 15px;
+		color:#3c3d3b ;
+		&:hover {
+		color: white;
+	}
+	}
+}
+
+.top {
+
+	i {
+		font-size: 14px;
+	
+		padding-top: 2px;
+	}
+
+	a{color:#3c3d3b;
+		&:hover {
+		text-decoration: none;
+		color: white;
+		i{
+			color: white;
+		}
+	}
+		}
 }
