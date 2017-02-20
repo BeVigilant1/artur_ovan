@@ -1,0 +1,22 @@
+{
+  "name": "kovtungal",
+  "version": "1.0.0",
+  "description": "Site for celebration planner",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeVigilant1/kovtungal.git"
+  },
+  "author": "Dan Kovtun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeVigilant1/kovtungal/issues"
+  },
+  "homepage": "https://github.com/BeVigilant1/kovtungal#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}

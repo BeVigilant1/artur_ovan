@@ -1,0 +1,415 @@
+@import "variables.css";
+@import "fonts.css";
+@import "events.css";
+
+
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  // -webkit-user-select: none;                /* disable text select */
+  -webkit-touch-callout: none;              /* disable callout, image save panel (popup) */
+  -webkit-tap-highlight-color: transparent; /* "turn off" link highlight */
+
+}
+h1,h2,h3,p,a {
+	text-rendering: optimizeLegibility;
+}
+
+a:focus {
+  outline:0; // Firefox (remove border on link click)
+}
+
+body {
+	font-family: 'Effra'; 
+	background: white;
+	
+}
+/* container-fluid fix*/
+.container-fluid {
+	padding: 0;
+}
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.main {
+	z-index: 2;
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+}
+
+.nav{
+	 a{
+	 	line-height: 50px;
+	 	 display:inline;
+	color: #fff;
+    display:inline-block;
+    text-transform: uppercase;
+    padding:10px;
+    text-align: center;
+        text-align: -webkit-center;
+        font-weight: 100;
+	font-style: normal;
+	font-size: 21px;
+	&:hover {
+		opacity:0.7;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+}
+
+}
+.menu-button  {
+	font-size: 25px;
+	font-weight: 0;
+	padding: 30px 0 0 30px;
+	a{
+		color:#fff;
+		&:hover{
+			opacity:0.6;
+		}
+	}
+}
+.menu-logo {
+	
+	max-width: 400px;
+	margin:30px auto;
+}
+.menu-contacts {
+	text-align: right;
+	color: #fff;
+	margin-top: 30px;
+	padding-right: 50px;
+	
+	.tel {
+		font-size: 21px;
+		margin-top: 15px;
+		font-weight: 100;
+	font-style: normal;
+	}
+	a {
+		padding: 10px 10px;
+		font-size: 35px;
+		color:#fff;
+		
+
+		&:hover{
+			opacity:0.6;
+		}
+
+	}
+	
+}
+
+.hero {
+	height: 100vh;
+	width:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background-image: url('../img/bg_main.png');
+	background-size: 100% auto;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.spacer {
+	position: relative;
+	top:-100px;
+}
+.company-stats {
+
+	float:left;
+	p {
+			margin-top: 45px;
+			text-align: center;
+			font-size: 18px;
+		}
+}
+
+.border {
+	border-radius: 50%;
+	width: 172px;
+	height: 172px;
+	padding: 4px;
+	background: none;
+	border: 2px solid #a88643;
+	margin-left: auto;
+	margin-right: auto;
+		.numbers {
+			width: 160px;
+			height: 160px;
+			text-align: center;
+			background: #a88643;
+			border-radius: 50%;
+			position: relative;
+			color: #fff;
+			margin-bottom: 80px;
+
+			
+		
+		.num {
+			  position: absolute;
+			  top:10%;
+			 left:11%;
+			  font-size: 90px;
+			  font-family: 'ArnoPro';
+	font-weight: 100;
+	font-style: normal;
+				    line-height: 1.2;
+
+			
+		}
+		.num1 {
+			left:8%;
+		}
+.num1::after{
+				content:'лет';
+				display: block;
+				font-size: 21px;
+				font-weight: normal;
+				    position: absolute;
+    top: 74%;
+    left: 48%;
+			}
+.num2::after{
+
+				content:'тысяч\00a0рублей';
+				display: block;
+				font-size: 21px;
+				font-weight: normal;
+				    position: absolute;
+    top: 74%;
+    left: 8%;
+			}
+.num3::after{
+
+
+				content:'миллионов рублей';
+				display: block;
+				font-size: 21px;
+				font-weight: normal;
+				    position: absolute;
+    top: 74%;
+    left: 5%;
+			}
+.num4::after{
+
+
+				content:'человек';
+				display: block;
+				font-size: 21px;
+				font-weight: normal;
+				    position: absolute;
+    top: 74%;
+    left: 28%;
+			}
+}
+
+
+}
+
+.test {
+	
+	h2,p {
+		display: block;
+	}
+	a {
+	color:inherit;
+	&:hover {
+		
+		cursor: pointer;
+		.half--colored,.half__border:before,.half__border:after,.half__border--left:before,.half__border--left, .half__border--right:before,.half__border--right  {
+	background-color: silver;
+
+	cursor: pointer;
+
+}
+h2, p{
+	color:white;
+	
+	
+}
+
+}
+}
+}
+
+
+
+.half {
+	height: 50vh;
+	position: relative;
+	width: calc(50% + 20px);
+	float: left;
+	background-size: cover;
+	display: flex;
+	 align-items: center;
+  justify-content: center;
+	h2 {
+		font-size: 70px;
+		color:#a88643;
+		text-transform: uppercase;
+		font-family: 'ArnoPro';
+		font-weight: 100;
+	
+
+	}
+	p {
+		font-size: 32px;
+		font-family: 'ArnoPro';
+		
+	}
+	&.baloons{
+		background-image: url('../img/baloons.jpg');
+	} 
+	&.guitar {
+		background-image: url('../img/guitar.jpg');
+		
+	}
+	&.team {
+		background-image: url('../img/wedding.jpg');
+		
+	}
+	&.barcelona {
+		background-image: url('../img/city _sights.jpg');
+		
+	}
+
+}
+
+.half--colored {
+	background-color: #ececec;
+	width: calc(50% - 20px);
+	text-align: center;
+ 	margin: auto;
+
+}
+
+.half__border {
+	height: calc(50% - 10px);
+	width: 20px;
+	position: absolute;
+	/*outline: 1px hotpink solid;*/
+	background-color: #ececec;
+	z-index: 1;
+}
+
+.half__border--top {
+	top: 0;
+}
+
+.half__border--bottom {
+	bottom: 0;
+}
+
+.half__border:before {
+	content: '';
+	height: 20px;
+	width: 25px;
+	position: absolute;
+	/*outline: 1px hotpink solid;*/
+	background-color: #ececec;
+}
+
+.half__border--left { right: -20px; }
+.half__border--right { left: -20px; }
+
+.half__border--left:before {
+	right: 4px;
+}
+
+.half__border--right:before {
+	left: 4px;
+}
+
+.half__border--left.half__border--top:before {
+	bottom: -8px;
+	transform: rotate(-30deg);
+}
+
+.half__border--left.half__border--bottom:before {
+	top: -8px;
+	transform: rotate(30deg);
+}
+
+.half__border--right.half__border--top:before {
+	bottom: -8px;
+	transform: rotate(30deg);
+}
+
+.half__border--right.half__border--bottom:before {
+	top: -8px;
+	transform: rotate(-30deg);
+}
+
+.footer {
+	padding: 20px 20px;
+	height: 60px;
+	background-color: silver;
+color:#3c3d3b ;
+
+	ul {
+		list-style: none;
+
+		li {
+			display: inline;
+			margin-left: 10%;
+			padding-left: 10px;
+			text-transform: uppercase;
+		}
+		a {
+			color:#3c3d3b ;
+			&:hover{
+		color: white;
+				text-decoration: none;
+			}
+		}
+	}
+	
+}
+
+.social {
+	color:#3c3d3b ;
+	position:relative;
+	display: inline;
+	i {
+		font-size: 21px;
+		margin-left: 15px;
+		color:#3c3d3b ;
+		&:hover {
+		color: white;
+	}
+	}
+}
+
+.top {
+
+	i {
+		font-size: 14px;
+	
+		padding-top: 2px;
+	}
+
+	a{color:#3c3d3b;
+		&:hover {
+		text-decoration: none;
+		color: white;
+		i{
+			color: white;
+		}
+	}
+		}
+}
