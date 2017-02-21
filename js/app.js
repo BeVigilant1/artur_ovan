@@ -33,5 +33,9 @@ $(document).ready(function() {
       /*scrollOverflowOptions:true,
       fitToSection:false,
       lazyLoading: true*/
+      navigation:true,
+     
+      
     });
+    
 });

@@ -1,6 +1,7 @@
 @import "variables.css";
 @import "fonts.css";
 @import "events.css";
+@import "booking.css";
 
 
 * {
@@ -13,10 +14,22 @@
 h1,h2,h3,p,a {
 	text-rendering: optimizeLegibility;
 }
-
+p {
+	z-index: 2;
+}
 a:focus {
   outline:0; // Firefox (remove border on link click)
 }
+
+// FULLPAGE NAV STYLES 
+
+#fullPage-nav span, .fullPage-slidesNav span, #fullPage-nav li a, .fullPage-slidesNav li a, #fullPage-nav li, .fullPage-slidesNav li, #fullPage-nav ul, .fullPage-slidesNav ul, #fullPage-nav,.fullPage-tooltip {
+	color: white;
+	background-color: white;
+}
+
+
+// ***************************
 
 body {
 	font-family: 'Effra'; 
@@ -35,7 +48,7 @@ body {
     display:inline-block;
     float:none;
     /* reset the text-align */
-    text-align:left;
+   
     /* inline-block space fix */
     margin-right:-4px;
 }
@@ -46,6 +59,7 @@ body {
 	top:0;
 	left:0;
 	width: 100%;
+
 }
 
 .nav{
@@ -76,8 +90,10 @@ body {
 	padding: 30px 0 0 30px;
 	a{
 		color:#fff;
+		z-index: 10;
 		&:hover{
 			opacity:0.6;
+			cursor:pointer;
 		}
 	}
 }
@@ -85,6 +101,12 @@ body {
 	
 	max-width: 400px;
 	margin:30px auto;
+		z-index: 10;
+
+	&:hover{
+			opacity:0.6;
+			cursor:pointer;
+		}
 }
 .menu-contacts {
 	text-align: right;
@@ -356,6 +378,7 @@ h2, p{
 }
 
 .footer {
+	
 	padding: 20px 20px;
 	height: 60px;
 	background-color: silver;

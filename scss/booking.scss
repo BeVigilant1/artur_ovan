@@ -1,0 +1,133 @@
+.booking {
+	position: relative;
+	height: 100vh;
+	z-index: -1;
+		background-image: url('../img/guitar.jpg'), ;
+
+	background-size: 100% auto;
+	background-attachment: fixed;
+	width:100%;
+	@media screen and (min-height: 1344px) { 
+	height: calc(100vh - 300px); 
+
+	
+}
+	  &:before {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+
+	background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0),white);
+	opacity: .6; 
+  }
+	h1 {
+		margin: 0;
+		padding:0;
+		font-size: 250px;
+		letter-spacing: 25px;
+		position: relative;
+		top:70%;
+		left:4%;
+		text-transform: uppercase;
+		font-family: 'ArnoPro';
+		font-weight: 100;
+		color: #fff;
+position: relative;
+	}
+	}
+
+	.goodwill {
+		position: absolute;
+		top:10%;
+		left: 0;
+		height: 100vh;
+		text-align: center;
+		font-size: 21px;
+
+		.translate  {
+			font-family: 'ArnoPro';
+		font-size: 36px;
+		color:#b1b1b1;
+		p:first-child {
+					color:#a88643;
+				
+
+		}
+			&:after {
+						content:'»';
+						position: absolute;
+						top: -20%;
+					color:#a88643;
+
+						right: 8vw;
+
+
+								font-size: 100px;
+
+
+							}
+					&:before {
+						content:'«';
+						position: absolute;
+						top: -20%;
+						left: 8vw;
+						display: inline-block;
+								font-size: 100px;
+					color:#a88643;
+
+
+							}
+						}
+
+		}
+		.residents {
+							text-align: center;
+
+			margin: 15vh auto;
+		}
+		.wedo {
+			font-family: 'ArnoPro';
+		font-size: 36px;
+		color:#a88643;}
+
+
+.artists {
+		position: relative;
+	height: 100vh;
+	z-index: 2;
+	background-image: url('../img/mic.jpg') ;
+display: flex;
+align-items:center;
+justify-content:center;
+	background-size: 100% auto;
+	
+	@media screen and (min-height: 1344px) { 
+	height: calc(100vh - 300px); 
+
+	
+}
+.singers{
+		max-height: 90vh;
+		margin: 20px auto;
+
+	}
+		  &:before {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+z-index: -1;
+
+	background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0), black);
+	opacity: .6; 
+  }
+}
+
+	
+		

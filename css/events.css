@@ -1,8 +1,9 @@
+@charset "UTF-8";
 .events {
   position: relative;
   height: 100vh;
   z-index: -1;
-  background-image: url("../img/baloons.jpg");
+  background-image: url("../img/baloons_white.png");
   background-size: 100% auto;
   background-attachment: fixed;
   width: 100%; }
@@ -33,30 +34,23 @@
     position: relative; }
 
 .texter {
-  height: 90vh;
+  height: 75vh;
   display: flex;
-  background-image: url("../img/wedding.jpg");
+  background-image: url("../img/wedding_white.png");
   background-size: cover;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-repeat: no-repeat; }
   .texter:before {
-    display: block;
-    position: relative;
-    transform: rotate(180deg);
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
-    height: 150px;
-    width: 100%;
-    content: ''; }
-  .texter:after {
-    display: block;
-    position: relative;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
-    background-position: 0 bottom;
-    height: 150px;
-    width: 100%;
-    content: ''; }
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white), linear-gradient(to bottom, rgba(255, 255, 255, 0), white), linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+    opacity: .6; }
   .texter p {
     font-size: 21px;
     text-align: center;
@@ -64,14 +58,54 @@
     margin: 10px auto; }
   .texter .statement {
     font-size: 36px;
-    font-family: 'ArnoPro'; }
+    font-family: 'ArnoPro';
+    position: relative;
+    color: #a88643; }
+    .texter .statement:after {
+      content: '»';
+      position: absolute;
+      top: -20%;
+      right: -10px;
+      font-size: 100px; }
+    .texter .statement:before {
+      content: '«';
+      position: absolute;
+      top: -20%;
+      left: -10px;
+      display: inline-block;
+      font-size: 100px; }
 
-.wedding img {
+.anniversary .subheader {
+  color: #a88643;
+  font-family: 'ArnoPro'; }
+.anniversary .texter {
+  background-image: url("../img/champagne_white.png"); }
+  .anniversary .texter .statement:after {
+    top: -20%;
+    right: -20vh; }
+  .anniversary .texter .statement:before {
+    top: -20%;
+    left: -20vh; }
+
+.birthsday .texter {
+  background-image: url("../img/cake_white.png"); }
+  .birthsday .texter .statement:after {
+    top: -20%;
+    right: -20vh; }
+  .birthsday .texter .statement:before {
+    top: -20%;
+    left: -20vh; }
+
+.wedding img, .anniversary img, .birthsday img {
   margin: 20px auto; }
-.wedding h2 {
-  font-size: 90px;
+.wedding h2, .anniversary h2, .birthsday h2 {
+  font-size: 62px;
   text-align: center;
   font-weight: 100;
-  font-family: 'ArnoPro'; }
+  font-family: 'ArnoPro';
+  color: #a88643; }
+.wedding p, .anniversary p, .birthsday p {
+  font-size: 27px;
+  text-align: center; }
 
 /*# sourceMappingURL=events.css.map */
