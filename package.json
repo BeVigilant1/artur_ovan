@@ -18,5 +18,8 @@
   "homepage": "https://github.com/BeVigilant1/kovtungal#readme",
   "devDependencies": {
     "grunt": "^1.0.1"
+  },
+  "dependencies": {
+    "node-static": "^0.7.9"
   }
 }
