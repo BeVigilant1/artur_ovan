@@ -78,6 +78,12 @@ a:focus {
   padding: 15px;
 }
 
+// *******************************MOBILE VERSION******************************************
+
+
+
+
+
 
 // ***************************
 
@@ -209,6 +215,7 @@ body {
 			margin-top: 45px;
 			text-align: center;
 			font-size: 18px;
+			line-height: 0.9;
 		}
 }
 
@@ -486,4 +493,26 @@ color:#3c3d3b ;
 		}
 	}
 		}
+}
+
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
+.hero {
+	
+	background-size: 250% 80%;
+    background-repeat: no-repeat;
+    background-position: -250px 0;
+}
+.company-stats {
+	margin-top: 10vh;
+	
+p {
+	font-size: 16px;
+}
+
+}	
+
+	
+
 }

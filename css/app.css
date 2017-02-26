@@ -160,7 +160,8 @@ body {
   .company-stats p {
     margin-top: 45px;
     text-align: center;
-    font-size: 18px; }
+    font-size: 18px;
+    line-height: 0.9; }
 
 .border {
   border-radius: 50%;
@@ -358,5 +359,17 @@ body {
     color: white; }
     .top a:hover i {
       color: white; }
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
+  .hero {
+    background-size: 250% 80%;
+    background-repeat: no-repeat;
+    background-position: -250px 0; }
+
+  .company-stats {
+    margin-top: 10vh; }
+    .company-stats p {
+      font-size: 16px; } }
 
 /*# sourceMappingURL=app.css.map */
