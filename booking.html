@@ -31,18 +31,28 @@
 	<body>
 		<div id="fullpage">
 			<div class="section">
-
+				<div class='modal fade modal-fullscreen-menu' id='modalNavigation' role='dialog' tabindex='-1'>
+					<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+					<span class='sr-only'>Close navigation</span>
+					<span class='glyphicon glyphicon-remove'></span>
+					</button>
+					<div class='modal-dialog'>
+						<nav class='list-group'>
+							<a class='list-group-item' href='index.html'>Home</a>
+							<a class='list-group-item' href='events.html'>Events</a>
+							<a class='list-group-item' href='booking.html'>Booking</a>
+							<a class='list-group-item' href='#'>Team</a>
+							<a class='list-group-item' href='#'>Barcelona</a>
+						</nav>
+					</div>
+				</div>
 				<div class="container-fluid">
-
 					<div class="booking">
 						<h1>Booking</h1>
 					</div>
-				
-						<div  class="main ">
+					<div  class="main ">
 						<div class="row menu">
-
-							<div class="col-md-3 col-sm-3 col-xs-2 menu-button"><a  href="#">
-								<i class="fa fa-align-left" aria-hidden="true"></i></a>
+							<div class="col-md-3 col-sm-3 col-xs-2 menu-button">  <button class='btn btn-primary btn-lg open-menu' data-target='#modalNavigation' data-toggle='modal' type='button'><i class="fa fa-align-left" aria-hidden="true"></i></button>
 							</div>
 							<div class="col-md-6 col-sm-6 col-xs-8">
 								<a href="#"><img class="menu-logo img-responsive" src="img/logo.png" alt=""></a>
@@ -72,41 +82,47 @@
 						</div>
 					</div>
 				</div>
-				</div>
-			
-			
-		
-		<div class="section">
+			</div>
+			<div class="section">
 				<div class="container-fluid">
 					<div class="row goodwill">
-						<div class="col-md-12  col-sm-12 col-xs-12 translate"><p>Работаем с артистами эстрады и знаменитостями с 1999 года</p><p>
-Booking for live music acts and celebrity personalities since 1999 </p></div>
-						<div class="col-md-4 col-sm-12 col-xs-12 col-centered residents"><p>Мы сотрудничаем с артистами
-российской и зарубежной эстрады, артистами разговорного жанра,
-с именитыми ведущими и мировыми селебрити.</p></div>
-						<div class="col-md-4 col-sm-12 col-xs-12 col-centered residents clearfix"><p>В нашем booking листе резиденты 
-Comedy Club и Comedy Women, государственные ансамбли,
-танцевальные коллективы,
-кавер группы и DJs.</p></div>
-						<div class="col-md-12 col-sm-12 col-xs-12 col-centered wedo"><p>Составляем развлекательную программу
-вашего мероприятия.</p></div>
-					
+						<div class="col-md-12  col-sm-12 col-xs-12 translate">
+							<p>Работаем с артистами эстрады и знаменитостями с 1999 года</p>
+							<p>
+								Booking for live music acts and celebrity personalities since 1999 
+							</p>
+						</div>
+						<div class="col-md-4 col-sm-12 col-xs-12 col-centered residents">
+							<p>Мы сотрудничаем с артистами
+								российской и зарубежной эстрады, артистами разговорного жанра,
+								с именитыми ведущими и мировыми селебрити.
+							</p>
+						</div>
+						<div class="col-md-4 col-sm-12 col-xs-12 col-centered residents clearfix">
+							<p>В нашем booking листе резиденты 
+								Comedy Club и Comedy Women, государственные ансамбли,
+								танцевальные коллективы,
+								кавер группы и DJs.
+							</p>
+						</div>
+						<div class="col-md-12 col-sm-12 col-xs-12 col-centered wedo">
+							<p>Составляем развлекательную программу
+								вашего мероприятия.
+							</p>
+						</div>
 					</div>
 				</div>
-				
-				</div>
+			</div>
 			<div class="section">
-				
 				<div class="container-fluid">
-				
 					<div class="artists">
 						<img class="singers" src="img/singers.png" alt="Артисты с которыми мы сотрудничали" class="img-responsive">
 					</div>
 				</div>
 			</div>
-				<div class="section fp-auto-height fp-auto-height-responsive">
+			<div class="section fp-auto-height fp-auto-height-responsive">
 				<!-- FOOTER -->
-		<footer>
+				<footer>
 					<div class="row footer">
 						<div class="col-md-4 col-xs-6 pull-left ">
 							<p>&copy; ARTUR OVAN 2016</p>
@@ -128,11 +144,8 @@ Comedy Club и Comedy Women, государственные ансамбли,
 					</div>
 				</footer>
 			</div>
-		<!-- FULLPAGE ENDS -->
-			</div>
-
-		
-	
+			<!-- FULLPAGE ENDS -->
+		</div>
 		<!-- Bootstrap core JavaScript
 			================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->

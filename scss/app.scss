@@ -34,88 +34,89 @@ a:focus {
 // OFFCANVAS MENU
 
 
-#nav-toggle {
-  position: absolute;
-  clip: rect(0, 0, 0, 0);
-  
-  &:checked + .menux {
-    visibility: visible;
+.modal-fullscreen-menu {
+	background: black;
+	height: 100vh;
+	overflow: hidden;
+  .close {
+    color: white;
     opacity: 1;
-  }
-}
-
-#nav-toggle-label {
-  position: fixed;
-  right: 1em;
-  top: 1em;
-  z-index: 2;
-  cursor: pointer;
-
-  span, &:before, &:after{
-    display: block;
-    height: 3px;
-    background: black;
-    width: 2em;
-    margin-bottom: .4em;
-    transition: .2s all linear;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    font-size: 5vh;
   }
 
-  &:before, &:after {
-    content: "";
+  .modal-dialog {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 768px;
+    display: flex;
+    height: 100%;
+    align-items: center;
   }
-  
-}
 
-.menux {
-  font-size: 24px;
-  visibility: hidden;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: 0;
-  padding: 2em;
-  position: fixed;
-  list-style: none;
-  padding-left: 0;
-  text-align: center;
-  background: rgba(white, .5);
-  opacity: 0;
-  transition: .2s all linear;
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
-  li{
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 1.5em;
-    
-    a{
-      text-decoration: none;
-      border-bottom: 2px solid black;
-      color: black;
+  .modal-content {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+  }
+
+  .list-group {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+
+    a {
+      font-size: 200%;
+      font-weight: 200;
+      letter-spacing: 0.05em;
+      border: none;
+      transition: all 0.25s ease;
+      background-color: transparent;
+      color: white;
+      padding: 7.5vh 0;
+      height: 5vh;
+      font-size: 5vh;
+      line-height: 0;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        z-index: -1;
+        opacity: 0;
+        transform: scale3d(0.7, 1, 1);
+        transition: transform 0.4s, opacity 0.4s;
+      }
+
+      &:hover {
+        color: black;
+
+        &:before {
+          transform: translate3d(0, 0, 0);
+          opacity: 1;
+        }
+      }
     }
   }
 }
 
-.nav-toggle-label--active{
-  span{
-    opacity: 0;
-  }
-  &:before{
-    transform: rotate(-45deg);
-    position: absolute;
-    top: 50%;
-  }
-  &:after{
-    transform: rotate(45deg);
-    position: absolute;
-    top: 50%;
+.modal-backdrop {
+  &.in {
+    opacity: .9;
+    z-index: -1;
   }
 }
+
+
+
 // #site-wrapper {
 //   position: relative;
 //   overflow: hidden;
@@ -236,6 +237,15 @@ body {
 			opacity:0.6;
 			cursor:pointer;
 		}
+	}
+}
+
+.open-menu {
+	background: transparent;
+	border:none;
+	&:hover{
+		background: rgba(255, 255, 255, .4);
+		color: black;
 	}
 }
 .menu-logo {
@@ -589,6 +599,7 @@ color:#3c3d3b ;
 /* iPhone 6 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
 
+
 .hero {
 	
 	background-size: 250% 80%;
@@ -652,27 +663,42 @@ nav {
 }
 
 .footer {
-	height: 300px;
-	margin-top: -8vh;
+
+	height: 85px;
+	padding: 15px 20px;
+	p:first-child {
+		font-size: 14px;
+		position: relative;
+    top: 4vh;
+    left: 28vw;
+
+	}
 	ul li {
-	padding-left: 8px;
+	
 	
 	
 	margin-left: 0; 
 }
 	ul {
-		margin: 4vh 0;
+	margin-top: -32px;
+    margin-bottom: 10px;
+    margin-left: -10px;
+    font-size: 16px;
+
+	
 	}
-.mobile-social {
-	padding-top: 5vh;
+	.social {
+		position: relative;
+    top: -4px;
+
+	}
+
+
+
+
+
 }
 }
-
-
-
-
-}
-
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
@@ -706,8 +732,8 @@ nav {
 }
 
 .footer {
-	margin-top: -160px;
-	height: 240px;
+	       margin-top: -22px;
+    height: 101px;
 	padding: 20px 20px;
 	ul {
 		width: 50vw;
@@ -735,6 +761,112 @@ nav {
 		}
 	}
 }
+
+}
+
+/* iPhone 6+ (portrait) ----------- */
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) {
+.hero {
+	
+	background-size: 250% 80%;
+    background-repeat: no-repeat;
+    background-position: -250px 0;
+}
+
+.company-stats {
+	margin-top: 10vh;
+	margin-bottom: 2vh;
+p {
+	font-size: 16px;
+}
+
+}	
+
+
+.menu-logo {
+	max-width: 370px;
+    margin: 12vh -12vw;
+	
+}
+
+	.menu-contacts {
+		margin-top: -17vh;
+		.tel {
+			        margin: -52vh 60vw;
+
+		}
+		.share {
+			    position: absolute;
+    top: -30vh;
+    right: -64vw;
+			display: inline;
+		}
+	}
+	
+
+nav {
+	.links{
+		display: block;
+		text-align: left;
+	}
+}
+.spacer {
+    position: relative;
+    top: -4vh;
+}
+.half {
+	width: 100%;
+
+}
+.guitar {
+	float:left;
+}
+.mobile-section {
+	display: block;
+}
+.desktop-section{
+	display: none;
+}
+
+.footer {
+
+	height: 85px;
+	padding: 15px 20px;
+	p:first-child {
+		font-size: 14px;
+		position: relative;
+    top: 4vh;
+    left: 28vw;
+
+	}
+	ul li {
+	
+	
+	
+	margin-left: 0; 
+}
+	ul {
+	margin-top: -32px;
+    margin-bottom: 10px;
+    margin-left: -10px;
+    font-size: 16px;
+
+	
+	}
+	.social {
+		position: relative;
+    top: -4px;
+
+	}
+.mobile-social {
+	
+}
+}
+
+
+
+
 
 }
 

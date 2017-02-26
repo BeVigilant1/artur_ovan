@@ -4,7 +4,6 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<meta name="description" content="">
 		<meta name="author" content="">
@@ -30,18 +29,28 @@
 	<!-- NAVBAR
 		================================================== -->
 	<body>
-		
 		<div id="fullpage">
 			<div class="section">
-				
+				<div class='modal fade modal-fullscreen-menu' id='modalNavigation' role='dialog' tabindex='-1'>
+					<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+					<span class='sr-only'>Close navigation</span>
+					<span class='glyphicon glyphicon-remove'></span>
+					</button>
+					<div class='modal-dialog'>
+						<nav class='list-group'>
+							<a class='list-group-item' href='#'>Home</a>
+							<a class='list-group-item' href='events.html'>Events</a>
+							<a class='list-group-item' href='booking.html'>Booking</a>
+							<a class='list-group-item' href='#'>Team</a>
+							<a class='list-group-item' href='#'>Barcelona</a>
+						</nav>
+					</div>
+				</div>
 				<div class="container-fluid">
 					<div class="hero"></div>
-					
 					<div  class="main ">
 						<div class="row menu">
-
-							<div class="col-md-3  col-xs-2 menu-button"><a  href="#">
-								<i class="fa fa-align-left" aria-hidden="true"></i></a>
+							<div class="col-md-3  col-xs-2 menu-button">          <button class='btn btn-primary btn-lg open-menu' data-target='#modalNavigation' data-toggle='modal' type='button'><i class="fa fa-align-left" aria-hidden="true"></i></button>
 							</div>
 							<div class="col-md-6 col-xs-8">
 								<a href="#"><img class="menu-logo img-responsive" src="img/logo.png" alt=""></a>
@@ -126,7 +135,6 @@
 					</div>
 				</div>
 				<div class="test clearfix mobile-section">
-					
 					<a href="booking.html">
 						<div class="half half--colored">
 							<div class="text-holder">
@@ -139,8 +147,6 @@
 					</a>
 					<div class="half guitar"></div>
 				</div>
-			
-				
 				<div class="test clearfix desktop-section">
 					<div class="half guitar"></div>
 					<a href="booking.html">
@@ -171,7 +177,6 @@
 					</div>
 				</div>
 				<div class="test clearfix mobile-section">
-					
 					<a href="#">
 						<div class="half half--colored">
 							<div class="text-holder">
@@ -186,7 +191,6 @@
 					</a>
 					<div class="half barcelona"></div>
 				</div>
-			
 				<div class="test clearfix desktop-section">
 					<div class="half barcelona"></div>
 					<a href="#">
@@ -202,8 +206,7 @@
 						</div>
 					</a>
 				</div>
-				</div>
-			
+			</div>
 			<div class="section fp-auto-height-responsive fp-auto-height">
 				<!-- FOOTER -->
 				<footer>
@@ -234,9 +237,9 @@
 			================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
 		<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="owlcarousel/jquery-3.1.1.min.js"></script>
-		<script src="owlcarousel/owl.carousel.min.js"></script>
-		<script src="js/masonry.pkgd.min.js"></script>-->
+			<script src="owlcarousel/jquery-3.1.1.min.js"></script>
+			<script src="owlcarousel/owl.carousel.min.js"></script>
+			<script src="js/masonry.pkgd.min.js"></script>-->
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.js"></script>

@@ -160,5 +160,39 @@
     background-size: auto 100%; }
     .artists .singers {
       max-height: 70vh; } }
+/* iPhone 6+ (portrait) ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) {
+  .booking {
+    background-size: 180vh auto;
+    background-repeat: no-repeat;
+    background-position: -300px auto; }
+    .booking h1 {
+      font-size: 68px;
+      letter-spacing: 11px;
+      position: relative;
+      top: 81%; }
+
+  .goodwill {
+    height: 200vh; }
+    .goodwill .translate {
+      font-size: 24px; }
+      .goodwill .translate:before, .goodwill .translate:after {
+        display: none; }
+
+  .residents {
+    text-align: center;
+    margin: 4vh auto; }
+
+  .wedo {
+    font-size: 24px; }
+
+  .artists {
+    height: 82vh;
+    z-index: 0;
+    margin-top: 15vh;
+    background-repeat: no-repeat;
+    background-size: auto 100%; }
+    .artists .singers {
+      max-height: 60vh; } }
 
 /*# sourceMappingURL=booking.css.map */

@@ -35,11 +35,13 @@ $(document).ready(function() {
       lazyLoading: true*/
       navigation:true,
       responsiveHeight:414,
-      responsiveWidth:736
-     
+      responsiveWidth:736,
+     normalScrollElements:'#modalNavigation,.modal'
       
     });
-    
+
 });
 
+
+   
 

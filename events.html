@@ -31,15 +31,28 @@
 	<body>
 		<div id="fullpage">
 			<div class="section">
+				<div class='modal fade modal-fullscreen-menu' id='modalNavigation' role='dialog' tabindex='-1'>
+					<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+					<span class='sr-only'>Close navigation</span>
+					<span class='glyphicon glyphicon-remove'></span>
+					</button>
+					<div class='modal-dialog'>
+						<nav class='list-group'>
+							<a class='list-group-item' href='index.html'>Home</a>
+							<a class='list-group-item' href='events.html'>Events</a>
+							<a class='list-group-item' href='booking.html'>Booking</a>
+							<a class='list-group-item' href='#'>Team</a>
+							<a class='list-group-item' href='#'>Barcelona</a>
+						</nav>
+					</div>
+				</div>
 				<div class="container-fluid">
 					<div class="events">
 						<h1>Events</h1>
 					</div>
 					<div  class="main ">
 						<div class="row menu">
-
-							<div class="col-md-3  col-xs-2 menu-button"><a  href="#">
-								<i class="fa fa-align-left" aria-hidden="true"></i></a>
+							<div class="col-md-3  col-xs-2 menu-button">  <button class='btn btn-primary btn-lg open-menu' data-target='#modalNavigation' data-toggle='modal' type='button'><i class="fa fa-align-left" aria-hidden="true"></i></button>
 							</div>
 							<div class="col-md-6 col-xs-8">
 								<a href="index.html"><img class="menu-logo img-responsive" src="img/logo.png" alt=""></a>
@@ -68,7 +81,8 @@
 							</div>
 						</div>
 					</div>
-			</div></div>
+				</div>
+			</div>
 			<div class="section">
 				<div class="container-fluid">
 					<div class="row wedding">
