@@ -370,6 +370,10 @@ body {
   .company-stats {
     margin-top: 10vh; }
     .company-stats p {
-      font-size: 16px; } }
+      font-size: 16px; }
+
+  .menu-logo {
+    max-width: 295px;
+    margin: 23px 0; } }
 
 /*# sourceMappingURL=app.css.map */
