@@ -54,5 +54,11 @@
   src: url("../fonts/ArnoPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ArnoPro-Bold.woff") format("woff"), url("../fonts/ArnoPro-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
+@font-face {
+  font-family: 'ArnoPro';
+  src: url("../fonts/ArnoPro-LightDisplay.eot");
+  src: url("../fonts/ArnoPro-LightDisplay.eot?#iefix") format("embedded-opentype"), url("../fonts/ArnoPro-LightDisplay.woff") format("woff"), url("../fonts/ArnoPro-LightDisplay.ttf") format("truetype");
+  font-weight: thin;
+  font-style: normal; }
 
 /*# sourceMappingURL=fonts.css.map */

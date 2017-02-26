@@ -340,10 +340,9 @@ body {
 			 left:11%;
 			  font-size: 90px;
 			  font-family: 'ArnoPro';
-	font-weight: 100;
 	font-style: normal;
 				    line-height: 1.2;
-
+font-weight: thin;
 			
 		}
 		.num1 {
@@ -438,12 +437,14 @@ h2, p{
 		text-transform: uppercase;
 		font-family: 'ArnoPro';
 		font-weight: 100;
-	
+	    margin-bottom: -1vh;
+
 
 	}
 	p {
 		font-size: 32px;
 		font-family: 'ArnoPro';
+		font-weight: thin;
 		
 	}
 	&.baloons{
@@ -458,7 +459,7 @@ h2, p{
 		
 	}
 	&.barcelona {
-		background-image: url('../img/city _sights.jpg');
+		background-image: url('../img/city-_sights.png');
 		
 	}
 

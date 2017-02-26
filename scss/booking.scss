@@ -47,7 +47,7 @@ position: relative;
 		height: 100vh;
 		text-align: center;
 		font-size: 21px;
-
+		font-weight: 100;
 		.translate  {
 			font-family: 'ArnoPro';
 		font-size: 36px;
@@ -99,7 +99,7 @@ position: relative;
 		position: relative;
 	height: 100vh;
 	z-index: 2;
-	background-image: url('../img/mic.jpg') ;
+	background-image: url('../img/mic.png') ;
 display: flex;
 align-items:center;
 justify-content:center;
@@ -246,6 +246,7 @@ h1{
 
 .goodwill {
 	height: 200vh;
+
 		.translate {
 		font-size: 24px;
 		&:before, &:after {

@@ -219,9 +219,9 @@ body {
       left: 11%;
       font-size: 90px;
       font-family: 'ArnoPro';
-      font-weight: 100;
       font-style: normal;
-      line-height: 1.2; }
+      line-height: 1.2;
+      font-weight: thin; }
     .border .numbers .num1 {
       left: 8%; }
     .border .numbers .num1::after {
@@ -283,10 +283,12 @@ body {
     color: #a88643;
     text-transform: uppercase;
     font-family: 'ArnoPro';
-    font-weight: 100; }
+    font-weight: 100;
+    margin-bottom: -1vh; }
   .half p {
     font-size: 32px;
-    font-family: 'ArnoPro'; }
+    font-family: 'ArnoPro';
+    font-weight: thin; }
   .half.baloons {
     background-image: url("../img/baloons.jpg"); }
   .half.guitar {
@@ -294,7 +296,7 @@ body {
   .half.team {
     background-image: url("../img/wedding.jpg"); }
   .half.barcelona {
-    background-image: url("../img/city _sights.jpg"); }
+    background-image: url("../img/city-_sights.png"); }
 
 .half--colored {
   background-color: #ececec;
