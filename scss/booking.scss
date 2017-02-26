@@ -129,3 +129,99 @@ z-index: -1;
   }
 }
 
+// ****************************MOBILE VIEW*************************************
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
+
+
+	
+	
+.booking {
+background-size: 180vh auto;
+    background-repeat: no-repeat;
+    background-position: -300px auto;
+
+h1{
+    font-size: 68px;
+    letter-spacing: 11px;
+    position: relative;
+    top: 81%;
+}
+}
+
+.goodwill {
+	height: 200vh;
+		.translate {
+		font-size: 24px;
+		&:before, &:after {
+		display: none;
+	}
+}
+}
+.residents {
+							text-align: center;
+			
+			margin: 4vh auto;
+		}
+
+.wedo {
+	font-size: 24px;
+}
+.artists {
+	    height: 82vh;
+    z-index: 0;
+	margin-top: 15vh;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	.singers {
+		max-height: 60vh;
+	}
+}
+
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+
+.booking{
+
+
+
+h1{
+    font-size: 150px;
+    letter-spacing: 55px;
+    position: relative;
+    top: 61%;
+    left: 4%;
+    }
+}
+.goodwill {
+	height: 200vh;
+		.translate {
+		font-size: 24px;
+		&:before, &:after {
+		display: none;
+	}
+}
+}
+.residents {
+							text-align: center;
+			
+			margin: 4vh auto;
+		}
+
+.wedo {
+	font-size: 24px;
+}
+.artists {
+	        height: 90vh;
+    z-index: 0;
+    margin-top: -15vh;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+	.singers {
+		max-height: 70vh;
+	}
+}
+
+}

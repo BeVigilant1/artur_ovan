@@ -34,8 +34,12 @@ $(document).ready(function() {
       fitToSection:false,
       lazyLoading: true*/
       navigation:true,
+      responsiveHeight:414,
+      responsiveWidth:736
      
       
     });
     
 });
+
+
