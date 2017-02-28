@@ -34,7 +34,7 @@
     position: relative; }
 
 .texter {
-  height: 75vh;
+  height: 80vh;
   display: flex;
   background-image: url("../img/wedding_white.png");
   background-size: cover;
@@ -61,20 +61,23 @@
     font-family: 'ArnoPro';
     font-weight: 100;
     position: relative;
-    color: #a88643; }
+    color: #a88643;
+    margin-top: 14vh; }
     .texter .statement:after {
       content: '»';
       position: absolute;
       top: -20%;
-      right: -10px;
+      right: 2vw;
+      font-weight: bold;
       font-size: 100px; }
     .texter .statement:before {
       content: '«';
       position: absolute;
       top: -20%;
-      left: -10px;
+      left: 2vw;
       display: inline-block;
-      font-size: 100px; }
+      font-size: 100px;
+      font-weight: bold; }
 
 .anniversary .subheader {
   color: #a88643;
@@ -84,19 +87,23 @@
   background-image: url("../img/champagne_white.png"); }
   .anniversary .texter .statement:after {
     top: -20%;
-    right: -20vh; }
+    right: -4vw;
+    font-weight: bold; }
   .anniversary .texter .statement:before {
     top: -20%;
-    left: -20vh; }
+    left: -4vw;
+    font-weight: bold; }
 
 .birthsday .texter {
   background-image: url("../img/cake_white.png"); }
   .birthsday .texter .statement:after {
     top: -20%;
-    right: -20vh; }
+    right: -4vw;
+    font-weight: bold; }
   .birthsday .texter .statement:before {
     top: -20%;
-    left: -20vh; }
+    left: -4vw;
+    font-weight: bold; }
 
 .wedding img, .anniversary img, .birthsday img {
   margin: 20px auto; }
@@ -105,9 +112,10 @@
   text-align: center;
   font-weight: 100;
   font-family: 'ArnoPro';
-  color: #a88643; }
+  color: #a88643;
+  padding-top: 4vh; }
 .wedding p, .anniversary p, .birthsday p {
-  font-size: 26px;
+  font-size: 21px;
   text-align: center; }
 
 /* iPhone 6 ----------- */
@@ -133,7 +141,9 @@
   .texter p {
     font-size: 18px;
     margin: 1vh 0;
-    width: 94vw; }
+    width: 94vw;
+    font-weight: thin;
+    font-family: "Effra"; }
   .texter .statement {
     margin: 10vh 0;
     font-size: 21px; }

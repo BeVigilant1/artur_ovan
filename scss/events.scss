@@ -41,7 +41,7 @@ position: relative;
 	}
 	}
 .texter {
-	height: 75vh;
+	height: 80vh;
 	display: flex;
 	background-image: url('../img/wedding_white.png');
 	background-size: cover;
@@ -93,12 +93,15 @@ position: relative;
 				font-weight: 100;
 				position: relative;
 color:#a88643;
+		margin-top: 14vh;
+
 &:after {
 content:'»';
 position: absolute;
 top: -20%;
 
-right: -10px;
+right: 2vw;
+font-weight: bold;
 
 
 		font-size: 100px;
@@ -109,9 +112,10 @@ right: -10px;
 content:'«';
 position: absolute;
 top: -20%;
-left: -10px;
+left: 2vw;
 display: inline-block;
 		font-size: 100px;
+font-weight: bold;
 
 
 	}
@@ -135,8 +139,8 @@ color:#a88643;
 
 top: -20%;
 
-right: -20vh;
-
+right: -4vw;
+font-weight: bold;
 
 
 
@@ -144,8 +148,8 @@ right: -20vh;
 	&:before {
 
 top: -20%;
-left: -20vh;
-
+left: -4vw;
+font-weight: bold;
 
 
 	}
@@ -160,8 +164,8 @@ left: -20vh;
 
 top: -20%;
 
-right: -20vh;
-
+right: -4vw;
+font-weight: bold;
 
 
 
@@ -169,8 +173,8 @@ right: -20vh;
 	&:before {
 
 top: -20%;
-left: -20vh;
-
+left: -4vw;
+font-weight: bold;
 
 
 	}
@@ -186,13 +190,15 @@ h2{
 	font-weight: 100;
 			font-family: 'ArnoPro';
 			color:#a88643;
-
+padding-top: 4vh;
 
 }
 p {
-		font-size: 26px;
+		font-size: 21px;
 	text-align: center;
+
 }
+
 }
 .anniversary {
 	@extend .wedding;
@@ -237,7 +243,8 @@ h1 {
 		font-size: 18px;
 		margin: 1vh 0;
 		width: 94vw;
-
+		font-weight: thin;
+		font-family: "Effra";
 	}
 	.statement {
 		margin: 10vh 0;
