@@ -30,8 +30,8 @@
 		================================================== -->
 	<body>
 		<div id="fullpage">
-			<div id="section1" class="section">
-				<div class='modal fade modal-fullscreen-menu' id='modalNavigation' role='dialog' tabindex='-1'>
+			<div  class="section">
+				<div class='modal fade modal-fullscreen-menu' backdrop="false" id='modalNavigation' role='dialog' tabindex='-1'>
 					<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
 					<span class='sr-only'>Close navigation</span>
 					<span class='glyphicon glyphicon-remove'></span>
@@ -47,12 +47,14 @@
 					</div>
 				</div>
 				<div class="container-fluid">
+				<div id="arrow" class="downArrow bounce">
+<a href="#secondSection"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a></div>
 					<div class="hero"></div>
 					<div  class="main ">
 						<div class="row menu">
-							<div class="col-md-3  col-xs-2 menu-button">          <button class='btn btn-primary btn-lg open-menu' data-target='#modalNavigation' data-toggle='modal' type='button'><i class="fa fa-align-left" aria-hidden="true"></i></button>
+							<div id="menuBtn" class="menu-button">          <button class='wheat btn btn-primary btn-lg open-menu' data-target='#modalNavigation' data-toggle='modal' type='button'><i class="fa fa-align-left" aria-hidden="true"></i></button>
 							</div>
-							<div class="col-md-6 col-xs-8">
+							<div class="col-md-push-3 col-xs-push-2  col-md-6 col-xs-8">
 								<a href="#"><img class="menu-logo img-responsive" src="img/logo.png" alt=""></a>
 								<div class="nav">
 									<div class="row row-centered links">
@@ -71,10 +73,10 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-3 col-sm-4 col-xs-4 menu-contacts">
-								<p class="tel">8&nbsp;(906)&nbsp;096&nbsp;96&nbsp;74</p>
+							<div class="col-md-push-3 col-xs-push-2  col-md-3 col-sm-4 col-xs-4 menu-contacts ">
+								<p class="tel wheat">8&nbsp;(906)&nbsp;096&nbsp;96&nbsp;74</p>
 								<div class="share">
-									<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-facebook wheat" aria-hidden="true"></i></a><a href="#"><i class="fa fa-instagram wheat" aria-hidden="true"></i></a>
 								</div>
 							</div>
 						</div>
@@ -225,7 +227,7 @@
 						<div class="col-md-2 col-sm-2 col-xs-12 mobile-social">
 							<div class="social">
 								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-								<p class="top pull-right"><a href="index.html"><i class="fa   fa-arrow-up" aria-hidden="true"></i>&nbsp;Back to top </a></p>
+								<p class="top pull-right"><a href="#firstSection"><i class="fa   fa-arrow-up" aria-hidden="true"></i>&nbsp;Back to top </a></p>
 							</div>
 						</div>
 					</div>

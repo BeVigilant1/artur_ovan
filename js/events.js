@@ -1,8 +1,38 @@
+$(document).ready(function () {
+  var trigger = $('.hamburger'),
+      overlay = $('.overlay'),
+     isClosed = false;
+
+    trigger.click(function () {
+      hamburger_cross();      
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {          
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+  }
+  
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  });  
+});
 
 
 $(document).ready(function() {
     $('#fullpage').fullpage({
-      
+      /*scrollOverflowOptions:true,
+      fitToSection:false,
+      lazyLoading: true*/
       navigation:true,
       responsiveHeight:414,
       responsiveWidth:736,
@@ -11,37 +41,23 @@ $(document).ready(function() {
      fixedElements:'#arrow,#menuBtn,#modalNavigation',
      onLeave: function(index, nextIndex, direction) {
       var leavingSection = $(this);
+     
       //after leaving section 2
          if (index > 1) {
         $('#arrow').hide();
 
-    }
-      if (index <= 2) {
-                      $('.open-menu').removeClass("grey");
+
 
     }
       if (direction == 'down') {
         $('#arrow').fadeOut('slow');
-                                      $('.open-menu').removeClass("wheat");
-
+        $('.open-menu').addClass("grey");
       } 
          if (nextIndex == 1) {
         $('#arrow').show();
-                                              $('.open-menu').addClass("wheat");
-
-
+        $('.open-menu').removeClass("grey");
     }
-      if (nextIndex == 2 && direction =='down') {
-        $('#arrow').show();
-
-    }
-   if (nextIndex == 3) {
-                $('.open-menu').addClass("grey");
-
-    }
-  
-
-     
+   
 
     }
 
@@ -76,17 +92,10 @@ $(document).ready(function() {
 
  });
 
-
- $('.modal').on('click', function() {
+ $('.modal .close').on('click', function() {
   $('#arrow').show();
   $('#fp-nav').show();
     $('#menuBtn').show();
-
- });
-
-  $('.top').on('click', function() {
-
-                $('.open-menu').removeClass("grey");
 
  });
 
@@ -107,6 +116,7 @@ $(window).scroll(function() {
     if (scrollTop > lastScrollTop) {
         
         $('#arrow').hide();
+
     } else {
      
         $('#arrow').show();

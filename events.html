@@ -30,7 +30,7 @@
 		================================================== -->
 	<body>
 		<div id="fullpage">
-			<div class="section">
+			<div  class="section">
 				<div class='modal fade modal-fullscreen-menu' id='modalNavigation' role='dialog' tabindex='-1'>
 					<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
 					<span class='sr-only'>Close navigation</span>
@@ -50,30 +50,33 @@
 					<div class="events">
 						<h1>Events</h1>
 					</div>
+						<div id="arrow" class="downArrow bounce">
+<a href="#secondSection"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a></div>
+					
 					<div  class="main ">
 						<div class="row menu">
-							<div class="col-md-3  col-xs-2 menu-button">  <button class='btn btn-primary btn-lg open-menu' data-target='#modalNavigation' data-toggle='modal' type='button'><i class="fa fa-align-left" aria-hidden="true"></i></button>
+							<div id="menuBtn" class="menu-button">          <button class='btn btn-primary btn-lg open-menu' data-target='#modalNavigation' data-toggle='modal' type='button'><i class="fa fa-align-left" aria-hidden="true"></i></button>
 							</div>
-							<div class="col-md-6 col-xs-8">
+							<div class="col-md-push-3 col-xs-push-2  col-md-6 col-xs-8">
 								<a href="index.html"><img class="menu-logo img-responsive" src="img/logo.png" alt=""></a>
 								<div class="nav">
 									<div class="row row-centered links">
-										<div class="col-md-3 col-xs-12 col-centered">
+										<div class="col-md-3  col-sm-3 col-xs-12 col-centered">
 											<a href="events.html">Events</a>
 										</div>
-										<div class="col-md-3 col-xs-12 col-centered">
+										<div class="col-md-3 col-sm-3  col-xs-12 col-centered">
 											<a href="booking.html">Booking</a>
 										</div>
-										<div class="col-md-3  col-xs-12 col-centered">
+										<div class="col-md-3 col-sm-3  col-xs-12 col-centered">
 											<a href="#">Team</a>
 										</div>
-										<div class="col-md-3  col-xs-12 col-centered">
+										<div class="col-md-3 col-sm-3  col-xs-12 col-centered">
 											<a href="#">Barcelona</a>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-3 col-xs-4 menu-contacts">
+							<div class="col-md-push-3 col-xs-push-2  col-md-3 col-sm-4 col-xs-4 menu-contacts">
 								<p class="tel">8&nbsp;(906)&nbsp;096&nbsp;96&nbsp;74</p>
 								<div class="share">
 									<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -171,7 +174,7 @@
 						<div class="col-md-2 col-xs-12 mobile-social">
 							<div class="social">
 								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-								<p class="top pull-right"><a href="events.html"><i class="fa   fa-arrow-up" aria-hidden="true"></i>&nbsp;Back to top </a></p>
+								<p class="top pull-right"><a href="#firstSection"><i class="fa   fa-arrow-up" aria-hidden="true"></i>&nbsp;Back to top </a></p>
 							</div>
 						</div>
 					</div>
@@ -185,7 +188,7 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.js"></script>
-		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/events.js"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 		<!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
 	</body>

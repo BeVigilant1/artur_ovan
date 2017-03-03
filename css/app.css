@@ -19,10 +19,65 @@ p {
 a:focus {
   outline: 0; }
 
+.grey {
+  color: #333; }
+
+.wheat {
+  color: #d8bb82; }
+
 #fullPage-nav span, .fullPage-slidesNav span, #fullPage-nav li a, .fullPage-slidesNav li a, #fullPage-nav li, .fullPage-slidesNav li, #fullPage-nav ul, .fullPage-slidesNav ul, #fullPage-nav, .fullPage-tooltip {
   color: white;
   background-color: white; }
 
+.downArrow {
+  position: fixed;
+  bottom: 30%;
+  left: 48%;
+  font-size: 90px; }
+  .downArrow a {
+    color: white; }
+
+.bounce {
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite; }
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); } }
 .modal-fullscreen-menu {
   background: black;
   height: 100vh;
@@ -129,9 +184,11 @@ body {
     cursor: pointer; }
 
 .menu-button {
+  position: fixed;
+  top: 2%;
+  left: 0;
   font-size: 25px;
-  font-weight: 0;
-  padding: 30px 0 0 30px; }
+  font-weight: 0; }
   .menu-button a {
     color: #fff;
     z-index: 10; }
@@ -157,7 +214,7 @@ body {
 .menu-contacts {
   text-align: right;
   color: #fff;
-  margin-top: 30px;
+  margin-top: 5px;
   padding-right: 50px; }
   .menu-contacts .tel {
     font-size: 21px;
