@@ -92,7 +92,7 @@ $(document).ready(function() {
 
  });
 
- $('.modal .close').on('click', function() {
+ $('.modal').on('click', function() {
   $('#arrow').show();
   $('#fp-nav').show();
     $('#menuBtn').show();

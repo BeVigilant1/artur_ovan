@@ -84,7 +84,7 @@ $(document).ready(function() {
 
 });
 $(document).ready(function() {
-  
+
 
  $('.open-menu').on('click', function() {
   $('#menuBtn').fadeOut();
@@ -98,7 +98,7 @@ $(document).ready(function() {
 
  });
 
- $('.modal .close').on('click', function() {
+ $('.modal').on('click', function() {
   $('#arrow').show();
   $('#fp-nav').show();
     $('#menuBtn').show();
