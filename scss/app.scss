@@ -325,9 +325,10 @@ body {
 .open-menu {
 	background: transparent;
 	border:none;
+	margin-left: 2vh;
 	&:hover{
 		background: rgba(255, 255, 255, .4);
-		color: black;
+		color: white;
 	}
 }
 .menu-logo {

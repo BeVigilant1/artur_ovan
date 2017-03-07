@@ -23,7 +23,7 @@
 
 
 	background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0),white),;
-	opacity: .6; 
+	opacity: .4; 
   }
 	h1 {
 		margin: 0;
@@ -60,7 +60,7 @@ position: relative;
 
 
 	background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0),white),linear-gradient(to bottom,rgba(255, 255, 255, 0),white),linear-gradient(to bottom,rgba(255, 255, 255, 0),white);
-	opacity: .6; 
+	opacity: .2; 
   }
 // 		&:before {
 //   display: block;
@@ -130,11 +130,15 @@ color:#a88643;
 				font-weight: 100;
 				
 	}
+.added {
+	margin-top: -25vh;
+}
 .texter {
 	background-image: url('../img/champagne_white.png');
 
 	.statement {
-	
+		margin-top: 5vh;
+
 &:after {
 
 top: -20%;
@@ -159,7 +163,6 @@ font-weight: bold;
 .birthsday .texter {
 	background-image: url('../img/cake_white.png');
 		.statement {
-	
 &:after {
 
 top: -20%;

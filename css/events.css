@@ -18,7 +18,7 @@
     bottom: 0;
     left: 0;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
-    opacity: .6; }
+    opacity: .4; }
   .events h1 {
     margin: 0;
     padding: 0;
@@ -50,7 +50,7 @@
     bottom: 0;
     left: 0;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white), linear-gradient(to bottom, rgba(255, 255, 255, 0), white), linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
-    opacity: .6; }
+    opacity: .2; }
   .texter p {
     font-size: 21px;
     text-align: center;
@@ -83,16 +83,20 @@
   color: #a88643;
   font-family: 'ArnoPro';
   font-weight: 100; }
+.anniversary .added {
+  margin-top: -25vh; }
 .anniversary .texter {
   background-image: url("../img/champagne_white.png"); }
-  .anniversary .texter .statement:after {
-    top: -20%;
-    right: -4vw;
-    font-weight: bold; }
-  .anniversary .texter .statement:before {
-    top: -20%;
-    left: -4vw;
-    font-weight: bold; }
+  .anniversary .texter .statement {
+    margin-top: 5vh; }
+    .anniversary .texter .statement:after {
+      top: -20%;
+      right: -4vw;
+      font-weight: bold; }
+    .anniversary .texter .statement:before {
+      top: -20%;
+      left: -4vw;
+      font-weight: bold; }
 
 .birthsday .texter {
   background-image: url("../img/cake_white.png"); }

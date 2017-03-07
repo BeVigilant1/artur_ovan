@@ -198,10 +198,11 @@ body {
 
 .open-menu {
   background: transparent;
-  border: none; }
+  border: none;
+  margin-left: 2vh; }
   .open-menu:hover {
     background: rgba(255, 255, 255, 0.4);
-    color: black; }
+    color: white; }
 
 .menu-logo {
   max-width: 400px;
