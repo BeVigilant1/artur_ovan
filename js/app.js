@@ -1,6 +1,7 @@
 
 
 $(document).ready(function() {
+
     $('#fullpage').fullpage({
       
       navigation:true,
@@ -14,7 +15,7 @@ $(document).ready(function() {
       //after leaving section 2
          if (index > 1) {
         $('#arrow').hide();
-
+         $('#fp-nav').removeClass("white");
     }
       if (index <= 2) {
                       $('.open-menu').removeClass("grey");
@@ -27,18 +28,21 @@ $(document).ready(function() {
       } 
          if (nextIndex == 1) {
         $('#arrow').show();
-                                              $('.open-menu').addClass("wheat");
+        $('.open-menu').addClass("wheat");
+        $('#fp-nav').addClass("white");
 
 
     }
       if (nextIndex == 2 && direction =='down') {
         $('#arrow').show();
 
+
     }
    if (nextIndex == 3) {
                 $('.open-menu').addClass("grey");
 
     }
+
   
 
      

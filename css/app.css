@@ -3,6 +3,7 @@
 @import url(fonts.css);
 @import url(events.css);
 @import url(booking.css);
+@import url(animate.css);
 * {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -25,6 +26,9 @@ a:focus {
 .wheat {
   color: #d8bb82; }
 
+.white {
+  color: white; }
+
 #fullPage-nav span, .fullPage-slidesNav span, #fullPage-nav li a, .fullPage-slidesNav li a, #fullPage-nav li, .fullPage-slidesNav li, #fullPage-nav ul, .fullPage-slidesNav ul, #fullPage-nav, .fullPage-tooltip {
   color: white;
   background-color: white; }
@@ -34,6 +38,9 @@ a:focus {
   bottom: 30%;
   left: 48%;
   font-size: 90px; }
+  .downArrow:hover i {
+    transition: all .2s ease-in-out;
+    transform: scale(1.2); }
   .downArrow a {
     color: white; }
 
@@ -85,7 +92,7 @@ a:focus {
   .modal-fullscreen-menu .close {
     color: white;
     opacity: 1;
-    padding: 10px;
+    padding: 2vh;
     position: absolute;
     top: 0;
     right: 0;
@@ -239,6 +246,7 @@ body {
   background-image: url("../img/bg_main.png");
   background-size: 100% auto;
   background-attachment: fixed;
+  -webkit-backface-visibility: hidden;
   background-repeat: no-repeat; }
 
 .spacer {
