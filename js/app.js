@@ -111,6 +111,7 @@ $(window).scroll(function() {
     if (scrollTop > lastScrollTop) {
         
         $('#arrow').hide();
+
     } else {
      
         $('#arrow').show();

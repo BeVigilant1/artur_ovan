@@ -215,9 +215,9 @@ body {
   max-width: 400px;
   margin: 30px auto;
   z-index: 10; }
-  .menu-logo:hover {
-    opacity: 0.6;
-    cursor: pointer; }
+
+#arturlogo:hover {
+  cursor: pointer; }
 
 .menu-contacts {
   text-align: right;
@@ -448,7 +448,8 @@ body {
     margin-left: 15px;
     color: #3c3d3b; }
     .social i:hover {
-      color: white; }
+      color: white;
+      cursor: pointer; }
 
 .top i {
   font-size: 14px;
@@ -457,7 +458,8 @@ body {
   color: #3c3d3b; }
   .top a:hover {
     text-decoration: none;
-    color: white; }
+    color: white;
+    cursor: pointer; }
     .top a:hover i {
       color: white; }
 
@@ -469,6 +471,9 @@ body {
 
 /* iPhone 6 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
+  #arrow {
+    visibility: hidden; }
+
   .hero {
     background-size: 250% 80%;
     background-repeat: no-repeat;
@@ -485,14 +490,20 @@ body {
     margin: 12vh -12vw; }
 
   .menu-contacts {
-    margin-top: -17vh; }
+    position: absolute;
+    top: 0;
+    left: 30vw;
+    line-height: .6; }
     .menu-contacts .tel {
-      margin: -55vh 55vw; }
+      font-size: 18px; }
     .menu-contacts .share {
       position: absolute;
-      top: -35vh;
-      right: -64vw;
-      display: inline; }
+      top: 3vh;
+      left: 25vh;
+      display: inline;
+      width: 24vw; }
+      .menu-contacts .share a {
+        font-size: 20px; }
 
   nav .links {
     display: block;
@@ -504,6 +515,10 @@ body {
 
   .half {
     width: 100%; }
+    .half h2 {
+      font-size: 50px; }
+    .half p {
+      font-size: 22px; }
 
   .guitar {
     float: left; }
@@ -515,8 +530,7 @@ body {
     display: none; }
 
   .footer {
-    height: 85px;
-    padding: 15px 20px; }
+    height: 150px; }
     .footer p:first-child {
       font-size: 14px;
       position: relative;
@@ -525,13 +539,102 @@ body {
     .footer ul li {
       margin-left: 0; }
     .footer ul {
-      margin-top: -32px;
-      margin-bottom: 10px;
-      margin-left: -10px;
+      margin: -5vh;
       font-size: 16px; }
+      .footer ul a {
+        margin-right: 6px; }
     .footer .social {
       position: relative;
-      top: -4px; } }
+      top: -1vh; }
+      .footer .social .top {
+        top: 3px;
+        position: relative; }
+
+  .modal-fullscreen-menu .close {
+    right: 2vh; } }
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
+  #arrow {
+    visibility: hidden; }
+
+  .hero {
+    background-size: 250% 80%;
+    background-repeat: no-repeat;
+    background-position: -250px 0; }
+
+  .company-stats {
+    margin-top: 10vh;
+    margin-bottom: 2vh; }
+    .company-stats p {
+      font-size: 16px; }
+
+  .menu-logo {
+    max-width: 338px;
+    margin: 12vh -12vw; }
+
+  .menu-contacts {
+    position: absolute;
+    top: 0;
+    left: 30vw;
+    line-height: .6; }
+    .menu-contacts .tel {
+      font-size: 18px; }
+    .menu-contacts .share {
+      position: absolute;
+      top: 3vh;
+      left: 25vh;
+      display: inline;
+      width: 24vw; }
+      .menu-contacts .share a {
+        font-size: 20px; }
+
+  nav .links {
+    display: block;
+    text-align: left; }
+
+  .spacer {
+    position: relative;
+    top: -4vh; }
+
+  .half {
+    width: 100%; }
+    .half h2 {
+      font-size: 50px; }
+    .half p {
+      font-size: 22px; }
+
+  .guitar {
+    float: left; }
+
+  .mobile-section {
+    display: block; }
+
+  .desktop-section {
+    display: none; }
+
+  .footer {
+    height: 150px; }
+    .footer p:first-child {
+      font-size: 14px;
+      position: relative;
+      top: 4vh;
+      left: 28vw; }
+    .footer ul li {
+      margin-left: 0; }
+    .footer ul {
+      margin: -5vh;
+      font-size: 16px; }
+      .footer ul a {
+        margin-right: 6px; }
+    .footer .social {
+      position: relative;
+      top: -1vh; }
+      .footer .social .top {
+        top: 3px;
+        position: relative; }
+
+  .modal-fullscreen-menu .close {
+    right: 2vh; } }
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .hero {

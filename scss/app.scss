@@ -351,10 +351,14 @@ body {
 	margin:30px auto;
 		z-index: 10;
 
-	&:hover{
-			opacity:0.6;
+	
+}
+#arturlogo:hover {
+
+			
 			cursor:pointer;
-		}
+		
+		
 }
 .menu-contacts {
 	text-align: right;
@@ -668,6 +672,8 @@ color:#3c3d3b ;
 		color:#3c3d3b ;
 		&:hover {
 		color: white;
+		cursor: pointer;
+
 	}
 	}
 }
@@ -684,6 +690,7 @@ color:#3c3d3b ;
 		&:hover {
 		text-decoration: none;
 		color: white;
+		cursor: pointer;
 		i{
 			color: white;
 		}
@@ -701,6 +708,9 @@ color:#3c3d3b ;
 /* iPhone 6 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
 
+#arrow {
+	visibility: hidden;
+}
 
 .hero {
 	
@@ -726,16 +736,24 @@ p {
 }
 
 	.menu-contacts {
-		margin-top: -17vh;
+		position: absolute;
+		top:0;
+		left: 30vw;
+		line-height: .6;
 		.tel {
-			    margin: -55vh 55vw;
-
+			font-size: 18px;
 		}
 		.share {
 			    position: absolute;
-    top: -35vh;
-    right: -64vw;
-			display: inline;
+    top: 3vh;
+    left: 25vh;
+    	display: inline;
+    	width: 24vw;
+    	
+			a {
+		font-size: 20px;
+
+			}
 		}
 	}
 	
@@ -752,8 +770,15 @@ nav {
 }
 .half {
 	width: 100%;
+	h2 {
+		font-size: 50px;
 
+	}
+	p {
+		font-size: 22px;
+	}
 }
+
 .guitar {
 	float:left;
 }
@@ -766,8 +791,7 @@ nav {
 
 .footer {
 
-	height: 85px;
-	padding: 15px 20px;
+	height: 150px;
 	p:first-child {
 		font-size: 14px;
 		position: relative;
@@ -782,17 +806,24 @@ nav {
 	margin-left: 0; 
 }
 	ul {
-	margin-top: -32px;
-    margin-bottom: 10px;
-    margin-left: -10px;
+	margin: -5vh;
     font-size: 16px;
+	a {
+		    margin-right: 6px;
 
+	}
 	
 	}
 	.social {
 		position: relative;
-    top: -4px;
+		top:-1vh;
 
+    
+	.top {
+    top: 3px;
+    position: relative;
+
+    	}
 	}
 
 
@@ -800,7 +831,148 @@ nav {
 
 
 }
+
+
+
+.modal-fullscreen-menu .close {
+
+    right: 2vh;
+  
 }
+}
+
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
+#arrow {
+	visibility: hidden;
+}
+
+.hero {
+	
+	background-size: 250% 80%;
+    background-repeat: no-repeat;
+    background-position: -250px 0;
+}
+
+.company-stats {
+	margin-top: 10vh;
+	margin-bottom: 2vh;
+p {
+	font-size: 16px;
+}
+
+}	
+
+
+.menu-logo {
+	max-width: 338px;
+    margin: 12vh -12vw;
+	
+}
+
+	.menu-contacts {
+		position: absolute;
+		top:0;
+		left: 30vw;
+		line-height: .6;
+		.tel {
+			font-size: 18px;
+		}
+		.share {
+			    position: absolute;
+    top: 3vh;
+    left: 25vh;
+    	display: inline;
+    	width: 24vw;
+    	
+			a {
+		font-size: 20px;
+
+			}
+		}
+	}
+	
+
+nav {
+	.links{
+		display: block;
+		text-align: left;
+	}
+}
+.spacer {
+    position: relative;
+    top: -4vh;
+}
+.half {
+	width: 100%;
+	h2 {
+		font-size: 50px;
+
+	}
+	p {
+		font-size: 22px;
+	}
+}
+
+.guitar {
+	float:left;
+}
+.mobile-section {
+	display: block;
+}
+.desktop-section{
+	display: none;
+}
+
+.footer {
+
+	height: 150px;
+	p:first-child {
+		font-size: 14px;
+		position: relative;
+    top: 4vh;
+    left: 28vw;
+
+	}
+	ul li {
+	
+	
+	
+	margin-left: 0; 
+}
+	ul {
+	margin: -5vh;
+    font-size: 16px;
+	a {
+		    margin-right: 6px;
+	}
+	
+	}
+	.social {
+		position: relative;
+		top:-1vh;
+    
+	.top {
+    top: 3px;
+    position: relative;
+    	}
+	}
+
+
+
+
+
+}
+.modal-fullscreen-menu .close {
+
+    right: 2vh;
+  
+}
+}
+
+
+
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
