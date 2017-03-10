@@ -37,7 +37,8 @@ $(document).ready(function() {
       responsiveHeight:414,
       responsiveWidth:736,
       anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection'],
-   
+              normalScrollElements: '#modalNavigation',
+
      fixedElements:'#arrow,#menuBtn,#modalNavigation',
      onLeave: function(index, nextIndex, direction) {
       var leavingSection = $(this);

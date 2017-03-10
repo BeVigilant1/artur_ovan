@@ -12,7 +12,6 @@
 
 }
 
-
 h1,h2,h3,p,a {
 	text-rendering: optimizeLegibility;
 }
@@ -357,7 +356,7 @@ body {
 
 			
 			cursor:pointer;
-		
+
 		
 }
 .menu-contacts {
@@ -553,7 +552,7 @@ h2, p{
 		
 	}
 	&.baloons{
-		background-image: url('../img/baloons.jpg');
+		background-image: url('../img/baloons_white.png');
 	} 
 	&.guitar {
 		background-image: url('../img/guitar.png');
@@ -636,14 +635,16 @@ h2, p{
 }
 
 .footer {
-	
-	padding: 20px 20px;
-	height: 60px;
+	p {
+		margin-bottom: 0;
+	}
+	padding: 15px;
 	background-color: silver;
 color:#3c3d3b ;
 
 	ul {
 		list-style: none;
+		margin-bottom: 0;
 
 		li {
 			display: inline;
@@ -668,7 +669,7 @@ color:#3c3d3b ;
 	display: inline;
 	i {
 		font-size: 21px;
-		margin-left: 15px;
+		margin-left: 10px;
 		color:#3c3d3b ;
 		&:hover {
 		color: white;
@@ -683,7 +684,7 @@ color:#3c3d3b ;
 	i {
 		font-size: 14px;
 	
-		padding-top: 2px;
+
 	}
 
 	a{color:#3c3d3b;
@@ -708,30 +709,42 @@ color:#3c3d3b ;
 /* iPhone 6 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
 
-#arrow {
-	visibility: hidden;
+.row {
+	margin-right: 0;
+	margin-left: 0;
 }
+	.half__border--top, .half__border--bottom {
+		display: none;
+	}
+	#arrow {
+		visibility: hidden;
+	}
+	.hero {
+		background-size: 250% 80%;
+	    background-repeat: no-repeat;
+	    background-position: -250px 0;
+	}
+	.company-stats {
+		margin-top: 10vh;
+		margin-bottom: 2vh;
+	p {
+		font-size: 16px;
+	}
+	}	
 
-.hero {
-	
-	background-size: 250% 80%;
-    background-repeat: no-repeat;
-    background-position: -250px 0;
+
+.menu-logo-anchor {
+	display: block;
+    		max-width: 90%;
+
+	margin: 0 auto;
 }
-
-.company-stats {
-	margin-top: 10vh;
-	margin-bottom: 2vh;
-p {
-	font-size: 16px;
-}
-
-}	
-
-
 .menu-logo {
-	max-width: 338px;
-    margin: 12vh -12vw;
+    		max-width: 100%;
+    margin: 12vh auto;
+	display: block;
+
+
 	
 }
 
@@ -791,12 +804,12 @@ nav {
 
 .footer {
 
-	height: 150px;
+
 	p:first-child {
 		font-size: 14px;
-		position: relative;
-    top: 4vh;
-    left: 28vw;
+	
+    // top: 4vh;
+    // left: 28vw;
 
 	}
 	ul li {
@@ -806,22 +819,18 @@ nav {
 	margin-left: 0; 
 }
 	ul {
-	margin: -5vh;
+	// margin: -5vh;
     font-size: 16px;
 	a {
-		    margin-right: 6px;
-
+	
 	}
 	
 	}
 	.social {
-		position: relative;
-		top:-1vh;
-
+	
     
 	.top {
-    top: 3px;
-    position: relative;
+
 
     	}
 	}
@@ -864,10 +873,18 @@ p {
 
 }	
 
+.menu-logo-anchor {
+	display: block;
+    		max-width: 90%;
 
+	
+}
 .menu-logo {
-	max-width: 338px;
-    margin: 12vh -12vw;
+    		max-width: 100%;
+    margin: 12vh auto;
+	display: block;
+
+
 	
 }
 

@@ -357,7 +357,7 @@ body {
     font-family: 'ArnoPro';
     font-weight: thin; }
   .half.baloons {
-    background-image: url("../img/baloons.jpg"); }
+    background-image: url("../img/baloons_white.png"); }
   .half.guitar {
     background-image: url("../img/guitar.png"); }
   .half.team {
@@ -422,12 +422,14 @@ body {
   transform: rotate(-30deg); }
 
 .footer {
-  padding: 20px 20px;
-  height: 60px;
+  padding: 15px;
   background-color: silver;
   color: #3c3d3b; }
+  .footer p {
+    margin-bottom: 0; }
   .footer ul {
-    list-style: none; }
+    list-style: none;
+    margin-bottom: 0; }
     .footer ul li {
       display: inline;
       margin-left: 10%;
@@ -445,15 +447,14 @@ body {
   display: inline; }
   .social i {
     font-size: 21px;
-    margin-left: 15px;
+    margin-left: 10px;
     color: #3c3d3b; }
     .social i:hover {
       color: white;
       cursor: pointer; }
 
 .top i {
-  font-size: 14px;
-  padding-top: 2px; }
+  font-size: 14px; }
 .top a {
   color: #3c3d3b; }
   .top a:hover {
@@ -471,6 +472,13 @@ body {
 
 /* iPhone 6 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
+  .row {
+    margin-right: 0;
+    margin-left: 0; }
+
+  .half__border--top, .half__border--bottom {
+    display: none; }
+
   #arrow {
     visibility: hidden; }
 
@@ -485,9 +493,15 @@ body {
     .company-stats p {
       font-size: 16px; }
 
+  .menu-logo-anchor {
+    display: block;
+    max-width: 90%;
+    margin: 0 auto; }
+
   .menu-logo {
-    max-width: 338px;
-    margin: 12vh -12vw; }
+    max-width: 100%;
+    margin: 12vh auto;
+    display: block; }
 
   .menu-contacts {
     position: absolute;
@@ -529,26 +543,12 @@ body {
   .desktop-section {
     display: none; }
 
-  .footer {
-    height: 150px; }
-    .footer p:first-child {
-      font-size: 14px;
-      position: relative;
-      top: 4vh;
-      left: 28vw; }
-    .footer ul li {
-      margin-left: 0; }
-    .footer ul {
-      margin: -5vh;
-      font-size: 16px; }
-      .footer ul a {
-        margin-right: 6px; }
-    .footer .social {
-      position: relative;
-      top: -1vh; }
-      .footer .social .top {
-        top: 3px;
-        position: relative; }
+  .footer p:first-child {
+    font-size: 14px; }
+  .footer ul li {
+    margin-left: 0; }
+  .footer ul {
+    font-size: 16px; }
 
   .modal-fullscreen-menu .close {
     right: 2vh; } }
@@ -568,9 +568,14 @@ body {
     .company-stats p {
       font-size: 16px; }
 
+  .menu-logo-anchor {
+    display: block;
+    max-width: 90%; }
+
   .menu-logo {
-    max-width: 338px;
-    margin: 12vh -12vw; }
+    max-width: 100%;
+    margin: 12vh auto;
+    display: block; }
 
   .menu-contacts {
     position: absolute;

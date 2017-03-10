@@ -8,8 +8,11 @@ $(document).ready(function() {
       responsiveHeight:414,
       responsiveWidth:736,
       anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection'],
-   
+           normalScrollElements: '#modalNavigation',
+
      fixedElements:'#arrow,#menuBtn,#modalNavigation',
+            
+
      onLeave: function(index, nextIndex, direction) {
       var leavingSection = $(this);
       //after leaving section 2
@@ -42,6 +45,7 @@ $(document).ready(function() {
                 $('.open-menu').addClass("grey");
 
     }
+   
 
   
 

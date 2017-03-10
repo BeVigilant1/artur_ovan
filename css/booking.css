@@ -88,7 +88,154 @@
       height: calc(100vh - 300px); } }
   .artists .singers {
     max-height: 90vh;
-    margin: 20px auto; }
+    height: 80vh;
+    position: relative;
+    width: 520px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 5; }
+    .artists .singers .anchor {
+      display: block;
+      position: absolute;
+      transition: all .2s ease-in-out; }
+      .artists .singers .anchor:hover {
+        transform: scale(1.1); }
+      .artists .singers .anchor-img {
+        display: block;
+        width: 100%; }
+      .artists .singers .anchor.boneym {
+        top: 3px;
+        left: 128px;
+        width: 208px; }
+      .artists .singers .anchor.serov {
+        top: 23px;
+        left: 341px;
+        width: 78px; }
+      .artists .singers .anchor.lara {
+        top: 39px;
+        left: 71px;
+        width: 122px; }
+      .artists .singers .anchor.polina_gagarina {
+        top: 41px;
+        left: 164px;
+        width: 221px;
+        z-index: 10; }
+      .artists .singers .anchor.diskoteka {
+        z-index: 10;
+        top: 91px;
+        left: 69px;
+        width: 145px; }
+      .artists .singers .anchor.maroon {
+        top: 52px;
+        left: 216px;
+        width: 227px; }
+      .artists .singers .anchor.soso {
+        top: 122px;
+        left: 86px;
+        width: 173px; }
+      .artists .singers .anchor.avraam_russo {
+        top: 126px;
+        left: 282px;
+        width: 83px; }
+      .artists .singers .anchor.agutin {
+        z-index: 10;
+        top: 116px;
+        left: 378px;
+        width: 93px; }
+      .artists .singers .anchor.zara {
+        top: 141px;
+        left: 18px;
+        width: 113px; }
+      .artists .singers .anchor.richiepovveri {
+        top: 152px;
+        left: 133px;
+        width: 223px; }
+      .artists .singers .anchor.ingrid {
+        top: 149px;
+        left: 361px;
+        width: 137px; }
+      .artists .singers .anchor.ivanushki {
+        top: 192px;
+        left: 34px;
+        width: 97px; }
+      .artists .singers .anchor.thomas_anders {
+        top: 182px;
+        left: 131px;
+        width: 159px; }
+      .artists .singers .anchor.premier {
+        top: 206px;
+        left: 289px;
+        width: 120px;
+        z-index: 10; }
+      .artists .singers .anchor.hi-fi {
+        top: 206px;
+        left: 447px;
+        width: 43px;
+        z-index: 10; }
+      .artists .singers .anchor.bilan {
+        top: 217px;
+        left: 36px;
+        width: 345px; }
+      .artists .singers .anchor.sofieelis {
+        top: 225px;
+        left: 360px;
+        width: 145px; }
+      .artists .singers .anchor.chris_norman {
+        top: 261px;
+        left: 50px;
+        width: 146px; }
+      .artists .singers .anchor.kuzmin {
+        top: 258px;
+        left: 205px;
+        width: 122px; }
+      .artists .singers .anchor.philipp_kirkorov {
+        z-index: 10;
+        top: 279px;
+        left: 210px;
+        width: 240px; }
+      .artists .singers .anchor.enrike {
+        top: 292px;
+        left: 32px;
+        width: 187px; }
+      .artists .singers .anchor.leningrad {
+        top: 310px;
+        left: 230px;
+        width: 264px; }
+      .artists .singers .anchor.riki_martin {
+        top: 356px;
+        left: 234px;
+        width: 147px; }
+      .artists .singers .anchor.stas_pieha {
+        top: 362px;
+        left: 392px;
+        width: 103px; }
+      .artists .singers .anchor.al_bano {
+        top: 389px;
+        z-index: 10;
+        left: 130px;
+        width: 184px; }
+      .artists .singers .anchor.a_studio {
+        top: 389px;
+        left: 350px;
+        width: 150px; }
+      .artists .singers .anchor.juki {
+        top: 427px;
+        left: 90px;
+        width: 77px; }
+      .artists .singers .anchor.kristina_orbakaite {
+        z-index: 10;
+        top: 428px;
+        left: 177px;
+        width: 230px; }
+      .artists .singers .anchor.grigoriy_leps {
+        top: 462px;
+        left: 171px;
+        width: 217px; }
+      .artists .singers .anchor.banderos {
+        top: 502px;
+        left: 171px;
+        width: 217px; }
   .artists:before {
     content: '';
     position: absolute;
@@ -196,6 +343,9 @@
     background-repeat: no-repeat;
     background-size: auto 100%; }
     .artists .singers {
-      max-height: 60vh; } }
+      content: '';
+      width: 50vw;
+      margin: 20vh auto;
+      background: url("../img/singers.png"); } }
 
 /*# sourceMappingURL=booking.css.map */
