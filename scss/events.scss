@@ -1,13 +1,18 @@
 
-.events {
-	position: relative;
-	height: 100vh;
-	z-index: -1;
-		background-image: url('../img/baloons_white.png'), ;
 
+.events {
+	height: 100vh;
+	width:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background-image: url('../img/baloons_white.png');
 	background-size: 100% auto;
 	background-attachment: fixed;
-	width:100%;
+	-webkit-backface-visibility: hidden;
+
+	background-repeat: no-repeat;
 	@media screen and (min-height: 1344px) { 
 	height: calc(100vh - 300px); 
 	
@@ -83,7 +88,7 @@ position: relative;
 	p {
 		font-size: 21px;
 		text-align: center;
-		width: 600px;
+		max-width: 600px;
 		margin: 10px auto;
 	}
 	.statement {
@@ -214,12 +219,16 @@ p {
 // ****************************MOBILE VERSION***********************************
 /* iPhone 6 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
+
+#arrow {
+	display: none;	
+}
 .events {
 
 	
-	background-size: 180vh auto;
+	background-size: 300% 100%;
     background-repeat: no-repeat;
-    background-position: -300px auto;
+    background-position: -380px 0;
  &:before {
     content: '';
 	position: absolute;
@@ -244,7 +253,7 @@ h1 {
 	p {
 		font-size: 18px;
 		margin: 1vh 0;
-		width: 94vw;
+		
 		font-weight: thin;
 		font-family: "Effra";
 	}
@@ -253,14 +262,14 @@ h1 {
 		font-size: 21px;
 		&:before {
 			top:-50%;
-			font-size: 70px;
-			left: 0;
+			font-size: 30px;
+			left: 30px;
 
 		}
 		&:after {
 			top:-50%;
-			font-size: 70px;
-			right: 0;
+			font-size: 30px;
+			right: 30px;
 		}
 	}
 
@@ -302,7 +311,7 @@ h2 {
 	p {
 		font-size: 20px;
 		margin: 1vh 0;
-		width: 94vw;
+		width: 20vw;
 
 	}
 	.statement {
@@ -351,6 +360,11 @@ h2 {
     	font-size: 18px;
     }
 }
+
+.menu-logo {
+	margin: 10vh auto 2vh;
+}
+
 
 
 .footer {
@@ -418,22 +432,19 @@ h1 {
 	p {
 		font-size: 18px;
 		margin: 1vh 0;
-		width: 94vw;
+		
 
 	}
 	.statement {
 		margin: 10vh 0;
 		font-size: 21px;
 		&:before {
-			top:-50%;
-			font-size: 70px;
-			left: 0;
+			
 
 		}
 		&:after {
-			top:-50%;
-			font-size: 70px;
-			right: 0;
+			
+
 		}
 	}
 
