@@ -55,15 +55,6 @@
     left: 0;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white), linear-gradient(to bottom, rgba(255, 255, 255, 0), white), linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
     opacity: .2; }
-  .texter .text-lead {
-    animation: marquee 10s linear infinite alternate;
-    background: url "../img/wedding_trans.png";
-    height: 10vh; }
-@keyframes marquee {
-  from {
-    background-position: 0 50%; }
-  to {
-    background-position: 0 100%; } }
   .texter p {
     font-size: 21px;
     text-align: center;

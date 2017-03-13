@@ -67,15 +67,53 @@ position: relative;
 	opacity: .2; 
   }
 
-.text-lead {
-	    animation: marquee 10s linear infinite alternate;
-			background: url ('../img/wedding_trans.png');
-			height: 10vh;
-}
- @keyframes marquee {
-    from { background-position: 0 50%; }
-    to { background-position: 0 100%; }
-   }
+// .marquee {
+//   height: 25px;
+//   width: 420px;
+
+//   overflow: hidden;
+//   position: relative;
+// }
+
+// .marquee div {
+//   display: block;
+//   width: 200%;
+//   height: 30px;
+
+//   position: absolute;
+//   overflow: hidden;
+
+//   animation: marquee 5s linear infinite;
+// }
+
+// .marquee span {
+//   float: left;
+//   width: 50%;
+// }
+
+// @keyframes marquee {
+//   0% { left: 0; }
+//   100% { left: -100%; }
+// }
+
+// .text-ride {
+// 	    animation: marquee 10s infinite;
+// 			background: url ('../img/wedding_trans.png');
+// 			height: 100px;
+// 			width: 1000px;
+// 			margin: 20px auto;
+// 			  background-position: 0px 0px;
+
+// }
+//  @keyframes marquee { 
+// from { 
+// background-position: 0 0; 
+// } 
+
+// to { 
+// background-position: 0 300px; 
+// } 
+// }
 
 	p {
 		font-size: 21px;
