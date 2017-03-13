@@ -12,6 +12,10 @@
 
 }
 
+a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+       cursor: pointer;
+}
+
 h1,h2,h3,p,a {
 	text-rendering: optimizeLegibility;
 }
@@ -344,20 +348,21 @@ body {
 		color: white;
 	}
 }
+ 
+
 .menu-logo {
 	
 	max-width: 400px;
 	margin:30px auto;
 		z-index: 10;
+&:hover {
 
-	
-}
-#arturlogo:hover {
-
-			
+			opacity:.4 !important;
 			cursor:pointer;
 
 		
+}
+	
 }
 .menu-contacts {
 	text-align: right;
@@ -761,6 +766,7 @@ color:#3c3d3b ;
 		line-height: .6;
 		.tel {
 			font-size: 18px;
+			z-index: 10;
 		}
 		.share {
 			    position: absolute;

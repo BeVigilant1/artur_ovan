@@ -55,6 +55,15 @@
     left: 0;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white), linear-gradient(to bottom, rgba(255, 255, 255, 0), white), linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
     opacity: .2; }
+  .texter .text-lead {
+    animation: marquee 10s linear infinite alternate;
+    background: url "../img/wedding_trans.png";
+    height: 10vh; }
+@keyframes marquee {
+  from {
+    background-position: 0 50%; }
+  to {
+    background-position: 0 100%; } }
   .texter p {
     font-size: 21px;
     text-align: center;
@@ -71,14 +80,14 @@
       content: '»';
       position: absolute;
       top: -20%;
-      right: 2vw;
+      right: -10vw;
       font-weight: bold;
       font-size: 100px; }
     .texter .statement:before {
       content: '«';
       position: absolute;
       top: -20%;
-      left: 2vw;
+      left: -10vw;
       display: inline-block;
       font-size: 100px;
       font-weight: bold; }
@@ -128,8 +137,35 @@
 
 /* iPhone 6 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
+  .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .row {
+    margin: 0;
+    padding: 0; }
+
   #arrow {
     display: none; }
+
+  nav .links:after {
+    content: 'EVENTS';
+    margin: 0;
+    padding: 0;
+    font-size: 72px;
+    letter-spacing: 28px;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    color: #fff; }
+
+  .links h1 {
+    letter-spacing: 22px;
+    text-transform: uppercase;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    font-size: 58px;
+    color: #fff;
+    margin: 57px auto; }
 
   .events {
     background-size: 300% 100%;
@@ -144,10 +180,6 @@
       left: 0;
       background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), white);
       opacity: .2; }
-    .events h1 {
-      font-size: 93px;
-      letter-spacing: 9px;
-      padding-top: 20vh; }
 
   .texter p {
     font-size: 18px;
@@ -158,19 +190,15 @@
     margin: 10vh 0;
     font-size: 21px; }
     .texter .statement:before {
-      top: -50%;
-      font-size: 30px;
-      left: 30px; }
+      visibility: hidden; }
     .texter .statement:after {
-      top: -50%;
-      font-size: 30px;
-      right: 30px; }
+      visibility: hidden; }
 
   h2 {
     font-size: 50px; }
 
   p.subheader {
-    font-size: 13px; }
+    font-size: 20px; }
 
   .birthsday .texter {
     background-size: auto 100%;
@@ -250,10 +278,40 @@
         left: -20px; } }
 /* iPhone 6+ (portrait) ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) {
+  .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .row {
+    margin: 0;
+    padding: 0; }
+
+  #arrow {
+    display: none; }
+
+  nav .links:after {
+    content: 'EVENTS';
+    margin: 0;
+    padding: 0;
+    font-size: 72px;
+    letter-spacing: 28px;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    color: #fff; }
+
+  .links h1 {
+    letter-spacing: 22px;
+    text-transform: uppercase;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    font-size: 58px;
+    color: #fff;
+    margin: 57px auto; }
+
   .events {
-    background-size: 180vh auto;
+    background-size: 300% 100%;
     background-repeat: no-repeat;
-    background-position: -300px auto; }
+    background-position: -380px 0; }
     .events:before {
       content: '';
       position: absolute;
@@ -263,23 +321,159 @@
       left: 0;
       background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), white);
       opacity: .2; }
-    .events h1 {
-      font-size: 93px;
-      letter-spacing: 9px;
-      padding-top: 20vh; }
 
   .texter p {
     font-size: 18px;
-    margin: 1vh 0; }
+    margin: 1vh 0;
+    font-weight: thin;
+    font-family: "Effra"; }
   .texter .statement {
     margin: 10vh 0;
     font-size: 21px; }
+    .texter .statement:before {
+      visibility: hidden; }
+    .texter .statement:after {
+      visibility: hidden; }
 
   h2 {
     font-size: 50px; }
 
   p.subheader {
-    font-size: 13px; }
+    font-size: 20px; }
+
+  .birthsday .texter {
+    background-size: auto 100%;
+    background-position: -300px 0; } }
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
+  .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .row {
+    margin: 0;
+    padding: 0; }
+
+  #arrow {
+    display: none; }
+
+  nav .links:after {
+    content: 'EVENTS';
+    margin: 0;
+    padding: 0;
+    font-size: 72px;
+    letter-spacing: 28px;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    color: #fff; }
+
+  .links h1 {
+    letter-spacing: 22px;
+    text-transform: uppercase;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    font-size: 58px;
+    color: #fff;
+    margin: 57px auto; }
+
+  .events {
+    background-size: 300% 100%;
+    background-repeat: no-repeat;
+    background-position: -380px 0; }
+    .events:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), white);
+      opacity: .2; }
+
+  .texter p {
+    font-size: 18px;
+    margin: 1vh 0;
+    font-weight: thin;
+    font-family: "Effra"; }
+  .texter .statement {
+    margin: 10vh 0;
+    font-size: 21px; }
+    .texter .statement:before {
+      visibility: hidden; }
+    .texter .statement:after {
+      visibility: hidden; }
+
+  h2 {
+    font-size: 50px; }
+
+  p.subheader {
+    font-size: 20px; }
+
+  .birthsday .texter {
+    background-size: auto 100%;
+    background-position: -300px 0; } }
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) {
+  .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .row {
+    margin: 0;
+    padding: 0; }
+
+  #arrow {
+    display: none; }
+
+  nav .links:after {
+    content: 'EVENTS';
+    margin: 0;
+    padding: 0;
+    font-size: 72px;
+    letter-spacing: 28px;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    color: #fff; }
+
+  .links h1 {
+    letter-spacing: 22px;
+    text-transform: uppercase;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    font-size: 58px;
+    color: #fff;
+    margin: 57px auto; }
+
+  .events {
+    background-size: 300% 100%;
+    background-repeat: no-repeat;
+    background-position: -380px 0; }
+    .events:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), white);
+      opacity: .2; }
+
+  .texter p {
+    font-size: 13px;
+    margin: 1vh 0;
+    font-weight: thin;
+    font-family: "Effra"; }
+  .texter .statement {
+    margin: 10vh 0;
+    font-size: 21px; }
+    .texter .statement:before {
+      visibility: hidden; }
+    .texter .statement:after {
+      visibility: hidden; }
+
+  h2 {
+    font-size: 50px; }
+
+  p.subheader {
+    font-size: 20px; }
 
   .birthsday .texter {
     background-size: auto 100%;

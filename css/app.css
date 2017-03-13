@@ -11,6 +11,9 @@
   -webkit-tap-highlight-color: transparent;
   /* "turn off" link highlight */ }
 
+a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+  cursor: pointer; }
+
 h1, h2, h3, p, a {
   text-rendering: optimizeLegibility; }
 
@@ -215,9 +218,9 @@ body {
   max-width: 400px;
   margin: 30px auto;
   z-index: 10; }
-
-#arturlogo:hover {
-  cursor: pointer; }
+  .menu-logo:hover {
+    opacity: .4 !important;
+    cursor: pointer; }
 
 .menu-contacts {
   text-align: right;
@@ -513,7 +516,8 @@ body {
     left: 30vw;
     line-height: .6; }
     .menu-contacts .tel {
-      font-size: 18px; }
+      font-size: 18px;
+      z-index: 10; }
     .menu-contacts .share {
       position: absolute;
       top: 3vh;

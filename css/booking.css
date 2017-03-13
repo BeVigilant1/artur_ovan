@@ -247,11 +247,45 @@
     background-image: linear-gradient(to bottom, transparent, black);
     opacity: .6; }
 
+/* iPhone 6 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
+  .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .row {
+    margin: 0;
+    padding: 0; }
+
+  .singers {
+    transform: scale(0.8); }
+
+  #arrow {
+    display: none; }
+
+  nav .links:after {
+    content: 'BOOKING';
+    margin: 0;
+    padding: 0;
+    font-size: 44px;
+    letter-spacing: 28px;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    color: #fff; }
+
+  .links h1 {
+    letter-spacing: 22px;
+    text-transform: uppercase;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    font-size: 58px;
+    color: #fff;
+    margin: 57px auto; }
+
   .booking {
-    background-size: 180vh auto;
+    background-size: 300% 100%;
     background-repeat: no-repeat;
-    background-position: -300px auto; }
+    background-position: -380px 0; }
     .booking h1 {
       font-size: 68px;
       letter-spacing: 11px;
@@ -259,27 +293,41 @@
       top: 81%; }
 
   .goodwill {
-    height: 200vh; }
+    text-align: center;
+    font-size: 21px;
+    font-weight: 100; }
     .goodwill .translate {
-      font-size: 24px; }
-      .goodwill .translate:before, .goodwill .translate:after {
+      font-family: 'ArnoPro';
+      font-size: 36px;
+      color: #b1b1b1; }
+      .goodwill .translate p:first-child {
+        color: #a88643; }
+      .goodwill .translate:after {
+        display: none; }
+      .goodwill .translate:before {
         display: none; }
 
   .residents {
     text-align: center;
-    margin: 4vh auto; }
+    margin: 15vh auto; }
 
   .wedo {
-    font-size: 24px; }
+    font-family: 'ArnoPro';
+    font-size: 36px;
+    color: #a88643; } }
+.artists {
+  position: relative;
+  z-index: 2;
+  background-image: url("../img/mic.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+  @media screen and (min-height: 1344px) {
+    .artists {
+      height: calc(100vh - 300px); } }
 
-  .artists {
-    height: 82vh;
-    z-index: 0;
-    margin-top: 15vh;
-    background-repeat: no-repeat;
-    background-size: auto 100%; }
-    .artists .singers {
-      max-height: 60vh; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .booking h1 {
     font-size: 150px;
@@ -296,8 +344,7 @@
         display: none; }
 
   .residents {
-    text-align: center;
-    margin: 4vh auto; }
+    text-align: center; }
 
   .wedo {
     font-size: 24px; }
