@@ -95,22 +95,22 @@
     margin-top: 5vh; }
     .anniversary .texter .statement:after {
       top: -20%;
-      right: -4vw;
+      right: -10vw;
       font-weight: bold; }
     .anniversary .texter .statement:before {
       top: -20%;
-      left: -4vw;
+      left: -10vw;
       font-weight: bold; }
 
 .birthsday .texter {
   background-image: url("../img/cake_white.png"); }
   .birthsday .texter .statement:after {
     top: -20%;
-    right: -4vw;
+    right: -10vw;
     font-weight: bold; }
   .birthsday .texter .statement:before {
     top: -20%;
-    left: -4vw;
+    left: -10vw;
     font-weight: bold; }
 
 .wedding img, .anniversary img, .birthsday img {
