@@ -323,9 +323,11 @@ body {
 
 }
 
-.menu-logo-anchor:hover {
-	img{opacity:0.7;}
+.menu-logo-anchor{
+	display: block;
+	&:hover {opacity: 0.6}
 }
+
 .menu-button  {
 	position: fixed;
 	top: 2%;
@@ -353,6 +355,7 @@ body {
 	}
 }
  
+
 
 .menu-logo {
 	

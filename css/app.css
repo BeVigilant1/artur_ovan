@@ -193,8 +193,10 @@ body {
     text-decoration: none;
     cursor: pointer; }
 
-.menu-logo-anchor:hover img {
-  opacity: 0.7; }
+.menu-logo-anchor {
+  display: block; }
+  .menu-logo-anchor:hover {
+    opacity: 0.6; }
 
 .menu-button {
   position: fixed;
