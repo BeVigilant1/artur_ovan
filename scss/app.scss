@@ -322,6 +322,10 @@ body {
 }
 
 }
+
+.menu-logo-anchor:hover {
+	img{opacity:0.7;}
+}
 .menu-button  {
 	position: fixed;
 	top: 2%;
@@ -1477,3 +1481,166 @@ nav {
 
 }
 
+
+
+// nexus 5x
+@media only screen and (max-width: 525px)  {
+   .row {
+	margin-right: 0;
+	margin-left: 0;
+}
+	.half__border--top, .half__border--bottom {
+		display: none;
+	}
+	#arrow {
+		position: absolute;
+		left: 46%;
+		top: 80%;
+		a{
+			font-size: 55px;
+
+		}
+	}
+	.hero {
+	background-size: 290% 104%;
+    background-repeat: no-repeat;
+    background-position: -380px 0;
+	}
+	.company-stats {
+		margin-top: 10vh;
+		margin-bottom: 2vh;
+	p {
+		font-size: 16px;
+	}
+	}	
+
+
+.menu-logo-anchor {
+	display: block;
+    		max-width: 90%;
+
+	margin: 0 auto;
+}
+.menu-logo {
+    		max-width: 100%;
+    margin: 12vh auto;
+	display: block;
+
+
+	
+}
+
+	.menu-contacts {
+		position: absolute;
+		top:0;
+		left: 30vw;
+		line-height: .6;
+		.tel {
+			font-size: 18px;
+		}
+		.share {
+			    position: absolute;
+    top: 3vh;
+    left: 25vh;
+    	display: inline;
+    	width: 24vw;
+    	
+			a {
+		font-size: 20px;
+
+			}
+		}
+	}
+	
+
+nav {
+	.links{
+		display: block;
+		text-align: left;
+	}
+}
+.spacer {
+    position: relative;
+    top: -4vh;
+}
+.half {
+	width: 100%;
+	h2 {
+		font-size: 50px;
+
+	}
+	p {
+		font-size: 22px;
+	}
+}
+
+.guitar {
+	float:left;
+}
+.mobile-section {
+	display: block;
+}
+.desktop-section{
+	display: none;
+}
+
+.footer {
+	.footer-links {
+		margin-bottom: 10px;
+		display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+	}
+
+	p:first-child {
+		font-size: 14px;
+			white-space:nowrap;
+	
+    // top: 4vh;
+    // left: 28vw;
+		margin: 0;
+	}
+	ul li {
+		padding: 0;
+	text-align: justify;
+	display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+}
+	ul {
+	// margin: -5vh;
+    font-size: 16px;
+	padding-left: 0;
+	width: 100%;
+	display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+
+
+	a {
+	
+	}
+	
+	}
+	.social {
+	
+    
+	.top {
+
+    	}
+	}
+
+
+
+
+
+}
+
+
+
+.modal-fullscreen-menu .close {
+
+    right: 2vh;
+  
+}
+}
