@@ -346,7 +346,53 @@
     background-repeat: no-repeat;
     background-size: auto 100%; }
     .artists .singers {
-      max-height: 70vh; } }
+      max-height: 70vh; }
+
+  .row {
+    margin: 0; }
+
+  #downArrow {
+    display: none; }
+
+  .booking {
+    background-size: 190% 85%;
+    background-repeat: no-repeat;
+    background-position: -320px 0; }
+
+  .menu-contacts {
+    position: relative;
+    top: -20vh;
+    left: 80vw; }
+    .menu-contacts .tel {
+      font-size: 16px; }
+    .menu-contacts .share {
+      font-size: 18px; }
+
+  .footer {
+    height: auto;
+    margin-top: 0; }
+    .footer .footer-links {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-beetween;
+      align-content: space-beetween; }
+    .footer p:first-child {
+      font-size: 12px;
+      white-space: nowrap;
+      margin: 0; }
+    .footer ul li {
+      padding: 0;
+      text-align: justify;
+      display: flex;
+      justify-content: space-beetween;
+      align-content: space-beetween; }
+    .footer ul {
+      font-size: 14px;
+      padding-left: 90px;
+      width: 100%;
+      display: flex;
+      justify-content: space-beetween;
+      align-content: space-beetween; } }
 /* iPhone 6+ (portrait) ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) {
   .col-xs-12 {

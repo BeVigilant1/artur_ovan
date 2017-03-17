@@ -889,52 +889,65 @@ body {
 
   .modal-fullscreen-menu .close {
     right: 2vh; } }
-/* iPads (landscape) ----------- */
+/* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .row {
+    margin: 0; }
+
+  #downArrow {
+    display: none; }
+
   .hero {
-    background-size: 140vh auto;
-    background-repeat: no-repeat; }
+    background-size: 190% 85%;
+    background-repeat: no-repeat;
+    background-position: -320px 0; }
 
   .menu-contacts {
     position: relative;
-    top: -3vh;
-    left: 2vw; }
+    top: -20vh;
+    left: 80vw; }
     .menu-contacts .tel {
       font-size: 16px; }
     .menu-contacts .share {
       font-size: 18px; }
 
   .spacer {
-    top: -35vh; }
+    top: -20vh; }
 
   .half {
-    height: 40vh; }
+    max-height: 50vh; }
+    .half p {
+      font-size: 25px; }
+    .half h2 {
+      font-size: 50px; }
 
   .test {
-    height: 40vh;
-    margin-top: -22vh; }
+    margin-top: 0; }
 
   .footer {
-    margin-top: -22px;
-    height: 101px;
-    padding: 20px 20px; }
+    height: auto;
+    margin-top: 0; }
+    .footer .footer-links {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-beetween;
+      align-content: space-beetween; }
+    .footer p:first-child {
+      font-size: 12px;
+      white-space: nowrap;
+      margin: 0; }
+    .footer ul li {
+      padding: 0;
+      text-align: justify;
+      display: flex;
+      justify-content: space-beetween;
+      align-content: space-beetween; }
     .footer ul {
-      width: 50vw;
-      margin-left: -80px; }
-    .footer .mobile-social {
-      display: inline; }
-    .footer .social {
       font-size: 14px;
-      margin-left: -70px; }
-      .footer .social a {
-        padding-left: 2px;
-        margin-bottom: -100px;
-        position: relative;
-        top: 0;
-        left: 20px; }
-      .footer .social .top {
-        position: relative;
-        top: -24px;
-        left: -20px; } }
+      padding-left: 90px;
+      width: 100%;
+      display: flex;
+      justify-content: space-beetween;
+      align-content: space-beetween; } }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,4 +1,48 @@
+#wedding-constainer {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
 
+.weddings {
+  background: url('../img/wedding_trans.png');
+  height: 45px;
+  width: 104%;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.bd {
+	@extend .weddings;
+  background: url('../img/happybd_trans.png');
+  height: 38px;
+
+
+}
+
+.anno {
+	@extend .weddings;
+  background: url('../img/anniversary_trans.png');
+
+}
+
+#wedding {
+  background-repeat: repeat-x;
+  animation-name: ticker;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes ticker {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: -100%;
+  }
+}
 
 .events {
 	height: 100vh;
@@ -345,68 +389,30 @@ h2 {
 }
 
 
-/* iPads (landscape) ----------- */
+/* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+.col-xs-12, .col-md-12 {
+	padding: 0;	
+}
 
+.row {
+	margin: 0;
+}
+
+#downArrow {
+	display: none;
+}
 .events {
 	
-	background-size: 140vh auto;
+	background-size: 190% 85%;
     background-repeat: no-repeat;
-    h1 {
-    	    font-size: 241px;
-    letter-spacing: 35px;
-    position: relative;
-    top: 55%;
-    }
+    background-position: -320px 0;
    
 }
-.texter {
-
-	p {
-		font-size: 20px;
-		margin: 1vh 0;
-		width: 20vw;
-
-	}
-	.statement {
-		margin: 10vh 0;   
-		 position: relative;
-    top: -40px;
-		font-size: 30px;
-		&:before {
-			top:-20%;
-			font-size: 70px;
-			left: 25%;
-
-		}
-		&:after {
-			top:-20%;
-			font-size: 70px;
-			right: 25%;
-		}
-	}
-
-}
-
-h2 {
-		font-size: 50px;
-	}
-
- p.subheader {
-		font-size: 24px;
-	}
-.birthsday .texter {
-		background-size: auto 120%;
-    background-position: -2px -50px;
-
-	}
-
-
-
 .menu-contacts {
 	     position: relative;
-    top: -3vh;
-    left: 2vw;
+    top: -20vh;
+    left: 80vw;
     .tel {
     	font-size: 16px;
     }
@@ -415,42 +421,55 @@ h2 {
     }
 }
 
-.menu-logo {
-	margin: 10vh auto 2vh;
-}
-
-
-
 .footer {
-	margin-top: -160px;
-	height: 240px;
-	padding: 20px 20px;
-	ul {
-		width: 50vw;
-    margin-left: -80px;
+	height: auto;
+	margin-top: 0;
+	.footer-links {
+		margin-bottom: 10px;
+		display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
 	}
-	.mobile-social {
-		display: inline;
-	}
-	.social {
-		font-size: 14px;
-		margin-left: -70px;
-		
-		a {
-			padding-left: 2px;
-			    margin-bottom: -100px;
-    position: relative;
-    top: 0;
-    left: 20px;
 
-		}		
-		.top {
-			    position: relative;
-    top: -24px;
-    left: -20px;
-		}
+	p:first-child {
+		font-size: 12px;
+			white-space:nowrap;
+	
+    // top: 4vh;
+    // left: 28vw;
+		margin: 0;
 	}
+	ul li {
+		padding: 0;
+	text-align: justify;
+	display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
 }
+	ul {
+	// margin: -5vh;
+    font-size: 14px;
+	padding-left: 90px;
+	width: 100%;
+	display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+
+
+	a {
+	
+	}
+	
+	}
+
+
+
+
+
+
+}
+
+
 }
 
 /* iPhone 6+ (portrait) ----------- */

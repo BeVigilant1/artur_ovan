@@ -491,6 +491,79 @@ h1{
 		max-height: 70vh;
 	}
 }
+.row {
+	margin: 0;
+}
+
+#downArrow {
+	display: none;
+}
+.booking{
+	
+	background-size: 190% 85%;
+    background-repeat: no-repeat;
+    background-position: -320px 0;
+   
+}
+.menu-contacts {
+	     position: relative;
+    top: -20vh;
+    left: 80vw;
+    .tel {
+    	font-size: 16px;
+    }
+    .share {
+    	font-size: 18px;
+    }
+}
+
+.footer {
+	height: auto;
+	margin-top: 0;
+	.footer-links {
+		margin-bottom: 10px;
+		display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+	}
+
+	p:first-child {
+		font-size: 12px;
+			white-space:nowrap;
+	
+    // top: 4vh;
+    // left: 28vw;
+		margin: 0;
+	}
+	ul li {
+		padding: 0;
+	text-align: justify;
+	display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+}
+	ul {
+	// margin: -5vh;
+    font-size: 14px;
+	padding-left: 90px;
+	width: 100%;
+	display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+
+
+	a {
+	
+	}
+	
+	}
+
+
+
+
+
+
+}
 
 }
 
