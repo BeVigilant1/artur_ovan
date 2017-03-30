@@ -2,6 +2,7 @@
 @import "fonts.css";
 @import "events.css";
 @import "booking.css";
+@import "team.css";
 @import "animate.css";
 
 * {
@@ -570,8 +571,8 @@ h2, p{
 		background-image: url('../img/guitar.png');
 		
 	}
-	&.team {
-		background-image: url('../img/wedding.jpg');
+	&.team-all {
+		background-image: url('../img/team-all.jpg');
 		
 	}
 	&.barcelona {

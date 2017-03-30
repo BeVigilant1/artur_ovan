@@ -3,6 +3,7 @@
 @import url(fonts.css);
 @import url(events.css);
 @import url(booking.css);
+@import url(team.css);
 @import url(animate.css);
 * {
   -webkit-tap-highlight-color: transparent;
@@ -368,8 +369,8 @@ body {
     background-image: url("../img/baloons.jpg"); }
   .half.guitar {
     background-image: url("../img/guitar.png"); }
-  .half.team {
-    background-image: url("../img/wedding.jpg"); }
+  .half.team-all {
+    background-image: url("../img/team-all.jpg"); }
   .half.barcelona {
     background-image: url("../img/city-_sights.png"); }
 
