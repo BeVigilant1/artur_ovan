@@ -30,9 +30,10 @@ a:focus {
 .grey {
 	color:#333;
 }
+
 .wheat {
 	color: #d8bb82;
-
+	
 }
 .white {
 	color: white;
@@ -310,10 +311,15 @@ body {
     text-transform: uppercase;
     padding:10px;
     text-align: center;
-        text-align: -webkit-center;
-        font-weight: 100;
+    text-align: -webkit-center;
+    font-weight: 100;
 	font-style: normal;
 	font-size: 21px;
+	&.wheat {
+		color: #d8bb82;
+
+	}
+
 	&:hover {
 		opacity:0.7;
 		text-decoration: none;
