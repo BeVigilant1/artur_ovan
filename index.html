@@ -1,219 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<meta name="description" content="">
-		<meta name="author" content="">
-		<link rel="icon" href="#">
-		<title>Artur Ovan</title>
-		<!-- Bootstrap core CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-		<!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
-		<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-		<!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="#">
+	<title>Artur Ovan</title>
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
+	<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+	<!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
-		<script src="https://use.fontawesome.com/48cb5fda70.js"></script>
-		<!-- Custom styles for this template -->
-		<link href="css/app.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.css">
-	</head>
-	<!-- NAVBAR
+	<script src="https://use.fontawesome.com/48cb5fda70.js"></script>
+	<!-- Custom styles for this template -->
+	<link href="css/app.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.css">
+</head>
+<!-- NAVBAR
 		================================================== -->
-	<body>
-		<div id="fullpage">
-			<div  class="section">
-				<div class='modal fade modal-fullscreen-menu' backdrop="false" id='modalNavigation' role='dialog' tabindex='-1'>
-					<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+
+<body>
+	<div id="fullpage">
+		<div class="section">
+			<div class='modal fade modal-fullscreen-menu' backdrop="false" id='modalNavigation' role='dialog' tabindex='-1'>
+				<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
 					<span class='sr-only'>Close navigation</span>
 					<span class='glyphicon glyphicon-remove'></span>
-					</button>
-					<div class='modal-dialog'>
-						<nav class='list-group'>
-							<a class='list-group-item' href='index.html'>Home</a>
-							<a class='list-group-item' href='events.html'>Events</a>
-							<a class='list-group-item' href='booking.html'>Booking</a>
-							<a class='list-group-item' href='team.html'>Team</a>
-							<a class='list-group-item' href='#'>Barcelona</a>
-						</nav>
-					</div>
+				</button>
+				<div class='modal-dialog'>
+					<nav class='list-group'>
+						<a class='list-group-item' href='index.html'>Home</a>
+						<a class='list-group-item' href='events.html'>Events</a>
+						<a class='list-group-item' href='booking.html'>Booking</a>
+						<a class='list-group-item' href='team.html'>Team</a>
+						<a class='list-group-item' href='#'>Barcelona</a>
+					</nav>
 				</div>
-				<div class="container-fluid">
+			</div>
+			<div class="container-fluid">
 				<div id="arrow" class="downArrow bounce">
-<a href="#secondSection"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a></div>
-					<div class="hero animated pulse"></div>
-					<div  class="main ">
-						<div class="row menu">
-							<div id="menuBtn" class="menu-button ">          <button class='wheat btn btn-primary btn-lg open-menu animated fadeIn' data-target='#modalNavigation' data-toggle='modal' type='button'><i class="fa fa-align-left" aria-hidden="true"></i></button>
-							</div>
-							<div class="col-md-push-3 col-md-6 col-sm-12 col-xs-12">
-								<a class="menu-logo-anchor" href="#"><img id="arturlogo" class="menu-logo img-responsive animated fadeIn" src="img/logo.png" alt=""></a>
-								<div class="nav">
-									<div class="row row-centered links animated fadeIn">
-										<div class="col-md-3  col-sm-3 col-xs-12 col-centered">
-											<a href="events.html">Events</a>
-										</div>
-										<div class="col-md-3 col-sm-3  col-xs-12 col-centered">
-											<a href="booking.html">Booking</a>
-										</div>
-										<div class="col-md-3 col-sm-3  col-xs-12 col-centered">
-											<a href="team.html">Team</a>
-										</div>
-										<div class="col-md-3 col-sm-3  col-xs-12 col-centered">
-											<a href="#">Barcelona</a>
-										</div>
+					<a href="#secondSection">
+						<i class="fa fa-angle-double-down" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="hero animated pulse"></div>
+				<div class="main ">
+					<div class="row menu">
+						<div id="menuBtn" class="menu-button ">
+							<button class='wheat btn btn-primary btn-lg open-menu animated fadeIn' data-target='#modalNavigation' data-toggle='modal'
+							 type='button'>
+								<i class="fa fa-align-left" aria-hidden="true"></i>
+							</button>
+						</div>
+						<div class="col-md-push-3 col-md-6 col-sm-12 col-xs-12">
+							<a class="menu-logo-anchor" href="#">
+								<img id="arturlogo" class="menu-logo img-responsive animated fadeIn" src="img/logo.png" alt="">
+							</a>
+							<div class="nav">
+								<div class="row row-centered links animated fadeIn">
+									<div class="col-md-3  col-sm-3 col-xs-12 col-centered">
+										<a href="events.html">Events</a>
+									</div>
+									<div class="col-md-3 col-sm-3  col-xs-12 col-centered">
+										<a href="booking.html">Booking</a>
+									</div>
+									<div class="col-md-3 col-sm-3  col-xs-12 col-centered">
+										<a href="team.html">Team</a>
+									</div>
+									<div class="col-md-3 col-sm-3  col-xs-12 col-centered">
+										<a href="#">Barcelona</a>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-push-3 col-xs-push-2  col-md-3 col-sm-3 col-xs-4 menu-contacts animated fadeIn">
-								<p class="tel wheat">+7&nbsp;(915)&nbsp;313&nbsp;59&nbsp;95</p>
-								<p class="tel wheat">+34&nbsp;646&nbsp;37&nbsp;42&nbsp;71</p>
+						</div>
+						<div class="col-md-push-3 col-xs-push-2  col-md-3 col-sm-3 col-xs-4 menu-contacts animated fadeIn">
+							<p class="tel wheat">+7&nbsp;(915)&nbsp;313&nbsp;59&nbsp;95</p>
+							<p class="tel wheat">+34&nbsp;646&nbsp;37&nbsp;42&nbsp;71</p>
 
-								<div class="share">
-									<a href="https://www.facebook.com/artur.ovanesyants"><i class="fa fa-facebook wheat" aria-hidden="true"></i></a><a href="https://www.instagram.com/artovan/"><i class="fa fa-instagram wheat" aria-hidden="true"></i></a>
-								</div>
+							<div class="share">
+								<a href="https://www.facebook.com/artur.ovanesyants">
+									<i class="fa fa-facebook wheat" aria-hidden="true"></i>
+								</a>
+								<a href="https://www.instagram.com/a_ovants/">
+									<i class="fa fa-instagram wheat" aria-hidden="true"></i>
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="section fp-auto-height">
-				<div class="row row-centered spacer ">
-					<div class="col-md-3 col-sm-3 col-xs-6 col-centered company-stats animated fadeIn" >
-						<div class="border">
-							<div class="numbers">
-								<span class="num num1">&nbsp;&nbsp;17</span>
-							</div>
+		</div>
+		<div class="section fp-auto-height">
+			<div class="row row-centered spacer ">
+				<div class="col-md-3 col-sm-3 col-xs-6 col-centered company-stats animated fadeIn">
+					<div class="border">
+						<div class="numbers">
+							<span class="num num1">&nbsp;&nbsp;17</span>
 						</div>
-						<p>В сфере EVENT</p>
 					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6 col-centered company-stats animated fadeIn" >
-						<div class="border">
-							<div class="numbers">
-								<span class="num num2">100</span>
-							</div>
+					<p>В сфере EVENT</p>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6 col-centered company-stats animated fadeIn">
+					<div class="border">
+						<div class="numbers">
+							<span class="num num2">100</span>
 						</div>
-						<p>Минимальный <br>бюджет мероприятия</p>
 					</div>
-					<div class="col-md-3 col-sm-3  col-xs-6 col-centered company-stats animated fadeIn" >
-						<div class="border">
-							<div class="numbers">
-								<span class="num num3">100</span>
-							</div>
+					<p>Минимальный
+						<br>бюджет мероприятия</p>
+				</div>
+				<div class="col-md-3 col-sm-3  col-xs-6 col-centered company-stats animated fadeIn">
+					<div class="border">
+						<div class="numbers">
+							<span class="num num3">100</span>
 						</div>
-						<p>Максимальный <br>бюджет мероприятия</p>
 					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6 col-centered company-stats animated fadeIn" >
-						<div class="border">
-							<div class="numbers">
-								<span class="num num4">600</span>
-							</div>
+					<p>Максимальный
+						<br>бюджет мероприятия</p>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6 col-centered company-stats animated fadeIn">
+					<div class="border">
+						<div class="numbers">
+							<span class="num num4">600</span>
 						</div>
-						<p>Максимальное <br>количество гостей</p>
 					</div>
+					<p>Максимальное
+						<br>количество гостей</p>
 				</div>
 			</div>
-			<div class="section fp-auto-height-responsive">
-				<div class="test clearfix">
-					<a href="events.html">
-						<div class="half half--colored">
-							<div class="text-holder">
-								<h2>Events</h2>
-								<p>В нужном месте, в нужное время,
-									<br>с правильными людьми
-								</p>
-							</div>
-							<div class="half__border half__border--top half__border--left"></div>
-							<div class="half__border half__border--bottom half__border--left"></div>
+		</div>
+		<div class="section fp-auto-height-responsive">
+			<div class="test clearfix">
+				<a href="events.html">
+					<div class="half half--colored">
+						<div class="text-holder">
+							<h2>Events</h2>
+							<p>В нужном месте, в нужное время,
+								<br>с правильными людьми
+							</p>
 						</div>
-					</a>
-					<div class="half baloons">
+						<div class="half__border half__border--top half__border--left"></div>
+						<div class="half__border half__border--bottom half__border--left"></div>
 					</div>
-				</div>
-				<div class="test clearfix mobile-section">
-					<a href="booking.html">
-						<div class="half half--colored">
-							<div class="text-holder">
-								<h2>Booking</h2>
-								<p>Мероприятие за 2 дня!</p>
-							</div>
-							<div class="half__border half__border--top half__border--right"></div>
-							<div class="half__border half__border--bottom half__border--right"></div>
-						</div>
-					</a>
-					<div class="half guitar"></div>
-				</div>
-				<div class="test clearfix desktop-section">
-					<div class="half guitar"></div>
-					<a href="booking.html">
-						<div class="half half--colored">
-							<div class="text-holder">
-								<h2>Booking</h2>
-								<p>Мероприятие за 2 дня!</p>
-							</div>
-							<div class="half__border half__border--top half__border--right"></div>
-							<div class="half__border half__border--bottom half__border--right"></div>
-						</div>
-					</a>
+				</a>
+				<div class="half baloons">
 				</div>
 			</div>
-			<div class="section ">
-				<div class="test clearfix">
-					<a href="team.html">
-						<div class="half half--colored">
-							<div class="text-holder">
-								<h2>Team</h2>
-								<p>Мы организаторы счастья!</p>
-							</div>
-							<div class="half__border half__border--top half__border--left"></div>
-							<div class="half__border half__border--bottom half__border--left"></div>
+			<div class="test clearfix mobile-section">
+				<a href="booking.html">
+					<div class="half half--colored">
+						<div class="text-holder">
+							<h2>Booking</h2>
+							<p>Мероприятие за 2 дня!</p>
 						</div>
-					</a>
-					<div class="half team-all">
+						<div class="half__border half__border--top half__border--right"></div>
+						<div class="half__border half__border--bottom half__border--right"></div>
 					</div>
-				</div>
-				<div class="test clearfix mobile-section">
-					<a href="#">
-						<div class="half half--colored">
-							<div class="text-holder">
-								<h2>Barcelona</h2>
-								<p>Ваш незабываемый праздник<br>
-									в Испании
-								</p>
-							</div>
-							<div class="half__border half__border--top half__border--right"></div>
-							<div class="half__border half__border--bottom half__border--right"></div>
+				</a>
+				<div class="half guitar"></div>
+			</div>
+			<div class="test clearfix desktop-section">
+				<div class="half guitar"></div>
+				<a href="booking.html">
+					<div class="half half--colored">
+						<div class="text-holder">
+							<h2>Booking</h2>
+							<p>Мероприятие за 2 дня!</p>
 						</div>
-					</a>
-					<div class="half barcelona"></div>
-				</div>
-				<div class="test clearfix desktop-section">
-					<div class="half barcelona"></div>
-					<a href="#">
-						<div class="half half--colored">
-							<div class="text-holder">
-								<h2>Barcelona</h2>
-								<p>Ваш незабываемый праздник<br>
-									в Испании
-								</p>
-							</div>
-							<div class="half__border half__border--top half__border--right"></div>
-							<div class="half__border half__border--bottom half__border--right"></div>
+						<div class="half__border half__border--top half__border--right"></div>
+						<div class="half__border half__border--bottom half__border--right"></div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="section ">
+			<div class="test clearfix">
+				<a href="team.html">
+					<div class="half half--colored">
+						<div class="text-holder">
+							<h2>Team</h2>
+							<p>Мы организаторы счастья!</p>
 						</div>
-					</a>
+						<div class="half__border half__border--top half__border--left"></div>
+						<div class="half__border half__border--bottom half__border--left"></div>
+					</div>
+				</a>
+				<div class="half team-all">
 				</div>
 			</div>
-			<div class="section fp-auto-height-responsive fp-auto-height">
-				<!-- FOOTER -->
-				<footer>
+			<div class="test clearfix mobile-section">
+				<a href="#">
+					<div class="half half--colored">
+						<div class="text-holder">
+							<h2>Barcelona</h2>
+							<p>Ваш незабываемый праздник
+								<br> в Испании
+							</p>
+						</div>
+						<div class="half__border half__border--top half__border--right"></div>
+						<div class="half__border half__border--bottom half__border--right"></div>
+					</div>
+				</a>
+				<div class="half barcelona"></div>
+			</div>
+			<div class="test clearfix desktop-section">
+				<div class="half barcelona"></div>
+				<a href="#">
+					<div class="half half--colored">
+						<div class="text-holder">
+							<h2>Barcelona</h2>
+							<p>Ваш незабываемый праздник
+								<br> в Испании
+							</p>
+						</div>
+						<div class="half__border half__border--top half__border--right"></div>
+						<div class="half__border half__border--bottom half__border--right"></div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="section fp-auto-height-responsive fp-auto-height">
+			<!-- FOOTER -->
+			<footer>
 				<div class="container-fluid">
 					<div class="row footer">
 						<div class="col-md-2  col-sm-2 col-xs-2 pull-left hidden-xs ">
@@ -221,46 +240,64 @@
 						</div>
 						<div class="col-md-7 col-sm-6 col-xs-12 footer-links clearfix  ">
 							<ul>
-								<li><a href="events.html">Events</a><span></span></li>
-								<li><a href="booking.html">Booking</a></li>
-								<li><a href="team.html">Team</a></li>
-								<li><a href="#">Barcelona</a></li>
+								<li>
+									<a href="events.html">Events</a>
+									<span></span>
+								</li>
+								<li>
+									<a href="booking.html">Booking</a>
+								</li>
+								<li>
+									<a href="team.html">Team</a>
+								</li>
+								<li>
+									<a href="#">Barcelona</a>
+								</li>
 							</ul>
 						</div>
-					<div class="col-md-2  col-sm-2 col-xs-4 visible-xs-inline ">
+						<div class="col-md-2  col-sm-2 col-xs-4 visible-xs-inline ">
 							<p>&copy; ARTUR OVAN 2017</p>
 						</div>
 						<div class="col-md-1 col-sm-2 col-xs-4 mobile-social text-right">
 							<div class="social">
-		
-								<a href="https://www.facebook.com/artur.ovanesyants"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="https://www.instagram.com/artovan/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-								</div>
-								</div>
-								
-						<div class="col-md-2 col-sm-2 col-xs-4   mobile-social">
 
-								<p class="top"><a href="#firstSection"><i class="fa   fa-arrow-up" aria-hidden="true"></i>&nbsp;Back to top </a></p>
+								<a href="https://www.facebook.com/artur.ovanesyants">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</a>
+								<a href="https://www.instagram.com/a_ovants/">
+									<i class="fa fa-instagram" aria-hidden="true"></i>
+								</a>
 							</div>
 						</div>
+
+						<div class="col-md-2 col-sm-2 col-xs-4   mobile-social">
+
+							<p class="top">
+								<a href="#firstSection">
+									<i class="fa   fa-arrow-up" aria-hidden="true"></i>&nbsp;Back to top </a>
+							</p>
 						</div>
-					
-				</footer>
-			</div>
+					</div>
+				</div>
+
+			</footer>
 		</div>
-		<!-- /.container -->
-		<!-- Bootstrap core JavaScript
+	</div>
+	<!-- /.container -->
+	<!-- Bootstrap core JavaScript
 			================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
-		<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 			<script src="owlcarousel/jquery-3.1.1.min.js"></script>
 			<script src="owlcarousel/owl.carousel.min.js"></script>
 			<script src="js/masonry.pkgd.min.js"></script>-->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.js"></script>
 
-		<script type="text/javascript" src="js/app.js"></script>
-		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-		<!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
-	</body>
+	<script type="text/javascript" src="js/app.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+</body>
+
 </html>
