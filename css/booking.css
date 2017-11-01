@@ -34,10 +34,6 @@
     position: relative; }
 
 .goodwill {
-  position: absolute;
-  top: 10%;
-  left: 0;
-  height: 100vh;
   text-align: center;
   font-size: 21px;
   font-weight: 100; }
@@ -100,7 +96,7 @@
       position: absolute;
       transition: all .2s ease-in-out; }
       .artists .singers .anchor:hover {
-        transform: scale(1.1); }
+        transform: scale(1.2); }
       .artists .singers .anchor-img {
         display: block;
         width: 100%; }
@@ -247,11 +243,50 @@
     background-image: linear-gradient(to bottom, transparent, black);
     opacity: .6; }
 
+/* iPhone 6 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
+  .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .row {
+    margin: 0;
+    padding: 0; }
+
+  .artists {
+    background-size: 270% auto;
+    background-position: 50%; }
+
+  .singers {
+    transform: scale(0.6);
+    margin-left: -50px; }
+
+  #arrow {
+    display: none !important; }
+
+  nav .links:after {
+    content: 'BOOKING';
+    margin: 0;
+    padding: 0;
+    font-size: 44px;
+    letter-spacing: 28px;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    color: #fff; }
+
+  .links h1 {
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    font-size: 58px;
+    color: #fff;
+    margin: 57px auto; }
+
   .booking {
-    background-size: 180vh auto;
+    background-size: 300% 100%;
     background-repeat: no-repeat;
-    background-position: -300px auto; }
+    background-position: -380px 0; }
     .booking h1 {
       font-size: 68px;
       letter-spacing: 11px;
@@ -259,27 +294,30 @@
       top: 81%; }
 
   .goodwill {
-    height: 200vh; }
+    text-align: center;
+    font-size: 21px;
+    font-weight: 100; }
     .goodwill .translate {
-      font-size: 24px; }
-      .goodwill .translate:before, .goodwill .translate:after {
+      font-family: 'ArnoPro';
+      font-size: 25px;
+      color: #b1b1b1;
+      margin-top: 20px; }
+      .goodwill .translate p:first-child {
+        color: #a88643; }
+      .goodwill .translate:after {
+        display: none; }
+      .goodwill .translate:before {
         display: none; }
 
   .residents {
     text-align: center;
-    margin: 4vh auto; }
+    margin: 5vh auto; }
 
   .wedo {
-    font-size: 24px; }
-
-  .artists {
-    height: 82vh;
-    z-index: 0;
-    margin-top: 15vh;
-    background-repeat: no-repeat;
-    background-size: auto 100%; }
-    .artists .singers {
-      max-height: 60vh; } }
+    font-family: 'ArnoPro';
+    font-size: 26px;
+    color: #a88643;
+    margin-bottom: 20px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .booking h1 {
     font-size: 150px;
@@ -296,8 +334,7 @@
         display: none; }
 
   .residents {
-    text-align: center;
-    margin: 4vh auto; }
+    text-align: center; }
 
   .wedo {
     font-size: 24px; }
@@ -309,13 +346,97 @@
     background-repeat: no-repeat;
     background-size: auto 100%; }
     .artists .singers {
-      max-height: 70vh; } }
+      max-height: 70vh; }
+
+  .row {
+    margin: 0; }
+
+  #downArrow {
+    display: none; }
+
+  .booking {
+    background-size: 190% 85%;
+    background-repeat: no-repeat;
+    background-position: -320px 0; }
+
+  .menu-contacts {
+    position: relative;
+    top: -20vh;
+    left: 80vw; }
+    .menu-contacts .tel {
+      font-size: 16px; }
+    .menu-contacts .share {
+      font-size: 18px; }
+
+  .footer {
+    height: auto;
+    margin-top: 0; }
+    .footer .footer-links {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-beetween;
+      align-content: space-beetween; }
+    .footer p:first-child {
+      font-size: 12px;
+      white-space: nowrap;
+      margin: 0; }
+    .footer ul li {
+      padding: 0;
+      text-align: justify;
+      display: flex;
+      justify-content: space-beetween;
+      align-content: space-beetween; }
+    .footer ul {
+      font-size: 14px;
+      padding-left: 90px;
+      width: 100%;
+      display: flex;
+      justify-content: space-beetween;
+      align-content: space-beetween; } }
 /* iPhone 6+ (portrait) ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) {
+  .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .row {
+    margin: 0;
+    padding: 0; }
+
+  .artists {
+    background-size: 270% auto;
+    background-position: 50%; }
+
+  .singers {
+    transform: scale(0.6);
+    margin-left: -30px; }
+
+  #arrow {
+    display: none !important; }
+
+  nav .links:after {
+    content: 'BOOKING';
+    margin: 0;
+    padding: 0;
+    font-size: 44px;
+    letter-spacing: 28px;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    color: #fff; }
+
+  .links h1 {
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    font-size: 58px;
+    color: #fff;
+    margin: 57px auto; }
+
   .booking {
-    background-size: 180vh auto;
+    background-size: 300% 100%;
     background-repeat: no-repeat;
-    background-position: -300px auto; }
+    background-position: -380px 0; }
     .booking h1 {
       font-size: 68px;
       letter-spacing: 11px;
@@ -323,29 +444,183 @@
       top: 81%; }
 
   .goodwill {
-    height: 200vh; }
+    text-align: center;
+    font-size: 21px;
+    font-weight: 100; }
     .goodwill .translate {
-      font-size: 24px; }
-      .goodwill .translate:before, .goodwill .translate:after {
+      font-family: 'ArnoPro';
+      font-size: 25px;
+      color: #b1b1b1;
+      margin-top: 20px; }
+      .goodwill .translate p:first-child {
+        color: #a88643; }
+      .goodwill .translate:after {
+        display: none; }
+      .goodwill .translate:before {
         display: none; }
 
   .residents {
     text-align: center;
-    margin: 4vh auto; }
+    margin: 5vh auto; }
+    .residents p {
+      font-size: 20px;
+      max-width: 300px;
+      margin: auto; }
 
   .wedo {
-    font-size: 24px; }
+    font-family: 'ArnoPro';
+    font-size: 26px;
+    color: #a88643;
+    margin-bottom: 20px; } }
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
+  .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .row {
+    margin: 0;
+    padding: 0; }
 
   .artists {
-    height: 82vh;
-    z-index: 0;
-    margin-top: 15vh;
+    background-size: 270% auto;
+    background-position: 50%; }
+
+  .singers {
+    transform: scale(0.6);
+    margin-left: -50px; }
+
+  #arrow {
+    display: none !important; }
+
+  nav .links:after {
+    content: 'BOOKING';
+    margin: 0;
+    padding: 0;
+    font-size: 44px;
+    letter-spacing: 28px;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    color: #fff; }
+
+  .links h1 {
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    font-size: 58px;
+    color: #fff;
+    margin: 57px auto; }
+
+  .booking {
+    background-size: 300% 100%;
     background-repeat: no-repeat;
-    background-size: auto 100%; }
-    .artists .singers {
-      content: '';
-      width: 50vw;
-      margin: 20vh auto;
-      background: url("../img/singers.png"); } }
+    background-position: -380px 0; }
+    .booking h1 {
+      font-size: 68px;
+      letter-spacing: 11px;
+      position: relative;
+      top: 81%; }
+
+  .goodwill {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 100; }
+    .goodwill .translate {
+      font-family: 'ArnoPro';
+      font-size: 25px;
+      color: #b1b1b1;
+      margin-top: 20px; }
+      .goodwill .translate p:first-child {
+        color: #a88643; }
+      .goodwill .translate:after {
+        display: none; }
+      .goodwill .translate:before {
+        display: none; }
+
+  .residents {
+    text-align: center;
+    margin: 5vh auto; }
+
+  .wedo {
+    font-family: 'ArnoPro';
+    font-size: 26px;
+    color: #a88643;
+    margin-bottom: 20px; } }
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) {
+  .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .row {
+    margin: 0;
+    padding: 0; }
+
+  .artists {
+    background-size: 270% auto;
+    background-position: 50%; }
+
+  .singers {
+    transform: scale(0.6);
+    margin-left: -70px; }
+
+  #arrow {
+    display: none !important; }
+
+  nav .links:after {
+    content: 'BOOKING';
+    margin: 0;
+    padding: 0;
+    font-size: 44px;
+    letter-spacing: 28px;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    color: #fff; }
+
+  .links h1 {
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    font-size: 58px;
+    color: #fff;
+    margin: 57px auto; }
+
+  .booking {
+    background-size: 300% 100%;
+    background-repeat: no-repeat;
+    background-position: -380px 0; }
+    .booking h1 {
+      font-size: 68px;
+      letter-spacing: 11px;
+      position: relative;
+      top: 81%; }
+
+  .goodwill {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 100; }
+    .goodwill .translate {
+      font-family: 'ArnoPro';
+      font-size: 25px;
+      color: #b1b1b1;
+      margin-top: 20px; }
+      .goodwill .translate p:first-child {
+        color: #a88643; }
+      .goodwill .translate:after {
+        display: none; }
+      .goodwill .translate:before {
+        display: none; }
+
+  .residents {
+    text-align: center;
+    margin: 5vh auto; }
+    .residents p {
+      font-size: 19px; }
+
+  .wedo {
+    font-family: 'ArnoPro';
+    font-size: 26px;
+    color: #a88643;
+    margin-bottom: 20px; } }
 
 /*# sourceMappingURL=booking.css.map */

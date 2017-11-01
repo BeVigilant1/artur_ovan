@@ -42,10 +42,7 @@ position: relative;
 	}
 
 	.goodwill {
-		position: absolute;
-		top:10%;
-		left: 0;
-		height: 100vh;
+		
 		text-align: center;
 		font-size: 21px;
 		font-weight: 100;
@@ -126,7 +123,7 @@ z-index: 5;
 	position: absolute;
 	transition: all .2s ease-in-out;
 	&:hover{
-		transform:scale(1.1);
+		transform:scale(1.2);
 	}
 	&-img{
 		display: block;
@@ -342,15 +339,57 @@ z-index: -1;
 }
 
 // ****************************MOBILE VIEW*************************************
+/* iPhone 6 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
+.col-xs-12 {
+	padding-left: 0;
+	padding-right: 0;
+}
+.row {
+	margin: 0;
+	padding: 0;
+}
 
+.artists {
+	    background-size: 270% auto;
+    background-position: 50%;
+}
 
-	
-	
+.singers {
+	transform: scale(0.6);
+	margin-left: -50px;
+}
+#arrow {
+	display: none !important;	
+}
+nav {
+	.links:after {
+		content:'BOOKING';
+		margin: 0;
+		padding:0;
+		font-size: 44px;
+		letter-spacing: 28px;
+		font-family: 'ArnoPro';
+		font-weight: 100;
+		color: #fff;
+	}
+}
+
+.links h1 {
+	letter-spacing: 8px;
+    text-transform: uppercase;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    font-size: 58px;
+    color: #fff;
+    margin: 57px auto;
+}
+
 .booking {
-background-size: 180vh auto;
+
+	background-size: 300% 100%;
     background-repeat: no-repeat;
-    background-position: -300px auto;
+    background-position: -380px 0;
 
 h1{
     font-size: 68px;
@@ -360,36 +399,51 @@ h1{
 }
 }
 
-.goodwill {
-	height: 200vh;
-		.translate {
-		font-size: 24px;
-		&:before, &:after {
-		display: none;
-	}
-}
-}
-.residents {
-							text-align: center;
-			
-			margin: 4vh auto;
+	.goodwill {
+		
+		text-align: center;
+		font-size: 21px;
+		font-weight: 100;
+
+		.translate  {
+			font-family: 'ArnoPro';
+		font-size: 25px;
+		color:#b1b1b1;
+		margin-top: 20px;
+		p:first-child {
+					color:#a88643;
+				
+
 		}
+			&:after {
+						display: none;
 
-.wedo {
-	font-size: 24px;
-}
-.artists {
-	    height: 82vh;
-    z-index: 0;
-	margin-top: 15vh;
-	background-repeat: no-repeat;
-	background-size: auto 100%;
-	.singers {
-		max-height: 60vh;
+
+							}
+					&:before {
+						display: none;
+							}
+						}
+					}
+
+		
+		.residents {
+							text-align: center;
+
+			margin: 5vh auto;
+		}
+		.wedo {
+			font-family: 'ArnoPro';
+		font-size: 26px;
+		color:#a88643;
+		margin-bottom: 20px; 
 	}
 }
 
-}
+
+
+
+
 
 // ********* IPAD LANDSCAPE *****************
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -413,13 +467,15 @@ h1{
 		font-size: 24px;
 		&:before, &:after {
 		display: none;
+		}
+
 	}
 }
-}
+
 .residents {
 							text-align: center;
 			
-			margin: 4vh auto;
+			
 		}
 
 .wedo {
@@ -435,6 +491,79 @@ h1{
 		max-height: 70vh;
 	}
 }
+.row {
+	margin: 0;
+}
+
+#downArrow {
+	display: none;
+}
+.booking{
+	
+	background-size: 190% 85%;
+    background-repeat: no-repeat;
+    background-position: -320px 0;
+   
+}
+.menu-contacts {
+	     position: relative;
+    top: -20vh;
+    left: 80vw;
+    .tel {
+    	font-size: 16px;
+    }
+    .share {
+    	font-size: 18px;
+    }
+}
+
+.footer {
+	height: auto;
+	margin-top: 0;
+	.footer-links {
+		margin-bottom: 10px;
+		display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+	}
+
+	p:first-child {
+		font-size: 12px;
+			white-space:nowrap;
+	
+    // top: 4vh;
+    // left: 28vw;
+		margin: 0;
+	}
+	ul li {
+		padding: 0;
+	text-align: justify;
+	display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+}
+	ul {
+	// margin: -5vh;
+    font-size: 14px;
+	padding-left: 90px;
+	width: 100%;
+	display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+
+
+	a {
+	
+	}
+	
+	}
+
+
+
+
+
+
+}
 
 }
 
@@ -443,10 +572,55 @@ h1{
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) {
 	
 	
+.col-xs-12 {
+	padding-left: 0;
+	padding-right: 0;
+}
+.row {
+	margin: 0;
+	padding: 0;
+}
+
+.artists {
+	    background-size: 270% auto;
+    background-position: 50%;
+}
+
+.singers {
+	transform: scale(0.6);
+	margin-left: -30px;
+}
+#arrow {
+	display: none !important;	
+}
+nav {
+	.links:after {
+		content:'BOOKING';
+		margin: 0;
+		padding:0;
+		font-size: 44px;
+		letter-spacing: 28px;
+		font-family: 'ArnoPro';
+		font-weight: 100;
+		color: #fff;
+	}
+}
+
+.links h1 {
+	letter-spacing: 8px;
+    text-transform: uppercase;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    font-size: 58px;
+    color: #fff;
+    margin: 57px auto;
+}
+
 .booking {
-background-size: 180vh auto;
+
+	background-size: 300% 100%;
     background-repeat: no-repeat;
-    background-position: -300px auto;
+    background-position: -380px 0;
 
 h1{
     font-size: 68px;
@@ -456,37 +630,268 @@ h1{
 }
 }
 
-.goodwill {
-	height: 200vh;
+	.goodwill {
+		
+		text-align: center;
+		font-size: 21px;
+		font-weight: 100;
 
-		.translate {
-		font-size: 24px;
-		&:before, &:after {
-		display: none;
-	}
-}
-}
-.residents {
-							text-align: center;
-			
-			margin: 4vh auto;
+		.translate  {
+			font-family: 'ArnoPro';
+		font-size: 25px;
+		color:#b1b1b1;
+		margin-top: 20px;
+		p:first-child {
+					color:#a88643;
+				
+
 		}
+			&:after {
+						display: none;
 
-.wedo {
-	font-size: 24px;
+
+							}
+					&:before {
+						display: none;
+							}
+						}
+					}
+
+		
+		.residents {
+							text-align: center;
+
+			margin: 5vh auto;
+
+
+			p {
+				font-size: 20px;
+				max-width: 300px;
+				margin: auto;
+			}
+		}
+		.wedo {
+			font-family: 'ArnoPro';
+		font-size: 26px;
+		color:#a88643;
+		margin-bottom: 20px; 
+	}
+
 }
+
+// GALAXY S5 ********************************************************************
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
+
+
+	
+.col-xs-12 {
+	padding-left: 0;
+	padding-right: 0;
+}
+.row {
+	margin: 0;
+	padding: 0;
+}
+
 .artists {
-	    height: 82vh;
-    z-index: 0;
-	margin-top: 15vh;
-	background-repeat: no-repeat;
-	background-size: auto 100%;
-	.singers {
-		content:'';
-		width: 50vw;
-		margin: 20vh auto;
-		background: url('../img/singers.png');
+	    background-size: 270% auto;
+    background-position: 50%;
+}
+
+.singers {
+	transform: scale(0.6);
+	margin-left: -50px;
+}
+#arrow {
+	display: none !important;	
+}
+nav {
+	.links:after {
+		content:'BOOKING';
+		margin: 0;
+		padding:0;
+		font-size: 44px;
+		letter-spacing: 28px;
+		font-family: 'ArnoPro';
+		font-weight: 100;
+		color: #fff;
 	}
 }
 
+.links h1 {
+	letter-spacing: 8px;
+    text-transform: uppercase;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    font-size: 58px;
+    color: #fff;
+    margin: 57px auto;
 }
+
+.booking {
+
+	background-size: 300% 100%;
+    background-repeat: no-repeat;
+    background-position: -380px 0;
+
+h1{
+    font-size: 68px;
+    letter-spacing: 11px;
+    position: relative;
+    top: 81%;
+}
+}
+
+	.goodwill {
+		
+		text-align: center;
+		font-size: 21px;
+		font-weight: 100;
+
+		.translate  {
+			font-family: 'ArnoPro';
+		font-size: 25px;
+		color:#b1b1b1;
+		margin-top: 20px;
+		p:first-child {
+					color:#a88643;
+				
+
+		}
+			&:after {
+						display: none;
+
+
+							}
+					&:before {
+						display: none;
+							}
+						}
+					}
+
+		
+		.residents {
+							text-align: center;
+
+			margin: 5vh auto;
+		}
+		.wedo {
+			font-family: 'ArnoPro';
+		font-size: 26px;
+		color:#a88643;
+		margin-bottom: 20px; 
+	}
+
+
+}
+
+// Iphone 5 *********************************************
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) {
+	
+.col-xs-12 {
+	padding-left: 0;
+	padding-right: 0;
+}
+.row {
+	margin: 0;
+	padding: 0;
+}
+
+.artists {
+	    background-size: 270% auto;
+    background-position: 50%;
+}
+
+.singers {
+	transform: scale(0.6);
+	margin-left: -70px;
+}
+#arrow {
+	display: none !important;	
+}
+nav {
+	.links:after {
+		content:'BOOKING';
+		margin: 0;
+		padding:0;
+		font-size: 44px;
+		letter-spacing: 28px;
+		font-family: 'ArnoPro';
+		font-weight: 100;
+		color: #fff;
+	}
+}
+
+.links h1 {
+	letter-spacing: 8px;
+    text-transform: uppercase;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    font-size: 58px;
+    color: #fff;
+    margin: 57px auto;
+}
+
+.booking {
+
+	background-size: 300% 100%;
+    background-repeat: no-repeat;
+    background-position: -380px 0;
+
+h1{
+    font-size: 68px;
+    letter-spacing: 11px;
+    position: relative;
+    top: 81%;
+}
+}
+
+	.goodwill {
+		
+		text-align: center;
+		font-size: 21px;
+		font-weight: 100;
+
+		.translate  {
+			font-family: 'ArnoPro';
+		font-size: 25px;
+		color:#b1b1b1;
+		margin-top: 20px;
+		p:first-child {
+					color:#a88643;
+				
+
+		}
+			&:after {
+						display: none;
+
+
+							}
+					&:before {
+						display: none;
+							}
+						}
+					}
+
+		
+		.residents {
+							text-align: center;
+
+			margin: 5vh auto;
+
+			p{
+				font-size: 19px;
+			}
+		}
+		.wedo {
+			font-family: 'ArnoPro';
+		font-size: 26px;
+		color:#a88643;
+		margin-bottom: 20px; 
+	}
+
+
+}
+
+
+

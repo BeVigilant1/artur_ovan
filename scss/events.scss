@@ -1,13 +1,62 @@
+#wedding-constainer {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.weddings {
+  background: url('../img/wedding_trans.png');
+  height: 45px;
+  width: 104%;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.bd {
+	@extend .weddings;
+  background: url('../img/happybd_trans.png');
+  height: 38px;
+
+
+}
+
+.anno {
+	@extend .weddings;
+  background: url('../img/anniversary_trans.png');
+
+}
+
+#wedding {
+  background-repeat: repeat-x;
+  animation-name: ticker;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes ticker {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: -100%;
+  }
+}
 
 .events {
-	position: relative;
 	height: 100vh;
+	width:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 	z-index: -1;
-		background-image: url('../img/baloons_white.png'), ;
-
+	background-image: url('../img/baloons_white.png');
 	background-size: 100% auto;
 	background-attachment: fixed;
-	width:100%;
+	-webkit-backface-visibility: hidden;
+
+	background-repeat: no-repeat;
 	@media screen and (min-height: 1344px) { 
 	height: calc(100vh - 300px); 
 	
@@ -61,29 +110,59 @@ position: relative;
 	background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0),white),linear-gradient(to bottom,rgba(255, 255, 255, 0),white),linear-gradient(to bottom,rgba(255, 255, 255, 0),white);
 	opacity: .2; 
   }
-// 		&:before {
-//   display: block;
+
+// .marquee {
+//   height: 25px;
+//   width: 420px;
+
+//   overflow: hidden;
 //   position: relative;
-//  transform:rotate(180deg);
-//  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
- 
-//   height: 150px;
-//   width: 100%;
-//   content: '';
 // }
-// 	&:after {
+
+// .marquee div {
 //   display: block;
-//   position: relative;
-//   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
-//   background-position:  0 bottom;
-//   height: 150px;
-//   width: 100%;
-//   content: '';
+//   width: 200%;
+//   height: 30px;
+
+//   position: absolute;
+//   overflow: hidden;
+
+//   animation: marquee 5s linear infinite;
 // }
+
+// .marquee span {
+//   float: left;
+//   width: 50%;
+// }
+
+// @keyframes marquee {
+//   0% { left: 0; }
+//   100% { left: -100%; }
+// }
+
+// .text-ride {
+// 	    animation: marquee 10s infinite;
+// 			background: url ('../img/wedding_trans.png');
+// 			height: 100px;
+// 			width: 1000px;
+// 			margin: 20px auto;
+// 			  background-position: 0px 0px;
+
+// }
+//  @keyframes marquee { 
+// from { 
+// background-position: 0 0; 
+// } 
+
+// to { 
+// background-position: 0 300px; 
+// } 
+// }
+
 	p {
 		font-size: 21px;
 		text-align: center;
-		width: 600px;
+		max-width: 600px;
 		margin: 10px auto;
 	}
 	.statement {
@@ -99,7 +178,7 @@ content:'»';
 position: absolute;
 top: -20%;
 
-right: 2vw;
+right: -10vw;
 font-weight: bold;
 
 
@@ -111,7 +190,7 @@ font-weight: bold;
 content:'«';
 position: absolute;
 top: -20%;
-left: 2vw;
+left: -10vw;
 display: inline-block;
 		font-size: 100px;
 font-weight: bold;
@@ -142,7 +221,7 @@ color:#a88643;
 
 top: -20%;
 
-right: -4vw;
+right: -10vw;
 font-weight: bold;
 
 
@@ -151,7 +230,7 @@ font-weight: bold;
 	&:before {
 
 top: -20%;
-left: -4vw;
+left: -10vw;
 font-weight: bold;
 
 
@@ -166,7 +245,7 @@ font-weight: bold;
 
 top: -20%;
 
-right: -4vw;
+right: -10vw;
 font-weight: bold;
 
 
@@ -175,7 +254,7 @@ font-weight: bold;
 	&:before {
 
 top: -20%;
-left: -4vw;
+left: -10vw;
 font-weight: bold;
 
 
@@ -214,12 +293,46 @@ p {
 // ****************************MOBILE VERSION***********************************
 /* iPhone 6 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
+.col-xs-12 {
+	padding-left: 0;
+	padding-right: 0;
+}
+.row {
+	margin: 0;
+	padding: 0;
+}
+
+#arrow {
+	display: none;	
+}
+nav {
+	.links:after {
+		content:'EVENTS';
+		margin: 0;
+		padding:0;
+		font-size: 72px;
+		letter-spacing: 28px;
+		font-family: 'ArnoPro';
+		font-weight: 100;
+		color: #fff;
+	}
+}
+
+.links h1 {
+	letter-spacing: 22px;
+    text-transform: uppercase;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    font-size: 58px;
+    color: #fff;
+    margin: 57px auto;
+}
 .events {
 
 	
-	background-size: 180vh auto;
+	background-size: 300% 100%;
     background-repeat: no-repeat;
-    background-position: -300px auto;
+    background-position: -380px 0;
  &:before {
     content: '';
 	position: absolute;
@@ -233,18 +346,14 @@ p {
 	opacity: .2; 
   }
  
-h1 {
-	font-size: 93px;
-	letter-spacing: 9px;
-	padding-top: 20vh;
-}	
+
 }
 .texter {
 
 	p {
 		font-size: 18px;
 		margin: 1vh 0;
-		width: 94vw;
+		
 		font-weight: thin;
 		font-family: "Effra";
 	}
@@ -252,15 +361,12 @@ h1 {
 		margin: 10vh 0;
 		font-size: 21px;
 		&:before {
-			top:-50%;
-			font-size: 70px;
-			left: 0;
+			visibility: hidden;
+			
 
 		}
 		&:after {
-			top:-50%;
-			font-size: 70px;
-			right: 0;
+			visibility: hidden;
 		}
 	}
 
@@ -271,7 +377,7 @@ h2 {
 	}
 
  p.subheader {
-		font-size: 13px;
+		font-size: 20px;
 	}
 .birthsday .texter {
 		background-size: auto 100%;
@@ -279,71 +385,34 @@ h2 {
 
 	}
 
+
 }
 
 
-/* iPads (landscape) ----------- */
+/* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+.col-xs-12, .col-md-12 {
+	padding: 0;	
+}
 
+.row {
+	margin: 0;
+}
+
+#downArrow {
+	display: none;
+}
 .events {
 	
-	background-size: 140vh auto;
+	background-size: 190% 85%;
     background-repeat: no-repeat;
-    h1 {
-    	    font-size: 241px;
-    letter-spacing: 35px;
-    position: relative;
-    top: 55%;
-    }
+    background-position: -320px 0;
    
 }
-.texter {
-
-	p {
-		font-size: 20px;
-		margin: 1vh 0;
-		width: 94vw;
-
-	}
-	.statement {
-		margin: 10vh 0;   
-		 position: relative;
-    top: -40px;
-		font-size: 30px;
-		&:before {
-			top:-20%;
-			font-size: 70px;
-			left: 25%;
-
-		}
-		&:after {
-			top:-20%;
-			font-size: 70px;
-			right: 25%;
-		}
-	}
-
-}
-
-h2 {
-		font-size: 50px;
-	}
-
- p.subheader {
-		font-size: 24px;
-	}
-.birthsday .texter {
-		background-size: auto 120%;
-    background-position: -2px -50px;
-
-	}
-
-
-
 .menu-contacts {
 	     position: relative;
-    top: -3vh;
-    left: 2vw;
+    top: -20vh;
+    left: 80vw;
     .tel {
     	font-size: 16px;
     }
@@ -352,48 +421,100 @@ h2 {
     }
 }
 
-
 .footer {
-	margin-top: -160px;
-	height: 240px;
-	padding: 20px 20px;
-	ul {
-		width: 50vw;
-    margin-left: -80px;
+	height: auto;
+	margin-top: 0;
+	.footer-links {
+		margin-bottom: 10px;
+		display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
 	}
-	.mobile-social {
-		display: inline;
-	}
-	.social {
-		font-size: 14px;
-		margin-left: -70px;
-		
-		a {
-			padding-left: 2px;
-			    margin-bottom: -100px;
-    position: relative;
-    top: 0;
-    left: 20px;
 
-		}		
-		.top {
-			    position: relative;
-    top: -24px;
-    left: -20px;
-		}
+	p:first-child {
+		font-size: 12px;
+			white-space:nowrap;
+	
+    // top: 4vh;
+    // left: 28vw;
+		margin: 0;
 	}
+	ul li {
+		padding: 0;
+	text-align: justify;
+	display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
 }
+	ul {
+	// margin: -5vh;
+    font-size: 14px;
+	padding-left: 90px;
+	width: 100%;
+	display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+
+
+	a {
+	
+	}
+	
+	}
+
+
+
+
+
+
+}
+
+
 }
 
 /* iPhone 6+ (portrait) ----------- */
 
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) {
+.col-xs-12 {
+	padding-left: 0;
+	padding-right: 0;
+}
+.row {
+	margin: 0;
+	padding: 0;
+}
+
+#arrow {
+	display: none;	
+}
+nav {
+	.links:after {
+		content:'EVENTS';
+		margin: 0;
+		padding:0;
+		font-size: 72px;
+		letter-spacing: 28px;
+		font-family: 'ArnoPro';
+		font-weight: 100;
+		color: #fff;
+	}
+}
+
+.links h1 {
+	letter-spacing: 22px;
+    text-transform: uppercase;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    font-size: 58px;
+    color: #fff;
+    margin: 57px auto;
+}
 .events {
 
 	
-	background-size: 180vh auto;
+	background-size: 300% 100%;
     background-repeat: no-repeat;
-    background-position: -300px auto;
+    background-position: -380px 0;
  &:before {
     content: '';
 	position: absolute;
@@ -407,33 +528,27 @@ h2 {
 	opacity: .2; 
   }
  
-h1 {
-	font-size: 93px;
-	letter-spacing: 9px;
-	padding-top: 20vh;
-}	
+
 }
 .texter {
 
 	p {
 		font-size: 18px;
 		margin: 1vh 0;
-		width: 94vw;
-
+		
+		font-weight: thin;
+		font-family: "Effra";
 	}
 	.statement {
 		margin: 10vh 0;
 		font-size: 21px;
 		&:before {
-			top:-50%;
-			font-size: 70px;
-			left: 0;
+			visibility: hidden;
+			
 
 		}
 		&:after {
-			top:-50%;
-			font-size: 70px;
-			right: 0;
+			visibility: hidden;
 		}
 	}
 
@@ -444,7 +559,7 @@ h2 {
 	}
 
  p.subheader {
-		font-size: 13px;
+		font-size: 20px;
 	}
 .birthsday .texter {
 		background-size: auto 100%;
@@ -452,6 +567,197 @@ h2 {
 
 	}
 
+}
+
+// GALAXY S5 ********************************************************************
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
+.col-xs-12 {
+	padding-left: 0;
+	padding-right: 0;
+}
+.row {
+	margin: 0;
+	padding: 0;
+}
+
+#arrow {
+	display: none;	
+}
+nav {
+	.links:after {
+		content:'EVENTS';
+		margin: 0;
+		padding:0;
+		font-size: 72px;
+		letter-spacing: 28px;
+		font-family: 'ArnoPro';
+		font-weight: 100;
+		color: #fff;
+	}
+}
+
+.links h1 {
+	letter-spacing: 22px;
+    text-transform: uppercase;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    font-size: 58px;
+    color: #fff;
+    margin: 57px auto;
+}
+.events {
+
+	
+	background-size: 300% 100%;
+    background-repeat: no-repeat;
+    background-position: -380px 0;
+ &:before {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	
+
+	background-image: linear-gradient(to bottom,rgba(255, 255, 255, .2),white),;
+	opacity: .2; 
+  }
+ 
+
+}
+.texter {
+
+	p {
+		font-size: 18px;
+		margin: 1vh 0;
+		
+		font-weight: thin;
+		font-family: "Effra";
+	}
+	.statement {
+		margin: 10vh 0;
+		font-size: 21px;
+		&:before {
+			visibility: hidden;
+			
+
+		}
+		&:after {
+			visibility: hidden;
+		}
+	}
+
+}
+
+h2 {
+		font-size: 50px;
+	}
+
+ p.subheader {
+		font-size: 20px;
+	}
+.birthsday .texter {
+		background-size: auto 100%;
+		background-position: -300px 0;
+
+	}
+
+}
+
+// Iphone 5 *********************************************
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) {
+.col-xs-12 {
+	padding-left: 0;
+	padding-right: 0;
+}
+.row {
+	margin: 0;
+	padding: 0;
+}
+
+#arrow {
+	display: none;	
+}
+nav {
+	.links:after {
+		content:'EVENTS';
+		margin: 0;
+		padding:0;
+		font-size: 72px;
+		letter-spacing: 28px;
+		font-family: 'ArnoPro';
+		font-weight: 100;
+		color: #fff;
+	}
+}
+
+.links h1 {
+	letter-spacing: 22px;
+    text-transform: uppercase;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    font-size: 58px;
+    color: #fff;
+    margin: 57px auto;
+}
+.events {
+
+	
+	background-size: 300% 100%;
+    background-repeat: no-repeat;
+    background-position: -380px 0;
+ &:before {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	
+
+	background-image: linear-gradient(to bottom,rgba(255, 255, 255, .2),white),;
+	opacity: .2; 
+  }
+ 
+
+}
+.texter {
+
+	p {
+		font-size: 13px;
+		margin: 1vh 0;
+		
+		font-weight: thin;
+		font-family: "Effra";
+	}
+	.statement {
+		margin: 10vh 0;
+		font-size: 21px;
+		&:before {
+			visibility: hidden;
+			
+
+		}
+		&:after {
+			visibility: hidden;
+		}
+	}
+
+}
+
+h2 {
+		font-size: 50px;
+	}
+
+ p.subheader {
+		font-size: 20px;
+	}
+.birthsday .texter {
+		background-size: auto 100%;
+		background-position: -300px 0;
+
+	}
 }
 
 

@@ -1,0 +1,130 @@
+@charset "UTF-8";
+.spaced-out {
+  margin: 60px 0; }
+
+.team {
+  position: relative;
+  height: 100vh;
+  z-index: -1;
+  background-image: url("../img/team.jpg");
+  background-size: 100% auto;
+  background-attachment: fixed;
+  width: 100%; }
+  .team:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+    opacity: .4; }
+  @media screen and (min-height: 1344px) {
+    .team {
+      height: calc(100vh - 300px); } }
+  .team h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 300px;
+    letter-spacing: 35px;
+    position: relative;
+    top: 65%;
+    left: 15%;
+    text-transform: uppercase;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    color: #fff;
+    position: relative; }
+
+.marketing-phrase {
+  font-size: 24px;
+  font-family: 'ArnoPro';
+  font-weight: 100;
+  position: relative;
+  color: #a88643;
+  margin: 5vh 0; }
+  .marketing-phrase .text-to:after {
+    content: '»';
+    position: absolute;
+    top: 0%;
+    right: 18vw;
+    font-weight: bold;
+    font-size: 100px; }
+  .marketing-phrase .text-to:before {
+    content: '«';
+    position: absolute;
+    top: 0%;
+    left: 18vw;
+    display: inline-block;
+    font-size: 100px;
+    font-weight: bold; }
+
+.people .half--colored {
+  background-color: #fff;
+  width: calc(60% - 20px);
+  text-align: center;
+  margin: auto; }
+.people .half__border {
+  height: calc(50% - 10px);
+  width: 20px;
+  position: absolute;
+  /*outline: 1px hotpink solid;*/
+  background-color: #fff;
+  z-index: 1; }
+.people .half__border:before {
+  content: '';
+  height: 20px;
+  width: 25px;
+  position: absolute;
+  /*outline: 1px hotpink solid;*/
+  background-color: #fff; }
+.people .half-team {
+  height: 95vh;
+  position: relative;
+  width: calc(60% + 20px);
+  float: left;
+  background-size: cover;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  pointer-events: none; }
+.people .half-team-face {
+  width: 35%;
+  overflow-x: visible; }
+.people .team-info {
+  padding: 50px 200px; }
+  .people .team-info h3 {
+    font-size: 36px;
+    color: #a88643;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    margin-bottom: -1vh; }
+  .people .team-info p {
+    font-size: 16px;
+    max-width: 400px; }
+.people .artour-photo {
+  background-image: url("../img/artour.jpg"); }
+.people .olga-photo {
+  background-image: url("../img/olga.jpg"); }
+.people .maks-photo {
+  background-image: url("../img/maksim.jpg"); }
+
+.preferences_artour, .preferences_olga, .preferences_maksim {
+  height: 100px;
+  width: 510px;
+  background-size: 450px 80px;
+  background-repeat: no-repeat;
+  background-image: url("../img/artour_preferences.png");
+  position: relative;
+  top: 0;
+  left: -100px; }
+
+.preferences_olga {
+  background-image: url("../img/olga_preferences.png");
+  background-size: 510px 100px; }
+
+.preferences_maksim {
+  background-image: url("../img/maxim_preferences.png"); }
+
+/*# sourceMappingURL=team.css.map */

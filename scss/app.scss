@@ -2,6 +2,7 @@
 @import "fonts.css";
 @import "events.css";
 @import "booking.css";
+@import "team.css";
 @import "animate.css";
 
 * {
@@ -10,6 +11,10 @@
   -webkit-touch-callout: none;              /* disable callout, image save panel (popup) */
   -webkit-tap-highlight-color: transparent; /* "turn off" link highlight */
 
+}
+
+a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+       cursor: pointer;
 }
 
 h1,h2,h3,p,a {
@@ -25,9 +30,10 @@ a:focus {
 .grey {
 	color:#333;
 }
+
 .wheat {
 	color: #d8bb82;
-
+	
 }
 .white {
 	color: white;
@@ -305,10 +311,15 @@ body {
     text-transform: uppercase;
     padding:10px;
     text-align: center;
-        text-align: -webkit-center;
-        font-weight: 100;
+    text-align: -webkit-center;
+    font-weight: 100;
 	font-style: normal;
 	font-size: 21px;
+	&.wheat {
+		color: #d8bb82;
+
+	}
+
 	&:hover {
 		opacity:0.7;
 		text-decoration: none;
@@ -318,6 +329,12 @@ body {
 }
 
 }
+
+.menu-logo-anchor{
+	display: block;
+	&:hover {opacity: 0.6}
+}
+
 .menu-button  {
 	position: fixed;
 	top: 2%;
@@ -344,20 +361,22 @@ body {
 		color: white;
 	}
 }
+ 
+
+
 .menu-logo {
 	
 	max-width: 400px;
 	margin:30px auto;
 		z-index: 10;
+&:hover {
 
-	
-}
-#arturlogo:hover {
-
-			
+			opacity:.4 !important;
 			cursor:pointer;
 
 		
+}
+	
 }
 .menu-contacts {
 	text-align: right;
@@ -552,14 +571,14 @@ h2, p{
 		
 	}
 	&.baloons{
-		background-image: url('../img/baloons_white.png');
+		background-image: url('../img/baloons.jpg');
 	} 
 	&.guitar {
 		background-image: url('../img/guitar.png');
 		
 	}
-	&.team {
-		background-image: url('../img/wedding.jpg');
+	&.team-all {
+		background-image: url('../img/team-all.jpg');
 		
 	}
 	&.barcelona {
@@ -648,7 +667,7 @@ color:#3c3d3b ;
 
 		li {
 			display: inline;
-			margin-left: 10%;
+			margin:0 auto;
 			padding-left: 10px;
 			text-transform: uppercase;
 		}
@@ -708,6 +727,172 @@ color:#3c3d3b ;
 
 /* iPhone 6 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
+
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+	.half__border--top, .half__border--bottom {
+		display: none;
+	}
+	#arrow {
+		position: absolute;
+		left: 46%;
+		top: 80%;
+		a{
+			font-size: 55px;
+
+		}
+	}
+	.hero {
+		background-size: 300% 100%;
+    background-repeat: no-repeat;
+    background-position: -380px 0;
+	}
+	.company-stats {
+		margin-top: 10vh;
+		margin-bottom: 2vh;
+	p {
+		font-size: 16px;
+	}
+	}	
+
+
+.menu-logo-anchor {
+	display: block;
+    		max-width: 90%;
+
+	margin: 0 auto;
+}
+.menu-logo {
+    		max-width: 100%;
+    margin: 15vh auto 10vh;
+	display: block;
+
+
+	
+}
+
+	.menu-contacts {
+		position: absolute;
+		top:0;
+		left: 30vw;
+		line-height: .6;
+		.tel {
+			font-size: 18px;
+			z-index: 10;
+		}
+		.share {
+			    position: absolute;
+    top: 3vh;
+    left: 25vh;
+    	display: inline;
+    	width: 24vw;
+    	
+			a {
+		font-size: 20px;
+
+			}
+		}
+	}
+	
+
+nav {
+	.links{
+		display: block;
+		text-align: left;
+		font-size: 25px;
+	}
+}
+.spacer {
+    position: relative;
+    top: -4vh;
+}
+.half {
+	width: 100%;
+	h2 {
+		font-size: 50px;
+
+	}
+	p {
+		font-size: 22px;
+	}
+}
+
+.guitar {
+	float:left;
+}
+.mobile-section {
+	display: block;
+}
+.desktop-section{
+	display: none;
+}
+
+.footer {
+	.footer-links {
+		margin-bottom: 10px;
+		display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+	}
+
+	p:first-child {
+		font-size: 14px;
+			white-space:nowrap;
+	
+    // top: 4vh;
+    // left: 28vw;
+		margin: 0;
+	}
+	ul li {
+		padding: 0;
+	text-align: justify;
+	display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+}
+	ul {
+	// margin: -5vh;
+    font-size: 16px;
+	padding-left: 0;
+	width: 100%;
+	display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+
+
+	a {
+	
+	}
+	
+	}
+	.social {
+	
+    
+	.top {
+
+    	}
+	}
+
+
+
+
+
+}
+
+
+
+.modal-fullscreen-menu .close {
+
+    right: 2vh;
+  
+}
+}
+
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
 
 .row {
 	margin-right: 0;
@@ -803,24 +988,38 @@ nav {
 }
 
 .footer {
-
+	.footer-links {
+		margin-bottom: 10px;
+		display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+	}
 
 	p:first-child {
 		font-size: 14px;
+			white-space:nowrap;
 	
     // top: 4vh;
     // left: 28vw;
-
+		margin: 0;
 	}
 	ul li {
-	
-	
-	
-	margin-left: 0; 
+		padding: 0;
+	text-align: justify;
+	display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
 }
 	ul {
 	// margin: -5vh;
     font-size: 16px;
+	padding-left: 0;
+	width: 100%;
+	display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+
+
 	a {
 	
 	}
@@ -830,7 +1029,6 @@ nav {
 	
     
 	.top {
-
 
     	}
 	}
@@ -851,33 +1049,227 @@ nav {
 }
 
 
-/* Samsung Galaxy S5 ----------- */
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
-#arrow {
-	visibility: hidden;
-}
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) {
 
-.hero {
-	
-	background-size: 250% 80%;
+
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+	.half__border--top, .half__border--bottom {
+		display: none;
+	}
+	#arrow {
+		position: absolute;
+		left: 44%;
+		top: 80%;
+		a{
+			font-size: 55px;
+
+		}
+	}
+	.hero {
+		    background-size: 280% 100%;
     background-repeat: no-repeat;
-    background-position: -250px 0;
+    background-position: -320px 0;
+	}
+	.company-stats {
+		margin-top: 4vh;
+		margin-bottom: 2vh;
+		margin-left: -2vh;
+	p {
+		font-size: 14px;
+		margin-top: 2vh;
+		margin-left: 6vh;
+		line-height: 1.2;
+
+	}
+	.border {
+	transform:scale(.7);
 }
 
-.company-stats {
-	margin-top: 10vh;
-	margin-bottom: 2vh;
-p {
-	font-size: 16px;
-}
+	}	
 
-}	
 
 .menu-logo-anchor {
 	display: block;
     		max-width: 90%;
 
+	margin: 0 auto;
+}
+.menu-logo {
+    		max-width: 100%;
+    margin: 12vh auto 9vh;
+	display: block;
+
+
 	
+}
+
+
+
+
+
+	.menu-contacts {
+		position: absolute;
+		top:0;
+		left: 30vw;
+		line-height: .6;
+		.tel {
+			font-size: 14px;
+		}
+		.share {
+			    position: absolute;
+    top: 3vh;
+    left: 25vh;
+    	display: inline;
+    	width: 24vw;
+    	
+			a {
+		font-size: 20px;
+
+			}
+		}
+	}
+	
+
+nav {
+	.links{
+		display: block;
+		text-align: left;
+	margin-right: 0;
+
+	}
+}
+.spacer {
+    position: relative;
+    top: -4vh;
+}
+
+
+
+.half {
+	width: 100%;
+	h2 {
+		font-size: 50px;
+
+	}
+	p {
+		font-size: 22px;
+	}
+}
+
+.guitar {
+	float:left;
+}
+.mobile-section {
+	display: block;
+}
+.desktop-section{
+	display: none;
+}
+
+.footer {
+	.footer-links {
+		margin-bottom: 10px;
+		display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+	}
+
+	p:first-child {
+		font-size: 12px;
+			white-space:nowrap;
+	
+    // top: 4vh;
+    // left: 28vw;
+		margin: 0;
+	}
+	ul li {
+		padding: 0;
+	text-align: justify;
+	display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+}
+	ul {
+	// margin: -5vh;
+    font-size: 14px;
+	padding-left: 0;
+	width: 100%;
+	display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+
+
+	a {
+	
+	}
+	
+	}
+	.social {
+		left: 10px;
+    top: -4px;
+	
+	}
+
+
+
+
+
+}
+
+
+
+.modal-fullscreen-menu .close {
+
+    right: 2vh;
+  
+}
+}
+
+
+
+/* iPhone 6+ (portrait) ----------- */
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) {
+
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+	.half__border--top, .half__border--bottom {
+		display: none;
+	}
+	#arrow {
+		position: absolute;
+		left: 46%;
+		top: 80%;
+		a{
+			font-size: 55px;
+
+		}
+	}
+	.hero {
+	background-size: 290% 104%;
+    background-repeat: no-repeat;
+    background-position: -380px 0;
+	}
+	.company-stats {
+		margin-top: 10vh;
+		margin-bottom: 2vh;
+	p {
+		font-size: 16px;
+	}
+	}	
+
+
+.menu-logo-anchor {
+	display: block;
+    		max-width: 90%;
+
+	margin: 0 auto;
 }
 .menu-logo {
     		max-width: 100%;
@@ -943,36 +1335,48 @@ nav {
 }
 
 .footer {
+	.footer-links {
+		margin-bottom: 10px;
+		display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+	}
 
-	height: 150px;
 	p:first-child {
 		font-size: 14px;
-		position: relative;
-    top: 4vh;
-    left: 28vw;
-
+			white-space:nowrap;
+	
+    // top: 4vh;
+    // left: 28vw;
+		margin: 0;
 	}
 	ul li {
-	
-	
-	
-	margin-left: 0; 
+		padding: 0;
+	text-align: justify;
+	display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
 }
 	ul {
-	margin: -5vh;
+	// margin: -5vh;
     font-size: 16px;
+	padding-left: 0;
+	width: 100%;
+	display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+
+
 	a {
-		    margin-right: 6px;
+	
 	}
 	
 	}
 	.social {
-		position: relative;
-		top:-1vh;
+	
     
 	.top {
-    top: 3px;
-    position: relative;
+
     	}
 	}
 
@@ -981,6 +1385,9 @@ nav {
 
 
 }
+
+
+
 .modal-fullscreen-menu .close {
 
     right: 2vh;
@@ -989,20 +1396,26 @@ nav {
 }
 
 
-
-/* iPads (landscape) ----------- */
+/* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+.row {
+	margin: 0;
+}
 
+#downArrow {
+	display: none;
+}
 .hero {
 	
-	background-size: 140vh auto;
+	background-size: 190% 85%;
     background-repeat: no-repeat;
+    background-position: -320px 0;
    
 }
 .menu-contacts {
 	     position: relative;
-    top: -3vh;
-    left: 2vw;
+    top: -20vh;
+    left: 80vw;
     .tel {
     	font-size: 16px;
     }
@@ -1011,87 +1424,141 @@ nav {
     }
 }
 .spacer {
-	top:-35vh;
+	top:-20vh;
 }
 .half {
-	height:40vh;
+	max-height: 50vh;
+	p {
+		font-size: 25px;
+	}
+	h2 {
+		font-size: 50px;
 
+	}
 }
 .test {
-	    height: 40vh;
-    margin-top: -22vh;
+    margin-top: 0;
 }
 
 .footer {
-	       margin-top: -22px;
-    height: 101px;
-	padding: 20px 20px;
-	ul {
-		width: 50vw;
-    margin-left: -80px;
+	height: auto;
+	margin-top: 0;
+	.footer-links {
+		margin-bottom: 10px;
+		display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
 	}
-	.mobile-social {
-		display: inline;
-	}
-	.social {
-		font-size: 14px;
-		margin-left: -70px;
-		
-		a {
-			padding-left: 2px;
-			    margin-bottom: -100px;
-    position: relative;
-    top: 0;
-    left: 20px;
 
-		}		
-		.top {
-			    position: relative;
-    top: -24px;
-    left: -20px;
+	p:first-child {
+		font-size: 12px;
+			white-space:nowrap;
+	
+    // top: 4vh;
+    // left: 28vw;
+		margin: 0;
+	}
+	ul li {
+		padding: 0;
+	text-align: justify;
+	display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+}
+	ul {
+	// margin: -5vh;
+    font-size: 14px;
+	padding-left: 90px;
+	width: 100%;
+	display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+
+
+	a {
+	
+	}
+	
+	}
+
+
+
+
+
+
+}
+
+
+}
+
+
+
+// nexus 5x
+@media only screen and (max-width: 525px)  {
+   .row {
+	margin-right: 0;
+	margin-left: 0;
+}
+	.half__border--top, .half__border--bottom {
+		display: none;
+	}
+	#arrow {
+		position: absolute;
+		left: 46%;
+		top: 80%;
+		a{
+			font-size: 55px;
+
 		}
 	}
-}
-
-}
-
-/* iPhone 6+ (portrait) ----------- */
-
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) {
-.hero {
-	
-	background-size: 250% 80%;
+	.hero {
+	background-size: 290% 104%;
     background-repeat: no-repeat;
-    background-position: -250px 0;
+    background-position: -380px 0;
+	}
+	.company-stats {
+		margin-top: 10vh;
+		margin-bottom: 2vh;
+	p {
+		font-size: 16px;
+	}
+	}	
+
+
+.menu-logo-anchor {
+	display: block;
+    		max-width: 90%;
+
+	margin: 0 auto;
 }
-
-.company-stats {
-	margin-top: 10vh;
-	margin-bottom: 2vh;
-p {
-	font-size: 16px;
-}
-
-}	
-
-
 .menu-logo {
-	max-width: 370px;
-    margin: 12vh -12vw;
+    		max-width: 100%;
+    margin: 12vh auto;
+	display: block;
+
+
 	
 }
 
 	.menu-contacts {
-		margin-top: -17vh;
+		position: absolute;
+		top:0;
+		left: 30vw;
+		line-height: .6;
 		.tel {
-			        margin: -52vh 60vw;
-
+			font-size: 18px;
 		}
 		.share {
 			    position: absolute;
-    top: -30vh;
-    right: -64vw;
-			display: inline;
+    top: 3vh;
+    left: 25vh;
+    	display: inline;
+    	width: 24vw;
+    	
+			a {
+		font-size: 20px;
+
+			}
 		}
 	}
 	
@@ -1108,8 +1575,15 @@ nav {
 }
 .half {
 	width: 100%;
+	h2 {
+		font-size: 50px;
 
+	}
+	p {
+		font-size: 22px;
+	}
 }
+
 .guitar {
 	float:left;
 }
@@ -1121,39 +1595,50 @@ nav {
 }
 
 .footer {
+	.footer-links {
+		margin-bottom: 10px;
+		display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
+	}
 
-	height: 85px;
-	padding: 15px 20px;
 	p:first-child {
 		font-size: 14px;
-		position: relative;
-    top: 4vh;
-    left: 28vw;
-
+			white-space:nowrap;
+	
+    // top: 4vh;
+    // left: 28vw;
+		margin: 0;
 	}
 	ul li {
-	
-	
-	
-	margin-left: 0; 
+		padding: 0;
+	text-align: justify;
+	display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
 }
 	ul {
-	margin-top: -32px;
-    margin-bottom: 10px;
-    margin-left: -10px;
+	// margin: -5vh;
     font-size: 16px;
+	padding-left: 0;
+	width: 100%;
+	display: flex;
+    justify-content:space-beetween;
+    align-content:space-beetween;
 
+
+	a {
+	
+	}
 	
 	}
 	.social {
-		position: relative;
-    top: -4px;
-
-	}
-.mobile-social {
 	
-}
-}
+    
+	.top {
+
+    	}
+	}
 
 
 
@@ -1163,3 +1648,9 @@ nav {
 
 
 
+.modal-fullscreen-menu .close {
+
+    right: 2vh;
+  
+}
+}

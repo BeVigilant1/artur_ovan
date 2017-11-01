@@ -1,12 +1,47 @@
 @charset "UTF-8";
+#wedding-constainer {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap; }
+
+.weddings, .bd, .anno {
+  background: url("../img/wedding_trans.png");
+  height: 45px;
+  width: 104%;
+  margin-right: 20px;
+  display: inline-block; }
+
+.bd {
+  background: url("../img/happybd_trans.png");
+  height: 38px; }
+
+.anno {
+  background: url("../img/anniversary_trans.png"); }
+
+#wedding {
+  background-repeat: repeat-x;
+  animation-name: ticker;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+@keyframes ticker {
+  from {
+    margin-left: 0; }
+  to {
+    margin-left: -100%; } }
 .events {
-  position: relative;
   height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: -1;
   background-image: url("../img/baloons_white.png");
   background-size: 100% auto;
   background-attachment: fixed;
-  width: 100%; }
+  -webkit-backface-visibility: hidden;
+  background-repeat: no-repeat; }
   @media screen and (min-height: 1344px) {
     .events {
       height: calc(100vh - 300px); } }
@@ -54,7 +89,7 @@
   .texter p {
     font-size: 21px;
     text-align: center;
-    width: 600px;
+    max-width: 600px;
     margin: 10px auto; }
   .texter .statement {
     font-size: 36px;
@@ -67,14 +102,14 @@
       content: '»';
       position: absolute;
       top: -20%;
-      right: 2vw;
+      right: -10vw;
       font-weight: bold;
       font-size: 100px; }
     .texter .statement:before {
       content: '«';
       position: absolute;
       top: -20%;
-      left: 2vw;
+      left: -10vw;
       display: inline-block;
       font-size: 100px;
       font-weight: bold; }
@@ -91,22 +126,22 @@
     margin-top: 5vh; }
     .anniversary .texter .statement:after {
       top: -20%;
-      right: -4vw;
+      right: -10vw;
       font-weight: bold; }
     .anniversary .texter .statement:before {
       top: -20%;
-      left: -4vw;
+      left: -10vw;
       font-weight: bold; }
 
 .birthsday .texter {
   background-image: url("../img/cake_white.png"); }
   .birthsday .texter .statement:after {
     top: -20%;
-    right: -4vw;
+    right: -10vw;
     font-weight: bold; }
   .birthsday .texter .statement:before {
     top: -20%;
-    left: -4vw;
+    left: -10vw;
     font-weight: bold; }
 
 .wedding img, .anniversary img, .birthsday img {
@@ -124,10 +159,40 @@
 
 /* iPhone 6 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
+  .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .row {
+    margin: 0;
+    padding: 0; }
+
+  #arrow {
+    display: none; }
+
+  nav .links:after {
+    content: 'EVENTS';
+    margin: 0;
+    padding: 0;
+    font-size: 72px;
+    letter-spacing: 28px;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    color: #fff; }
+
+  .links h1 {
+    letter-spacing: 22px;
+    text-transform: uppercase;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    font-size: 58px;
+    color: #fff;
+    margin: 57px auto; }
+
   .events {
-    background-size: 180vh auto;
+    background-size: 300% 100%;
     background-repeat: no-repeat;
-    background-position: -300px auto; }
+    background-position: -380px 0; }
     .events:before {
       content: '';
       position: absolute;
@@ -137,114 +202,115 @@
       left: 0;
       background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), white);
       opacity: .2; }
-    .events h1 {
-      font-size: 93px;
-      letter-spacing: 9px;
-      padding-top: 20vh; }
 
   .texter p {
     font-size: 18px;
     margin: 1vh 0;
-    width: 94vw;
     font-weight: thin;
     font-family: "Effra"; }
   .texter .statement {
     margin: 10vh 0;
     font-size: 21px; }
     .texter .statement:before {
-      top: -50%;
-      font-size: 70px;
-      left: 0; }
+      visibility: hidden; }
     .texter .statement:after {
-      top: -50%;
-      font-size: 70px;
-      right: 0; }
+      visibility: hidden; }
 
   h2 {
     font-size: 50px; }
 
   p.subheader {
-    font-size: 13px; }
+    font-size: 20px; }
 
   .birthsday .texter {
     background-size: auto 100%;
     background-position: -300px 0; } }
-/* iPads (landscape) ----------- */
+/* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .col-xs-12, .col-md-12 {
+    padding: 0; }
+
+  .row {
+    margin: 0; }
+
+  #downArrow {
+    display: none; }
+
   .events {
-    background-size: 140vh auto;
-    background-repeat: no-repeat; }
-    .events h1 {
-      font-size: 241px;
-      letter-spacing: 35px;
-      position: relative;
-      top: 55%; }
-
-  .texter p {
-    font-size: 20px;
-    margin: 1vh 0;
-    width: 94vw; }
-  .texter .statement {
-    margin: 10vh 0;
-    position: relative;
-    top: -40px;
-    font-size: 30px; }
-    .texter .statement:before {
-      top: -20%;
-      font-size: 70px;
-      left: 25%; }
-    .texter .statement:after {
-      top: -20%;
-      font-size: 70px;
-      right: 25%; }
-
-  h2 {
-    font-size: 50px; }
-
-  p.subheader {
-    font-size: 24px; }
-
-  .birthsday .texter {
-    background-size: auto 120%;
-    background-position: -2px -50px; }
+    background-size: 190% 85%;
+    background-repeat: no-repeat;
+    background-position: -320px 0; }
 
   .menu-contacts {
     position: relative;
-    top: -3vh;
-    left: 2vw; }
+    top: -20vh;
+    left: 80vw; }
     .menu-contacts .tel {
       font-size: 16px; }
     .menu-contacts .share {
       font-size: 18px; }
 
   .footer {
-    margin-top: -160px;
-    height: 240px;
-    padding: 20px 20px; }
+    height: auto;
+    margin-top: 0; }
+    .footer .footer-links {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-beetween;
+      align-content: space-beetween; }
+    .footer p:first-child {
+      font-size: 12px;
+      white-space: nowrap;
+      margin: 0; }
+    .footer ul li {
+      padding: 0;
+      text-align: justify;
+      display: flex;
+      justify-content: space-beetween;
+      align-content: space-beetween; }
     .footer ul {
-      width: 50vw;
-      margin-left: -80px; }
-    .footer .mobile-social {
-      display: inline; }
-    .footer .social {
       font-size: 14px;
-      margin-left: -70px; }
-      .footer .social a {
-        padding-left: 2px;
-        margin-bottom: -100px;
-        position: relative;
-        top: 0;
-        left: 20px; }
-      .footer .social .top {
-        position: relative;
-        top: -24px;
-        left: -20px; } }
+      padding-left: 90px;
+      width: 100%;
+      display: flex;
+      justify-content: space-beetween;
+      align-content: space-beetween; } }
 /* iPhone 6+ (portrait) ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) {
+  .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .row {
+    margin: 0;
+    padding: 0; }
+
+  #arrow {
+    display: none; }
+
+  nav .links:after {
+    content: 'EVENTS';
+    margin: 0;
+    padding: 0;
+    font-size: 72px;
+    letter-spacing: 28px;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    color: #fff; }
+
+  .links h1 {
+    letter-spacing: 22px;
+    text-transform: uppercase;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    font-size: 58px;
+    color: #fff;
+    margin: 57px auto; }
+
   .events {
-    background-size: 180vh auto;
+    background-size: 300% 100%;
     background-repeat: no-repeat;
-    background-position: -300px auto; }
+    background-position: -380px 0; }
     .events:before {
       content: '';
       position: absolute;
@@ -254,32 +320,159 @@
       left: 0;
       background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), white);
       opacity: .2; }
-    .events h1 {
-      font-size: 93px;
-      letter-spacing: 9px;
-      padding-top: 20vh; }
 
   .texter p {
     font-size: 18px;
     margin: 1vh 0;
-    width: 94vw; }
+    font-weight: thin;
+    font-family: "Effra"; }
   .texter .statement {
     margin: 10vh 0;
     font-size: 21px; }
     .texter .statement:before {
-      top: -50%;
-      font-size: 70px;
-      left: 0; }
+      visibility: hidden; }
     .texter .statement:after {
-      top: -50%;
-      font-size: 70px;
-      right: 0; }
+      visibility: hidden; }
 
   h2 {
     font-size: 50px; }
 
   p.subheader {
-    font-size: 13px; }
+    font-size: 20px; }
+
+  .birthsday .texter {
+    background-size: auto 100%;
+    background-position: -300px 0; } }
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
+  .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .row {
+    margin: 0;
+    padding: 0; }
+
+  #arrow {
+    display: none; }
+
+  nav .links:after {
+    content: 'EVENTS';
+    margin: 0;
+    padding: 0;
+    font-size: 72px;
+    letter-spacing: 28px;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    color: #fff; }
+
+  .links h1 {
+    letter-spacing: 22px;
+    text-transform: uppercase;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    font-size: 58px;
+    color: #fff;
+    margin: 57px auto; }
+
+  .events {
+    background-size: 300% 100%;
+    background-repeat: no-repeat;
+    background-position: -380px 0; }
+    .events:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), white);
+      opacity: .2; }
+
+  .texter p {
+    font-size: 18px;
+    margin: 1vh 0;
+    font-weight: thin;
+    font-family: "Effra"; }
+  .texter .statement {
+    margin: 10vh 0;
+    font-size: 21px; }
+    .texter .statement:before {
+      visibility: hidden; }
+    .texter .statement:after {
+      visibility: hidden; }
+
+  h2 {
+    font-size: 50px; }
+
+  p.subheader {
+    font-size: 20px; }
+
+  .birthsday .texter {
+    background-size: auto 100%;
+    background-position: -300px 0; } }
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) {
+  .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .row {
+    margin: 0;
+    padding: 0; }
+
+  #arrow {
+    display: none; }
+
+  nav .links:after {
+    content: 'EVENTS';
+    margin: 0;
+    padding: 0;
+    font-size: 72px;
+    letter-spacing: 28px;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    color: #fff; }
+
+  .links h1 {
+    letter-spacing: 22px;
+    text-transform: uppercase;
+    font-family: 'ArnoPro';
+    font-weight: 100;
+    font-size: 58px;
+    color: #fff;
+    margin: 57px auto; }
+
+  .events {
+    background-size: 300% 100%;
+    background-repeat: no-repeat;
+    background-position: -380px 0; }
+    .events:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), white);
+      opacity: .2; }
+
+  .texter p {
+    font-size: 13px;
+    margin: 1vh 0;
+    font-weight: thin;
+    font-family: "Effra"; }
+  .texter .statement {
+    margin: 10vh 0;
+    font-size: 21px; }
+    .texter .statement:before {
+      visibility: hidden; }
+    .texter .statement:after {
+      visibility: hidden; }
+
+  h2 {
+    font-size: 50px; }
+
+  p.subheader {
+    font-size: 20px; }
 
   .birthsday .texter {
     background-size: auto 100%;

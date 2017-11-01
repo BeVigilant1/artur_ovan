@@ -1,208 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<meta name="description" content="">
-		<meta name="author" content="">
-		<link rel="icon" href="#">
-		<title>Artur Ovan</title>
-		<!-- Bootstrap core CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-		<!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
-		<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-		<!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="#">
+	<title>Artur Ovan</title>
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
+	<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+	<!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
-		<script src="https://use.fontawesome.com/48cb5fda70.js"></script>
-		<!-- Custom styles for this template -->
-		<link href="css/app.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.css">
-	</head>
-	<!-- NAVBAR
+	<script src="https://use.fontawesome.com/48cb5fda70.js"></script>
+	<!-- Custom styles for this template -->
+	<link href="css/app.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.css">
+</head>
+<!-- NAVBAR
 		================================================== -->
-	<body>
-		<div id="fullpage">
-			<div class="section">
-				<div class='modal fade modal-fullscreen-menu' id='modalNavigation' role='dialog' tabindex='-1'>
-					<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+
+<body>
+	<div id="fullpage">
+		<div class="section">
+			<div class='modal fade modal-fullscreen-menu' id='modalNavigation' role='dialog' tabindex='-1'>
+				<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
 					<span class='sr-only'>Close navigation</span>
 					<span class='glyphicon glyphicon-remove'></span>
-					</button>
-					<div class='modal-dialog'>
-						<nav class='list-group'>
-							<a class='list-group-item' href='index.html'>Home</a>
-							<a class='list-group-item' href='events.html'>Events</a>
-							<a class='list-group-item' href='booking.html'>Booking</a>
-							<a class='list-group-item' href='#'>Team</a>
-							<a class='list-group-item' href='#'>Barcelona</a>
-						</nav>
-					</div>
+				</button>
+				<div class='modal-dialog'>
+					<nav class='list-group'>
+						<a class='list-group-item' href='index.html'>Home</a>
+						<a class='list-group-item' href='events.html'>Events</a>
+						<a class='list-group-item' href='booking.html'>Booking</a>
+						<a class='list-group-item' href='team.html'>Team</a>
+						<a class='list-group-item' href='#'>Barcelona</a>
+					</nav>
 				</div>
-				<div class="container-fluid">
-					<div class="booking animated pulse">
-						<h1>Booking</h1>
-					</div>
-						<div id="arrow" class="downArrow bounce">
-<a href="#secondSection"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a></div>
-					
-					<div  class="main ">
-						<div class="row menu">
-							<div id="menuBtn" class="menu-button">          <button class='btn btn-primary btn-lg open-menu animated fadeIn' data-target='#modalNavigation' data-toggle='modal' type='button'><i class="fa fa-align-left" aria-hidden="true"></i></button>
-							</div>
-							<div class="col-md-push-3 col-xs-push-2  col-md-6 col-xs-8">
-								<a href="index.html"><img class="menu-logo img-responsive animated fadeIn" src="img/logo.png" alt=""></a>
-								<div class="nav animated fadeIn">
-									<div class="row row-centered links">
-										<div class="col-md-3  col-sm-3 col-xs-12 col-centered">
-											<a href="events.html">Events</a>
-										</div>
-										<div class="col-md-3 col-sm-3  col-xs-12 col-centered">
-											<a href="booking.html">Booking</a>
-										</div>
-										<div class="col-md-3 col-sm-3  col-xs-12 col-centered">
-											<a href="#">Team</a>
-										</div>
-										<div class="col-md-3 col-sm-3  col-xs-12 col-centered">
-											<a href="#">Barcelona</a>
-										</div>
+			</div>
+			<div class="container-fluid">
+				<div class="booking animated pulse">
+					<h1 class="visible-md-inline visible-lg-inline">Booking</h1>
+				</div>
+				<div id="arrow" class="downArrow bounce">
+					<a href="#secondSection">
+						<i class="fa fa-angle-double-down" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="main ">
+					<div class="row menu">
+						<div id="menuBtn" class="menu-button ">
+							<button class=' btn btn-primary btn-lg open-menu animated fadeIn' data-target='#modalNavigation' data-toggle='modal'
+							 type='button'>
+								<i class="fa fa-align-left" aria-hidden="true"></i>
+							</button>
+						</div>
+						<div class="col-md-push-3 col-md-6 col-sm-12 col-xs-12">
+							<a class="menu-logo-anchor" href="index.html">
+								<img id="arturlogo" class="menu-logo img-responsive animated fadeIn" src="img/logo.png" alt="">
+							</a>
+							<div class="nav">
+								<div class="row row-centered links animated fadeIn">
+									<div class="col-md-3  col-sm-3 col-xs-12 col-centered">
+										<a href="events.html">Events</a>
+									</div>
+									<div class="col-md-3 col-sm-3  col-xs-12 col-centered">
+										<a href="booking.html">Booking</a>
+									</div>
+									<div class="col-md-3 col-sm-3  col-xs-12 col-centered">
+										<a href="team.html">Team</a>
+									</div>
+									<div class="col-md-3 col-sm-3  col-xs-12 col-centered">
+										<a href="#">Barcelona</a>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-push-3 col-xs-push-2  col-md-3 col-sm-4 col-xs-4 menu-contacts animated fadeIn">
-								<p class="tel">8&nbsp;(915)&nbsp;313&nbsp;59&nbsp;95</p>
-								<p class="tel">+34&nbsp;646&nbsp;37&nbsp;42&nbsp;71</p>
+						</div>
+						<div class="col-md-push-3 col-xs-push-2  col-md-3 col-sm-3 col-xs-4 menu-contacts animated fadeIn">
+							<p class="tel ">+7&nbsp;(915)&nbsp;313&nbsp;59&nbsp;95</p>
+							<p class="tel ">+34&nbsp;646&nbsp;37&nbsp;42&nbsp;71</p>
 
-								<div class="share">
-									<a href="https://www.facebook.com/artur.ovanesyants"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="https://www.instagram.com/artovan/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-								</div>
+							<div class="share">
+								<a href="https://www.facebook.com/artur.ovanesyants">
+									<i class="fa fa-facebook " aria-hidden="true"></i>
+								</a>
+								<a href="https://www.instagram.com/a_ovants/">
+									<i class="fa fa-instagram " aria-hidden="true"></i>
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="section">
-				<div class="container-fluid">
-					<div class="row goodwill">
-						<div class="col-md-12  col-sm-12 col-xs-12 translate">
-							<p>Работаем с артистами эстрады и знаменитостями с 1999 года</p>
-							<p>
-								Booking for live music acts and celebrity personalities since 1999 
-							</p>
-						</div>
-						<div class="col-md-4 col-sm-12 col-xs-12 col-centered residents">
-							<p>Мы сотрудничаем с артистами
-								российской и зарубежной эстрады, артистами разговорного жанра,
-								с именитыми ведущими и мировыми селебрити.
-							</p>
-						</div>
-						<div class="col-md-4 col-sm-12 col-xs-12 col-centered residents clearfix">
-							<p>В нашем booking листе резиденты 
-								Comedy Club и Comedy Women, государственные ансамбли,
-								танцевальные коллективы,
-								кавер группы и DJs.
-							</p>
-						</div>
-						<div class="col-md-12 col-sm-12 col-xs-12 col-centered wedo">
-							<p>Составляем развлекательную программу
-								вашего мероприятия.
-							</p>
-						</div>
+		</div>
+		<div class="section">
+			<div class="container-fluid">
+				<div class="row goodwill">
+					<div class="col-md-12  col-sm-12 col-xs-12 translate">
+						<p>Работаем с артистами эстрады и знаменитостями с 1999 года</p>
+						<p>
+							Booking for live music acts and celebrity personalities since 1999
+						</p>
+					</div>
+					<div class="col-md-4 col-sm-12 col-xs-12 col-centered residents">
+						<p>Мы сотрудничаем с артистами российской и зарубежной эстрады, артистами разговорного жанра, с именитыми ведущими и мировыми
+							селебрити.
+						</p>
+					</div>
+					<div class="col-md-4 col-sm-12 col-xs-12 col-centered residents clearfix">
+						<p>В нашем booking листе резиденты Comedy Club и Comedy Women, государственные ансамбли, танцевальные коллективы, кавер
+							группы и DJs.
+						</p>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12 col-centered wedo">
+						<p>Составляем развлекательную программу вашего мероприятия.
+						</p>
 					</div>
 				</div>
 			</div>
-			<div class="section">
-				<div class="container-fluid">
-					<div class="artists">
-						<div class="singers"  alt="Артисты с которыми мы сотрудничали" >
-							<a href="#" class="anchor boneym"><img class="anchor-img" src="img/singers/_0002_boneyM.png" alt=""></a>
-								<a href="#" class="anchor serov"><img class="anchor-img" src="img/singers/_0000_aleksandr_serov.png" alt=""></a>
-								<a href="#" class="anchor lara"><img class="anchor-img" src="img/singers/_0001_lara_fabian.png" alt=""></a>
-								<a href="#" class="anchor polina_gagarina"><img class="anchor-img" src="img/singers/_0003_polina_gaga.png" alt=""></a>
-								<a href="#" class="anchor diskoteka"><img class="anchor-img" src="img/singers/_0004_diskoteka_avatiya.png" alt=""></a>
-								<a href="#" class="anchor maroon"><img class="anchor-img" src="img/singers/_0005_maroon5.png" alt=""></a>
-								<a href="#" class="anchor soso"><img class="anchor-img" src="img/singers/_0006_soso_pavliashvili.png" alt=""></a>
-								<a href="#" class="anchor avraam_russo"><img class="anchor-img" src="img/singers/_0007_avraam_russo.png" alt=""></a>
-								<a href="#" class="anchor agutin"><img class="anchor-img" src="img/singers/_0008_leonid_agutin.png" alt=""></a>
-								<a href="#" class="anchor zara"><img class="anchor-img" src="img/singers/_0009_zara.png" alt=""></a>
-								<a href="#" class="anchor richiepovveri"><img class="anchor-img" src="img/singers/_0010_ricchi_e_poveri.png" alt=""></a>
-								<a href="#" class="anchor ingrid"><img class="anchor-img" src="img/singers/_0011_Ingrid.png" alt=""></a>
-								<a href="#" class="anchor ivanushki"><img class="anchor-img" src="img/singers/_0012_ivanushki.png" alt=""></a>
-								<a href="#" class="anchor thomas_anders"><img class="anchor-img" src="img/singers/_0013_thomas_anders.png" alt=""></a>
-								<a href="#" class="anchor premier"><img class="anchor-img" src="img/singers/_0014_premier_minister.png" alt=""></a>
-								<a href="#" class="anchor hi-fi"><img class="anchor-img" src="img/singers/_0015_hi_fi.png" alt=""></a>
-								<a href="#" class="anchor bilan"><img class="anchor-img" src="img/singers/_0016_dima_bilan.png" alt=""></a>
-								<a href="#" class="anchor sofieelis"><img class="anchor-img" src="img/singers/_0017_sophie_ellis_bextor.png" alt=""></a>
-								<a href="#" class="anchor chris_norman"><img class="anchor-img" src="img/singers/_0018_chris_norman.png" alt=""></a>
-								<a href="#" class="anchor kuzmin"><img class="anchor-img" src="img/singers/_0019_vladimir_kuzmin.png" alt=""></a>
-								<a href="#" class="anchor philipp_kirkorov"><img class="anchor-img" src="img/singers/_0020_philipp_kirkorov.png" alt=""></a>
-								<a href="#" class="anchor enrike"><img class="anchor-img" src="img/singers/_0021_enrique_iglesias.png" alt=""></a>
-								<a href="#" class="anchor leningrad"><img class="anchor-img" src="img/singers/_0022_leningrad.png" alt=""></a>
-								<a href="#" class="anchor riki_martin"><img class="anchor-img" src="img/singers/_0023_Ricky-MArtin.png" alt=""></a>
-								<a href="#" class="anchor stas_pieha"><img class="anchor-img" src="img/singers/_0024_Stas_Piekha.png" alt=""></a>
-								<a href="#" class="anchor al_bano"><img class="anchor-img" src="img/singers/_0025_Al_Bano.png" alt=""></a>
-								<a href="#" class="anchor a_studio"><img class="anchor-img" src="img/singers/_0026_A_studio.png" alt=""></a>
-								<a href="#" class="anchor juki"><img class="anchor-img" src="img/singers/_0027_juki.png" alt=""></a>
-								<a href="#" class="anchor kristina_orbakaite"><img class="anchor-img" src="img/singers/_0028_Kristina_orbakaite.png" alt=""></a>
-								<a href="#" class="anchor grigoriy_leps"><img class="anchor-img" src="img/singers/_0029_grigory_leps.png" alt=""></a>
-								<a href="#" class="anchor banderos"><img class="anchor-img" src="img/singers/_0030_Banderos.png" alt=""></a>
-								
-
-
-						</div>
+		</div>
+		<div class="section">
+			<div class="container-fluid">
+				<div class="artists">
+					<div class="singers" alt="Артисты с которыми мы сотрудничали">
+						<a href="#" class="anchor boneym">
+							<img class="anchor-img" src="img/singers/_0002_boneyM.png" alt="">
+						</a>
+						<a href="#" class="anchor serov">
+							<img class="anchor-img" src="img/singers/_0000_aleksandr_serov.png" alt="">
+						</a>
+						<a href="#" class="anchor lara">
+							<img class="anchor-img" src="img/singers/_0001_lara_fabian.png" alt="">
+						</a>
+						<a href="#" class="anchor polina_gagarina">
+							<img class="anchor-img" src="img/singers/_0003_polina_gaga.png" alt="">
+						</a>
+						<a href="#" class="anchor diskoteka">
+							<img class="anchor-img" src="img/singers/_0004_diskoteka_avatiya.png" alt="">
+						</a>
+						<a href="#" class="anchor maroon">
+							<img class="anchor-img" src="img/singers/_0005_maroon5.png" alt="">
+						</a>
+						<a href="#" class="anchor soso">
+							<img class="anchor-img" src="img/singers/_0006_soso_pavliashvili.png" alt="">
+						</a>
+						<a href="#" class="anchor avraam_russo">
+							<img class="anchor-img" src="img/singers/_0007_avraam_russo.png" alt="">
+						</a>
+						<a href="#" class="anchor agutin">
+							<img class="anchor-img" src="img/singers/_0008_leonid_agutin.png" alt="">
+						</a>
+						<a href="#" class="anchor zara">
+							<img class="anchor-img" src="img/singers/_0009_zara.png" alt="">
+						</a>
+						<a href="#" class="anchor richiepovveri">
+							<img class="anchor-img" src="img/singers/_0010_ricchi_e_poveri.png" alt="">
+						</a>
+						<a href="#" class="anchor ingrid">
+							<img class="anchor-img" src="img/singers/_0011_Ingrid.png" alt="">
+						</a>
+						<a href="#" class="anchor ivanushki">
+							<img class="anchor-img" src="img/singers/_0012_ivanushki.png" alt="">
+						</a>
+						<a href="#" class="anchor thomas_anders">
+							<img class="anchor-img" src="img/singers/_0013_thomas_anders.png" alt="">
+						</a>
+						<a href="#" class="anchor premier">
+							<img class="anchor-img" src="img/singers/_0014_premier_minister.png" alt="">
+						</a>
+						<a href="#" class="anchor hi-fi">
+							<img class="anchor-img" src="img/singers/_0015_hi_fi.png" alt="">
+						</a>
+						<a href="#" class="anchor bilan">
+							<img class="anchor-img" src="img/singers/_0016_dima_bilan.png" alt="">
+						</a>
+						<a href="#" class="anchor sofieelis">
+							<img class="anchor-img" src="img/singers/_0017_sophie_ellis_bextor.png" alt="">
+						</a>
+						<a href="#" class="anchor chris_norman">
+							<img class="anchor-img" src="img/singers/_0018_chris_norman.png" alt="">
+						</a>
+						<a href="#" class="anchor kuzmin">
+							<img class="anchor-img" src="img/singers/_0019_vladimir_kuzmin.png" alt="">
+						</a>
+						<a href="#" class="anchor philipp_kirkorov">
+							<img class="anchor-img" src="img/singers/_0020_philipp_kirkorov.png" alt="">
+						</a>
+						<a href="#" class="anchor enrike">
+							<img class="anchor-img" src="img/singers/_0021_enrique_iglesias.png" alt="">
+						</a>
+						<a href="#" class="anchor leningrad">
+							<img class="anchor-img" src="img/singers/_0022_leningrad.png" alt="">
+						</a>
+						<a href="#" class="anchor riki_martin">
+							<img class="anchor-img" src="img/singers/_0023_Ricky-MArtin.png" alt="">
+						</a>
+						<a href="#" class="anchor stas_pieha">
+							<img class="anchor-img" src="img/singers/_0024_Stas_Piekha.png" alt="">
+						</a>
+						<a href="#" class="anchor al_bano">
+							<img class="anchor-img" src="img/singers/_0025_Al_Bano.png" alt="">
+						</a>
+						<a href="#" class="anchor a_studio">
+							<img class="anchor-img" src="img/singers/_0026_A_studio.png" alt="">
+						</a>
+						<a href="#" class="anchor juki">
+							<img class="anchor-img" src="img/singers/_0027_juki.png" alt="">
+						</a>
+						<a href="#" class="anchor kristina_orbakaite">
+							<img class="anchor-img" src="img/singers/_0028_Kristina_orbakaite.png" alt="">
+						</a>
+						<a href="#" class="anchor grigoriy_leps">
+							<img class="anchor-img" src="img/singers/_0029_grigory_leps.png" alt="">
+						</a>
+						<a href="#" class="anchor banderos">
+							<img class="anchor-img" src="img/singers/_0030_Banderos.png" alt="">
+						</a>
 					</div>
 				</div>
 			</div>
-						<div class="section fp-auto-height-responsive fp-auto-height">
-				<!-- FOOTER -->
-				<footer>
+		</div>
+		<div class="section fp-auto-height-responsive fp-auto-height">
+			<!-- FOOTER -->
+			<footer>
+				<div class="container-fluid">
 					<div class="row footer">
-						<div class="col-md-2  col-sm-4 col-xs-2 pull-left ">
+						<div class="col-md-2  col-sm-4 col-xs-2 pull-left hidden-xs ">
 							<p>&copy; ARTUR OVAN 2017</p>
 						</div>
-						<div class="col-md-7 col-sm-6 col-xs-12 footer-links  ">
+						<div class="col-md-7 col-sm-3 col-xs-12 footer-links clearfix  ">
 							<ul>
-								<li><a href="events.html">Events</a><span></span></li>
-								<li><a href="booking.html">Booking</a></li>
-								<li><a href="#">Team</a></li>
-								<li><a href="#">Barcelona</a></li>
+								<li>
+									<a href="events.html">Events</a>
+									<span></span>
+								</li>
+								<li>
+									<a href="booking.html">Booking</a>
+								</li>
+								<li>
+									<a href="team.html">Team</a>
+								</li>
+								<li>
+									<a href="#">Barcelona</a>
+								</li>
 							</ul>
 						</div>
-					
-						<div class="col-md-1 col-sm-2 col-xs-10 mobile-social text-right">
+						<div class="col-md-2  col-sm-4 col-xs-4 visible-xs-inline ">
+							<p>&copy; ARTUR OVAN 2017</p>
+						</div>
+						<div class="col-md-1 col-sm-2 col-xs-4 mobile-social text-right">
 							<div class="social">
-		
-								<a href="https://www.facebook.com/artur.ovanesyants"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="https://www.instagram.com/artovan/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-								</div>
-								</div>
-								
-						<div class="col-md-2 col-sm-2 col-xs-10 pull-right text-right mobile-social">
 
-								<p class="top"><a href="#firstSection"><i class="fa   fa-arrow-up" aria-hidden="true"></i>&nbsp;Back to top </a></p>
+								<a href="https://www.facebook.com/artur.ovanesyants">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</a>
+								<a href="https://www.instagram.com/a_ovants/">
+									<i class="fa fa-instagram" aria-hidden="true"></i>
+								</a>
 							</div>
 						</div>
-					</div>
-				</footer>
-			</div>
-			<!-- FULLPAGE ENDS -->
-		</div>
-		<!-- Bootstrap core JavaScript
-			================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.js"></script>
-		<script src="js/wow.js"></script>
 
-		<script type="text/javascript" src="js/booking.js"></script>
-		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-		<!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
-	</body>
+						<div class="col-md-2 col-sm-2 col-xs-4   mobile-social">
+
+							<p class="top">
+								<a href="#firstSection">
+									<i class="fa   fa-arrow-up" aria-hidden="true"></i>&nbsp;Back to top </a>
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</footer>
+		</div>
+		<!-- FULLPAGE ENDS -->
+	</div>
+	<!-- Bootstrap core JavaScript
+			================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/booking.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+</body>
+
 </html>
